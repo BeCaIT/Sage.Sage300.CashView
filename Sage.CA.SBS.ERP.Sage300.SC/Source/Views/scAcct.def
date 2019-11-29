@@ -1,0 +1,16 @@
+;---------------------------------------------------------------------
+;
+;   File        :   scAcct.def
+;   Purpose     :   Module definition file for a view DLL.
+;
+; Copyright (c) 1993-2007 Sage Software, Inc.  All rights reserved.
+;
+;---------------------------------------------------------------------
+
+
+LIBRARY      SCACCT
+; DESCRIPTION  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+HEAPSIZE     0
+EXPORTS
+             rotoEntry       @1000
+             identifyEntry   @999

@@ -1,0 +1,7 @@
+CLANG				; pattern type (C template)
+aaaa=sc			; application id
+yyyy=scEng		; language-specific DLL file name
+AAAA=SC			; APPLICATION ID
+YYYY=SCENG		; LANGUAGE SPECIFIC DLL FILE NAME
+dddd=Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+                ; view description in DEF file

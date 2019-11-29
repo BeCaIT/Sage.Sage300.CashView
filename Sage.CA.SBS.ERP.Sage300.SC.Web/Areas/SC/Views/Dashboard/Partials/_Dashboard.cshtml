@@ -1,0 +1,262 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.DashboardViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Dashboard>
+@using DashboardResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.DashboardResx
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Models.Enums
+@using AnnotationsResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.AnnotationsResx
+
+<style>
+    .summary-grid.k-grid .k-grid-header .k-header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .summary-grid.k-grid tr td {
+        padding: 0 10px;
+        line-height: 25px;
+        height: 25px;
+    }
+
+    .gauge-container div svg {
+        margin: auto;
+    }
+
+    .dashboard-widget {
+        height: 150px;
+        max-height: 150px;
+        border: 1px solid #ccc !important;
+    }
+
+    .dashboard-widget.panel {
+        margin: 0px auto 0px auto;
+    }
+
+    .dashboard-widget .panel-content {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .dashboard-indicator {
+        text-align: center;
+        font-size: 140%;
+        margin-top: 25px;
+    }
+
+    .dashboard-indicator .glyphicon {
+        font-size: 48px;
+        top: 16px;
+        padding: 0px;
+        margin: -10px;
+    }
+
+    .gauge-container {
+        position: relative;
+        height: 100px;
+        max-height: 100px;
+    }
+
+    .gauge-container .gauge-value-center {
+        position: absolute;
+        bottom: 50%;
+        margin-bottom: -8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .gauge-container .gauge-value-bottom {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .k-gauge > div {
+        position: absolute;
+        margin-left: 50%;
+        left: -50px;
+    }
+</style>
+<script type="text/javascript">
+    @Html.ConvertToJsVariableUsingNewtonSoft("scDashboardViewModel", Model)
+</script>
+
+@Html.Partial("~/Areas/SC/Views/Dashboard/Partials/_Localization.cshtml")
+
+<div>@Html.ValidationSummary(true)</div>
+<div id="success" class="message"></div>
+
+<div class="form-screen">
+    <div id="message"></div>
+    <header>
+        <section class="header-group-1">
+            <div class="header-wrapper">
+                <div class="header-headline">@Html.SageHeader3Label("scDashboardHeader", DashboardResx.Entity)</div>
+            </div>
+            @*<div class="flag-required">@Html.SageLabel(CommonResx.RequiredLegend, new { @class = "required" })</div>*@
+        </section>
+    </header>
+
+    <div class="wrapper-group clearfix">
+        <table width="100%" style="border-collapse: separate; border-spacing: 5px">
+            <tbody>
+                <!-- First Row -->
+                <tr>
+                    <td width="15%">
+                        <div class="panel dashboard-widget">
+                            <div class="panel-header">
+                                <span class="panel-icon"></span>
+                                <h3>@DashboardResx.QuickRatio</h3>
+                            </div>
+                            <div class="panel-content">
+                                <div class="bold dashboard-indicator">
+                                    @if (Model.Data != null && Model.Data.UIOptions != null)
+                                    {
+                                        <span>@string.Format("{0:" + Model.Data.UIOptions.FormatString + "}", Model.Data.QuickRatio)</span>
+                                        if (Model.Data.QuickRatio >= Model.Data.QuickRatioBreak)
+                                        {
+                                            <span class="glyphicon glyphicon-up" style="color: #37b400;"></span>
+                                        }
+                                        else
+                                        {
+                                            <span class="glyphicon glyphicon-down" style="color: red"></span>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="15%">
+                        <div class="panel dashboard-widget">
+                            <div class="panel-header">
+                                <span class="panel-icon"></span>
+                                <h3>@DashboardResx.CurrentRatio</h3>
+                            </div>
+                            <div class="panel-content">
+                                <div class="bold dashboard-indicator">
+                                    @if (Model.Data != null && Model.Data.UIOptions != null)
+                                    {
+                                        <span>@string.Format("{0:" + Model.Data.UIOptions.FormatString + "}", Model.Data.CurrentRatio)</span>
+                                        if (Model.Data.CurrentRatio >= Model.Data.CurrentRatioBreak)
+                                        {
+                                            <span class="glyphicon glyphicon-up" style="color: #37b400;"></span>
+                                        }
+                                        else
+                                        {
+                                            <span class="glyphicon glyphicon-down" style="color: red"></span>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="35%">
+                        <div class="panel dashboard-widget">
+                            <div class="panel-header">
+                                <span class="panel-icon"></span>
+                                <h3>@DashboardResx.DSO</h3>
+                            </div>
+                            <div class="panel-content">
+                                <div class="gauge-container">
+                                    <div id="gaugeDSO"></div>
+                                    <label class="bold gauge-value-bottom" data-bind="text: scDashboardUI.viewModel.DSOValue"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="35%">
+                        <div class="panel dashboard-widget">
+                            <div class="panel-header">
+                                <span class="panel-icon"></span>
+                                <h3>@DashboardResx.ARC</h3>
+                            </div>
+                            <div class="panel-content">
+                                <div class="gauge-container">
+                                    <div id="gaugeARC"></div>
+                                    <label class="bold gauge-value-center" data-bind="text: scDashboardUI.viewModel.ARCValue"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Second Row -->
+                <tr>
+                    <td colspan="2" width="30%">
+                        <div class="panel dashboard-widget">
+                            <div class="panel-header">
+                                <span class="panel-icon"></span>
+                                <h3>@DashboardResx.NetOperations</h3>
+                            </div>
+                            <div class="panel-content">
+                                <table style="width: 100%; border-collapse: separate; border-spacing: 5px;font-size: 130%; text-align: right;" class="bold">
+                                    <tbody>
+                                        <tr>
+                                            <td>In</td>
+                                            <td><span class="bold .dashboard-indicator" data-bind="text: scDashboardUI.viewModel.InValue"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Out</td>
+                                            <td><span class="bold .dashboard-indicator" data-bind="text: scDashboardUI.viewModel.OutValue"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Net</td>
+                                            <td><span class="bold .dashboard-indicator" data-bind="text: scDashboardUI.viewModel.NetValue"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="35%">
+                        <div class="panel dashboard-widget">
+                            <div class="panel-header">
+                                <span class="panel-icon"></span>
+                                <h3>@DashboardResx.DPO</h3>
+                            </div>
+                            <div class="panel-content">
+                                <div class="gauge-container">
+                                    <div id="gaugeDPO"></div>
+                                    <label class="bold gauge-value-bottom" data-bind="text: scDashboardUI.viewModel.DPOValue"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="35%">
+                        <div class="panel dashboard-widget">
+                            <div class="panel-header">
+                                <span class="panel-icon"></span>
+                                <h3>@DashboardResx.CCC</h3>
+                            </div>
+                            <div class="panel-content">
+                                <div class="gauge-container">
+                                    <div id="gaugeCCC"></div>
+                                    <label class="bold gauge-value-bottom" data-bind="text: scDashboardUI.viewModel.CCCValue"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Third Row -->
+                <tr>
+                    <td colspan="4">
+                        <div class="panel">
+                            <div class="panel-header">
+                                <span class="panel-icon"></span>
+                                <h3>@DashboardResx.CashFlow</h3>
+                            </div>
+                            <div class="panel-content">
+                                <div id="chartCashFlow" />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="footer-group-1">
+            @Html.KoSageButton("btnPrint", new { }, new { @value = CommonResx.Print, @id = "btnPrint", @class = "btn btn-secondary" })
+        </section>
+    </div>
+</div>

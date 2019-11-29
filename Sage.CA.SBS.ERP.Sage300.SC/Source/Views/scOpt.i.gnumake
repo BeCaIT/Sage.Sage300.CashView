@@ -1,0 +1,19 @@
+#############################################################################
+#
+#  Linux/Unix include makefile for SCOPT, application SC
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# The include makefiles are all included before any of the variables are used.
+# This makefile defines the general header files that other views may need to
+# access.  The dep file stands for the corresponding GEN files.
+# ALL_INCLUDES and ALL_GENS are augmented mainly for use in the clean target.
+#
+# See also scOpt.gnumake
+#
+#############################################################################
+
+iSCOPT = $(INCPATH)/scOpt.i $(INCPATH)/scOpt.h $(GENPATH)/SCOPT.dep
+
+ALL_INCLUDES += $(iSCOPT)
+ALL_GENS += $(GENPATH)/SCOPT?.GEN $(GENPATH)/SCOPT.dep

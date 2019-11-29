@@ -1,0 +1,124 @@
+﻿@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.OptionsViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Options>
+@using OptionsResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.OptionsResx
+@using AnnotationsResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.AnnotationsResx
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Models.Enums
+
+
+<div id="companyOptions" ondragstart="return false;" draggable="false" class="sublevel-1">
+    <!-- Company Address -->
+    <div id="companyProfileAdderss" class="company-address">
+        <label class="company-name" data-bind="text: Data.CompanyProfile.CompanyProfileContact.Name()"></label>
+        <label data-bind="text: Data.CompanyProfile.Address.AddressLine1()"></label>
+        <label data-bind="text: Data.CompanyProfile.Address.AddressLine2()"></label>
+        <label data-bind="text: Data.CompanyProfile.Address.AddressLine3()"></label>
+        <label data-bind="text: Data.CompanyProfile.Address.AddressLine4()"></label>
+        <label data-bind="text: Data.CompanyProfile.Address.City()"></label>
+        <label data-bind="text: Data.CompanyProfile.Address.State()"></label>
+        <label data-bind="text: Data.CompanyProfile.Address.ZipCode()"></label>
+        <label data-bind="text: Data.CompanyProfile.Address.Country()"></label>
+    </div>
+    <hr />
+    <!-- Country / Entity -->
+    <div class="form-group">
+        <div class="dropdown-group">
+            @Html.SageLabelFor(model => model.Data.Country, new { @class = "required" })
+            @Html.KoSageDropDownList("Country", new { options = "Countries", sagedisable = "!Data.IsNewLine() && (Data.Country() != 0)", @sagevalue = "Data.Country", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "default" })
+            @Html.ValidationMessageFor(model => model.Data.Country, null)
+        </div>
+        <!-- Default Entity Type -->
+        @*<div class="dropdown-group" id="fieldEntityType" style="visibility: hidden">
+            @Html.SageLabelFor(model => model.Data.EntityType, null)
+            @Html.KoSageDropDownList("EntityType", new { options = "EntityTypes", @sagevalue = "Data.EntityType", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "default" })
+            @Html.ValidationMessageFor(model => model.Data.EntityType, null)
+        </div>*@
+        <!-- Entity Type SG -->
+        <div class="dropdown-group" id="fieldEntityTypeSG" data-bind="visible: Data.Country() == 702">
+            @Html.SageLabelFor(model => model.Data.EntityTypeSG, new { @class = "required" })
+            @Html.KoSageDropDownList("EntityTypeSG", new { options = "EntityTypesSG", @sagevalue = "Data.EntityTypeSG", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "default" })
+            @Html.ValidationMessageFor(model => model.Data.EntityTypeSG, null)
+        </div>
+        <!-- Entity Type MY -->
+        <div class="dropdown-group" id="fieldEntityTypeMY" data-bind="visible: Data.Country() == 458">
+            @Html.SageLabelFor(model => model.Data.EntityTypeMY, new { @class = "required" })
+            @Html.KoSageDropDownList("EntityTypeMY", new { options = "EntityTypesMY", @sagevalue = "Data.EntityTypeMY", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "default" })
+            @Html.ValidationMessageFor(model => model.Data.EntityTypeMY, null)
+        </div>
+    </div>
+    <!-- Industry -->
+    <div class="form-group">
+        <!-- Default Industry -->
+        @*<div class="dropdown-group" id="fieldIndustry" style="visibility: hidden">
+            @Html.SageLabelFor(model => model.Data.Industry, null)
+            @Html.KoSageDropDownList("Industry", new { options = "Industries", @sagevalue = "Data.Industry", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "large" })
+            @Html.ValidationMessageFor(model => model.Data.Industry, null)
+        </div>*@
+        <!-- Industry SG -->
+        <div class="dropdown-group" id="fieldIndustrySG" data-bind="visible: Data.Country() == 702">
+            @Html.SageLabelFor(model => model.Data.IndustrySG, new { @class = "required" })
+            @Html.KoSageDropDownList("IndustrySG", new { options = "IndustriesSG", @sagevalue = "Data.IndustrySG", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "large" })
+            @Html.ValidationMessageFor(model => model.Data.IndustrySG, null)
+        </div>
+        <!-- Industry MY -->
+        <div class="dropdown-group" id="fieldIndustryMY" data-bind="visible: Data.Country() == 458">
+            @Html.SageLabelFor(model => model.Data.IndustryMY, new { @class = "required" })
+            @Html.KoSageDropDownList("IndustryMY", new { options = "IndustriesMY", @sagevalue = "Data.IndustryMY", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "large" })
+            @Html.ValidationMessageFor(model => model.Data.IndustryMY, null)
+        </div>
+    </div>
+    <!-- BRN / BRYear -->
+    <div class="form-group">
+        <div class="input-group">
+            @Html.SageLabelFor(model => model.Data.BRN, new { @class = "required" })
+            @Html.KoSageTextBoxFor(model => model.Data.BRN, new { @sagevalue = "Data.BRN", @valueUpdate = "'input'" }, new { @class = "default" })
+            @Html.ValidationMessageFor(model => model.Data.BRN, null)
+        </div>
+        <div class="input-group">
+            @Html.SageLabelFor(model => model.Data.BRYear, new { @class = "required" })
+            @Html.KoSageTextBoxFor(model => model.Data.BRYear, new { @sagevalue = "Data.BRYear", @valueUpdate = "'input'" }, new { @class = "default" })
+            @Html.ValidationMessageFor(model => model.Data.BRYear, null)
+        </div>
+    </div>
+    <!-- Key Contact -->
+    <div class="form-group">
+        <div class="input-group">
+            @Html.SageLabelFor(model => model.Data.Contact, new { @class = "required" })
+            @Html.KoSageTextBoxFor(model => model.Data.Contact, new { @sagevalue = "Data.Contact", @valueUpdate = "'input'" }, new { @class = "large" })
+            @Html.ValidationMessageFor(model => model.Data.Contact, null)
+        </div>
+    </div>
+    <!-- JobTitle -->
+    <div class="form-group">
+        <div class="dropdown-group">
+            @Html.SageLabelFor(model => model.Data.JobTitle, new { @class = "required" })
+            @Html.KoSageDropDownList("JobTitle", new { options = "JobTitles", @sagevalue = "Data.JobTitle", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "large" })
+            @Html.ValidationMessageFor(model => model.Data.JobTitle, null)
+        </div>
+    </div>
+    <!-- Email -->
+    <div class="form-group">
+        <div class="input-group">
+            @Html.SageLabelFor(model => model.Data.Email, new { @class = "required" })
+            @Html.KoSageTextBoxFor(model => model.Data.Email, new { @sagevalue = "Data.Email", @valueUpdate = "'input'" }, new { @class = "large" })
+            @Html.ValidationMessageFor(model => model.Data.Email, null)
+        </div>
+    </div>
+    <!-- Phone / Mobile -->
+    <div class="form-group">
+        <div class="input-group">
+            @Html.SageLabelFor(model => model.Data.Phone, new { @class = "required" })
+            @Html.KoSageTextBoxFor(model => model.Data.Phone, new { @sagevalue = "Data.Phone", @valueUpdate = "'input'" }, new { @class = "default" })
+            @Html.ValidationMessageFor(model => model.Data.Phone, null)
+        </div>
+        <div class="input-group">
+            @Html.SageLabelFor(model => model.Data.Mobile, null)
+            @Html.KoSageTextBoxFor(model => model.Data.Mobile, new { @sagevalue = "Data.Mobile", @valueUpdate = "'input'" }, new { @class = "default" })
+            @Html.ValidationMessageFor(model => model.Data.Mobile, null)
+        </div>
+    </div>
+</div>

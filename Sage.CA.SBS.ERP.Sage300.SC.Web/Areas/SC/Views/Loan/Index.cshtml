@@ -1,0 +1,48 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+
+@{
+    const string newLayout = "~/Areas/Shared/Views/Shared/_GlobalLayout.cshtml";
+    bool newLayoutExists = System.IO.File.Exists(Server.MapPath(newLayout));
+}
+@if (!newLayoutExists)
+{
+    <script>
+        var isNewLayout = false;
+    </script>
+    <style>
+        .margin-left-base {
+            margin-left: 20px;
+        }
+    </style>
+}
+else
+{
+    <script>
+        var isNewLayout = true;
+    </script>
+}
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "frmLoan" }))
+{
+    <div id="antiforgerytoken_holder">
+        @Html.AntiForgeryToken()
+    </div>
+    @Html.Partial("~/Areas/SC/Views/Loan/Partials/_Loan.cshtml")
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/SCLoan")
+}
+
+@{
+    if (newLayoutExists)
+    {
+        Layout = newLayout;
+    }
+    else
+    {
+        Layout = Shared.LocalizedLayout;
+    }
+}

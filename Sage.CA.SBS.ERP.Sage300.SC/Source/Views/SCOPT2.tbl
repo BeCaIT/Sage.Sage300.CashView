@@ -1,0 +1,53 @@
+//
+// Table SCOPT2 for view SCOPT
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements_____________decimals____validator______presents_____________flags__________attributes_____________
+//
+// Company Options
+//
+*50 brn			-				BRN			string	SIZEOF_COMP_BRN		-				BRNValid			BRNMask					-					ATTR_CALCULATE|ATTR_REQUIRED
+*	brYearC		-				BRYEARC		string	SIZEOF_YEAR				-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	homeCur		-				HOMECUR		string	SIZEOF_CURRENCY_CODE	-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	industrySG	-				INDUSTRYSG	string	1							-				RListSValid		IndustrySGList			-					ATTR_CALCULATE
+*	industryMY	-				INDUSTRYMY	string	1							-				RListSValid		IndustryMYList			-					ATTR_CALCULATE
+*	industryHK	-				INDUSTRYHK	string	1							-				RListSValid		IndustryHKList			-					ATTR_CALCULATE
+*	industryAU	-				INDUSTRYAU	string	1							-				RListSValid		IndustryAUList			-					ATTR_CALCULATE
+*	industryNZ	-				INDUSTRYNZ	string	1							-				RListSValid		IndustryNZList			-					ATTR_CALCULATE
+*	entTypeSG	-				ENTTYPESG	integer	-							-				RListNValid		EntityTypeSGList		-					ATTR_CALCULATE
+*	entTypeMY	-				ENTTYPEMY	integer	-							-				RListNValid		EntityTypeMYList		-					ATTR_CALCULATE
+*	entTypeHK	-				ENTTYPEHK	integer	-							-				RListNValid		EntityTypeHKList		-					ATTR_CALCULATE
+*	entTypeAU	-				ENTTYPEAU	integer	-							-				RListNValid		EntityTypeAUList		-					ATTR_CALCULATE
+*	entTypeNZ	-				ENTTYPENZ	integer	-							-				RListNValid		EntityTypeNZList		-					ATTR_CALCULATE
+//
+// Processing Options
+//
+*	fcPeriod1S	-				FCPERIOD1S	integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	fcPeriod2S	-				FCPERIOD2S	integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	fcPeriod3S	-				FCPERIOD3S	integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	fcPeriod4S	-				FCPERIOD4S	integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	fcPeriod5S	-				FCPERIOD5S	integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	fcPeriod6S	-				FCPERIOD6S	integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	curDate		-				CURDATE		date		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	curYear		-				CURYEAR		string	SIZEOF_YEAR				-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	curPeriod	-				CURPERIOD	integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//
+// Currency Rate
+//
+*	rptCur		-				RPTCUR		string	SIZEOF_CURRENCY_CODE	-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	rate			-				RATE			number	SIZEOF_RATE				RATE_DECIMALS -				-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	rateOper		-				RATEOPER		integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	rateDate		-				RATEDATE		date		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//
+//
+//
+*	emailPswdS	-				EMAILPSWDS	string	SIZEOF_PASSWORD		-				-					-							-					ATTR_CALCULATE
+*	emailTest	-				EMAILTEST	string	MAX_FIELD_LENGTH		-				
+//
+// Document Numbering
+//
+*	cfeDocNumD	-				CFEDOCNUMD	string	SC_SIZEOF_DOCNUM		-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	cfeDocNumN	-				CFEDOCNUMN	string	SC_SIZEOF_DOCNUM		-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//
+*	processCmd	-				PROCESSCMD	integer	-							-				

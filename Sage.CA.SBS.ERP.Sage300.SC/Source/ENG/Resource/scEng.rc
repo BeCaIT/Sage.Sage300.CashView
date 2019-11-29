@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------------
+
+    File        :   scEng.rc
+    Purpose     :   Resource script for resource only DLL for a view.
+
+    Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+
+    Conventions:
+        0 -   299 view names/object names
+      300 -   599 key names
+      600 -  4999 field names
+     5000 -  8999 presentation
+     9000 -  9999 security
+    10000 - 59999 error messages and text
+    60000         program name
+    60001 - 65535 reserved by the system
+
+--------------------------------------------------------------------*/
+
+#include "sc.i"
+
+#include "scerr.rc"
+#include "scdp.rc"
+
+//////////////////////////////////////////////////////////////////////
+// For each view defined, add an include line for its ZZZZ.i resource
+// ID definition file.
+
+// +++
+#include "scOpt.rc"
+#include "scAcct.rc"
+#include "scBal.rc"
+#include "scTran.rc"
+#include "scLoan.rc"
+#include "scPro.rc"
+// ---
+
+STRINGTABLE
+{
+   ///////////////////////////////////////////////////////////////////
+   // Duplicate the following section for each view defined, and fill
+   // in the string resource definitions appropriately for each view.
+
+   // +++
+
+   //// View name
+   //IDS_ZZZZ_VIEW_NAME   ,    "View name"
+   //IDS_ZZZZ_VIEW_NOUN   ,    "View noun"
+   //
+   //// Key names
+   //IDS_ZZZZ_KEY_NAME    ,    "Name"
+   //
+   //// Field names
+   //IDS_tttt_FIRST_FLD   ,    "Name"
+   //IDS_tttt_SECOND_FLD  ,    "Amount"
+   //IDS_tttt_THIRD_FLD   ,    "Type"
+   //IDS_tttt_FOURTH_FLD  ,    "Date"
+   //
+   //// Presentation strings
+	IDS_SC_YES					,		"Yes"
+	IDS_SC_NO					,		"No"
+	IDS_SC_RECTYPE_NORMAL	,		"Posted"
+	IDS_SC_RECTYPE_PENDING	,		"Pending"
+   //IDS_tttt_TYPE_0      ,    "Type number 0"
+   //IDS_tttt_TYPE_1      ,    "Type number 1"
+   //
+   //// Error messages
+	IDERR_SC_FIELD_ISBLANK			,		"Invalid input. '%s' cannot be blank."
+	IDERR_SC_FIELD_NOTSPECIFIED	,		"Invalid input. '%s' is not specified."
+	//
+	IDERR_SC_EMAIL_INVALID			,		"Invalid input. '%s' is not valid email address(es)."
+	//
+	IDERR_SC_OPTIONS_NOT_SET		,		"Incorrect procedure. Options has not been specified."
+	//
+	//// Security Resources
+	IDS_SC_RSC_SCSETUP			,		"Setup Maintenance"
+	IDS_SC_RSC_SCINQUIRY			,		"Inquiry"
+	IDS_SC_RSC_SCPROCESS			,		"Refresh Data (Re-process)"
+	IDS_SC_RSC_SCFCENTRY			,		"Forecast Entry"
+	IDS_SC_RSC_SCLINQUIRY		,		"Loan History Inquiry"
+	IDS_SC_RSC_SCLENTRY			,		"Loan Entry"
+	// ---
+
+   SYS_OFFSET             ,    "CashView"
+}

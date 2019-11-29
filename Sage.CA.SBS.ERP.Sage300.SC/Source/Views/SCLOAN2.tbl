@@ -1,0 +1,11 @@
+//
+// Table SCLOAN2 for view SCLOAN
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements_____________decimals____validator______presents_____________flags__________attributes_____________
+*35 brn			-				BRN			string	SIZEOF_COMP_BRN		-				-					-							-					ATTR_EDITABLE
+*	rptCur		-				RPTCUR		string	SIZEOF_CURRENCY_CODE	-				-					-							-					ATTR_EDITABLE
+*	emailSubj	-				EMAILSUBJ	string	SIZEOF_STD_DESC		-				-					-							-					ATTR_EDITABLE
+*	emailFrom	-				EMAILFROM	string	SIZEOF_EMAIL			-				EmailFromValid	-							-					ATTR_EDITABLE
+*	emailTo		-				EMAILTO		string	SIZEOF_EMAIL			-				-					-							-					ATTR_EDITABLE

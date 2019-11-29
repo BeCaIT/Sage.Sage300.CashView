@@ -1,0 +1,40 @@
+// <BELOW: Change SC to the appropriate AppID.>
+[SC63AENG]
+DLL=SC63AENGClient.dll
+
+// <BELOW: For each UI in your app, make a section.>
+//
+// The format for a section is as follows:
+//   Line 0: (Optional) a comment indicating the UI's display name
+//   Line 1: Roto ID, enclosed in square brackets
+//   Line 2: DLL=, then name of UI-specific ENG DLL
+//   Line 3: (Not needed if CAB and DLL have the same base
+//            filename, i.e. if they only differ in file extension)
+//            CAB=, then name of UI-specific ENG CAB
+//   Line 4: blank line
+//
+// NOTE: After the last section, there MUST be at least TWO BLANK
+//       LINES before the end of the file.  Otherwise, ccdep won't
+//       process the last section.
+//
+// EXAMPLES:
+//   // Bank Services Activation
+//   [SC0000]
+//   DLL=AccpacSC0000ENG.dll
+//
+//   // Banks
+//   [SC1001]
+//   DLL=AccpacSC1000ENG.dll
+//
+//   // Some other UI
+//   [SC1234]
+//   DLL=AccpacSC1234ENG.dll
+//   CAB=MyCAB.cab
+//
+//
+[SC1100]
+DLL=AccpacSC1100ENG.dll
+
+[SC9100]
+DLL=AccpacSC9100ENG.dll
+

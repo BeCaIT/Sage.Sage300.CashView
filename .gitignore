@@ -3,3 +3,23 @@
 ################################################################################
 
 /.vs
+/Deploy
+/packages
+/lib/RCWF/2019.2.618.40
+/Sage.CA.SBS.ERP.Sage300.SC/.vs/Sage.CA.SBS.ERP.Sage300.SC/v16
+/Sage.CA.SBS.ERP.Sage300.SC/Build32
+/Sage.CA.SBS.ERP.Sage300.SC.BusinessRepository/bin
+/Sage.CA.SBS.ERP.Sage300.SC.BusinessRepository/obj
+/Sage.CA.SBS.ERP.Sage300.SC.Data/bin
+/Sage.CA.SBS.ERP.Sage300.SC.Data/obj
+/Sage.CA.SBS.ERP.Sage300.SC.Interfaces/bin
+/Sage.CA.SBS.ERP.Sage300.SC.Interfaces/obj
+/Sage.CA.SBS.ERP.Sage300.SC.Models/bin
+/Sage.CA.SBS.ERP.Sage300.SC.Models/obj
+/Sage.CA.SBS.ERP.Sage300.SC.Resources/bin
+/Sage.CA.SBS.ERP.Sage300.SC.Resources/obj
+/Sage.CA.SBS.ERP.Sage300.SC.Services/bin
+/Sage.CA.SBS.ERP.Sage300.SC.Services/obj
+/Sage.CA.SBS.ERP.Sage300.SC.Setup/Release
+/Sage.CA.SBS.ERP.Sage300.SC.Web/obj
+/Sage.CA.SBS.ERP.Sage300.SC.Web/bin

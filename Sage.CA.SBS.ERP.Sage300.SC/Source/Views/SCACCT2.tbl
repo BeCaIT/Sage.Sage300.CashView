@@ -1,0 +1,11 @@
+//
+// Table SCACCT2 for view SCACCT
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements________________decimals____validator______presents_____________flags__________attributes_____________
+*10 acctExists	-				ACCTEXISTS	boolean	-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	acctFmttd	-				ACCTFMTTD	string	GLAMF_SIZ(ACCTFMTTD)		-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	acctDesc		-				ACCTDESC		string	GLAMF_SIZ(ACCTDESC)		-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	amtBalHC		-				AMTBALHC		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	processCmd	-				PROCESSCMD	integer	-								-				-					

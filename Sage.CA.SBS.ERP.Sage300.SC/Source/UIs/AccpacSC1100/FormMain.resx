@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="themeManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="&gt;&gt;btnDismiss.Name" xml:space="preserve">
+    <value>btnDismiss</value>
+  </data>
+  <data name="&gt;&gt;btnDismiss.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnDismiss.Parent" xml:space="preserve">
+    <value>pvMain_infoCenter</value>
+  </data>
+  <data name="&gt;&gt;btnDismiss.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radWaitingBar1.Name" xml:space="preserve">
+    <value>radWaitingBar1</value>
+  </data>
+  <data name="&gt;&gt;radWaitingBar1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadWaitingBar, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radWaitingBar1.Parent" xml:space="preserve">
+    <value>pvMain_infoCenter</value>
+  </data>
+  <data name="&gt;&gt;radWaitingBar1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radWaitingBar1.WaitingBarElement.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radWaitingBar1.WaitingBarElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radWaitingBar1.WaitingBarElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageInfoCenter.Name" xml:space="preserve">
+    <value>pageInfoCenter</value>
+  </data>
+  <data name="&gt;&gt;pageInfoCenter.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPageInfoCenter, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageInfoCenter.Parent" xml:space="preserve">
+    <value>pvMain_infoCenter</value>
+  </data>
+  <data name="&gt;&gt;pageInfoCenter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pvMain_infoCenter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 30</value>
+  </data>
+  <data name="pvMain_infoCenter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>653, 629</value>
+  </data>
+  <data name="pvMain_infoCenter.Text" xml:space="preserve">
+    <value>Info Center</value>
+  </data>
+  <data name="&gt;&gt;pvMain_infoCenter.Name" xml:space="preserve">
+    <value>pvMain_infoCenter</value>
+  </data>
+  <data name="&gt;&gt;pvMain_infoCenter.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvMain_infoCenter.Parent" xml:space="preserve">
+    <value>pvMain</value>
+  </data>
+  <data name="&gt;&gt;pvMain_infoCenter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageDashBoard.Name" xml:space="preserve">
+    <value>pageDashBoard</value>
+  </data>
+  <data name="&gt;&gt;pageDashBoard.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPageDashboard, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageDashBoard.Parent" xml:space="preserve">
+    <value>pvMain_dashboard</value>
+  </data>
+  <data name="&gt;&gt;pageDashBoard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pvMain_dashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 30</value>
+  </data>
+  <data name="pvMain_dashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pvMain_dashboard.Text" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="&gt;&gt;pvMain_dashboard.Name" xml:space="preserve">
+    <value>pvMain_dashboard</value>
+  </data>
+  <data name="&gt;&gt;pvMain_dashboard.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvMain_dashboard.Parent" xml:space="preserve">
+    <value>pvMain</value>
+  </data>
+  <data name="&gt;&gt;pvMain_dashboard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pageCashFlowSummary.Name" xml:space="preserve">
+    <value>pageCashFlowSummary</value>
+  </data>
+  <data name="&gt;&gt;pageCashFlowSummary.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPageCashFlowSummary, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageCashFlowSummary.Parent" xml:space="preserve">
+    <value>pvMain_cashFlowSummary</value>
+  </data>
+  <data name="&gt;&gt;pageCashFlowSummary.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pvMain_cashFlowSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 30</value>
+  </data>
+  <data name="pvMain_cashFlowSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pvMain_cashFlowSummary.Text" xml:space="preserve">
+    <value>Cash Flow Summary</value>
+  </data>
+  <data name="&gt;&gt;pvMain_cashFlowSummary.Name" xml:space="preserve">
+    <value>pvMain_cashFlowSummary</value>
+  </data>
+  <data name="&gt;&gt;pvMain_cashFlowSummary.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvMain_cashFlowSummary.Parent" xml:space="preserve">
+    <value>pvMain</value>
+  </data>
+  <data name="&gt;&gt;pvMain_cashFlowSummary.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR.Name" xml:space="preserve">
+    <value>btnPrintAR</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownButton, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR.Parent" xml:space="preserve">
+    <value>pvMain_arSummary</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageARSummary.Name" xml:space="preserve">
+    <value>pageARSummary</value>
+  </data>
+  <data name="&gt;&gt;pageARSummary.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPayeeSummary, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageARSummary.Parent" xml:space="preserve">
+    <value>pvMain_arSummary</value>
+  </data>
+  <data name="&gt;&gt;pageARSummary.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pvMain_arSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 30</value>
+  </data>
+  <data name="pvMain_arSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pvMain_arSummary.Text" xml:space="preserve">
+    <value>A/R Summary - Top 10 Outstanding Balance</value>
+  </data>
+  <data name="&gt;&gt;pvMain_arSummary.Name" xml:space="preserve">
+    <value>pvMain_arSummary</value>
+  </data>
+  <data name="&gt;&gt;pvMain_arSummary.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvMain_arSummary.Parent" xml:space="preserve">
+    <value>pvMain</value>
+  </data>
+  <data name="&gt;&gt;pvMain_arSummary.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP.Name" xml:space="preserve">
+    <value>btnPrintAP</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownButton, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP.Parent" xml:space="preserve">
+    <value>pvMain_apSummary</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageAPSummary.Name" xml:space="preserve">
+    <value>pageAPSummary</value>
+  </data>
+  <data name="&gt;&gt;pageAPSummary.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPayeeSummary, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageAPSummary.Parent" xml:space="preserve">
+    <value>pvMain_apSummary</value>
+  </data>
+  <data name="&gt;&gt;pageAPSummary.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pvMain_apSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 30</value>
+  </data>
+  <data name="pvMain_apSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pvMain_apSummary.Text" xml:space="preserve">
+    <value>A/P Summary - Top 10 Outstanding Balance</value>
+  </data>
+  <data name="&gt;&gt;pvMain_apSummary.Name" xml:space="preserve">
+    <value>pvMain_apSummary</value>
+  </data>
+  <data name="&gt;&gt;pvMain_apSummary.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvMain_apSummary.Parent" xml:space="preserve">
+    <value>pvMain</value>
+  </data>
+  <data name="&gt;&gt;pvMain_apSummary.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pageLoan.Name" xml:space="preserve">
+    <value>pageLoan</value>
+  </data>
+  <data name="&gt;&gt;pageLoan.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPageLoanNative, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageLoan.Parent" xml:space="preserve">
+    <value>pvMain_loan</value>
+  </data>
+  <data name="&gt;&gt;pageLoan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pvMain_loan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 30</value>
+  </data>
+  <data name="pvMain_loan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pvMain_loan.Text" xml:space="preserve">
+    <value>Loans</value>
+  </data>
+  <data name="&gt;&gt;pvMain_loan.Name" xml:space="preserve">
+    <value>pvMain_loan</value>
+  </data>
+  <data name="&gt;&gt;pvMain_loan.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageViewPage, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvMain_loan.Parent" xml:space="preserve">
+    <value>pvMain</value>
+  </data>
+  <data name="&gt;&gt;pvMain_loan.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pvMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pvMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pvMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>912, 660</value>
+  </data>
+  <data name="pvMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pvMain.Name" xml:space="preserve">
+    <value>pvMain</value>
+  </data>
+  <data name="&gt;&gt;pvMain.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadPageView, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;pvMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pvMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnDismiss.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnDismiss.Location" type="System.Drawing.Point, System.Drawing">
+    <value>540, 602</value>
+  </data>
+  <data name="btnDismiss.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <data name="btnDismiss.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnDismiss.Text" xml:space="preserve">
+    <value>&amp;Dismiss</value>
+  </data>
+  <data name="&gt;&gt;btnDismiss.Name" xml:space="preserve">
+    <value>btnDismiss</value>
+  </data>
+  <data name="&gt;&gt;btnDismiss.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnDismiss.Parent" xml:space="preserve">
+    <value>pvMain_infoCenter</value>
+  </data>
+  <data name="&gt;&gt;btnDismiss.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radWaitingBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="radWaitingBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 70</value>
+  </data>
+  <data name="radWaitingBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radWaitingBar1.Text" xml:space="preserve">
+    <value>radWaitingBar1</value>
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="fadingRingWaitingBarIndicatorElement1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;radWaitingBar1.Name" xml:space="preserve">
+    <value>radWaitingBar1</value>
+  </data>
+  <data name="&gt;&gt;radWaitingBar1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadWaitingBar, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radWaitingBar1.Parent" xml:space="preserve">
+    <value>pvMain_infoCenter</value>
+  </data>
+  <data name="&gt;&gt;radWaitingBar1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radWaitingBar1.WaitingBarElement.SeparatorElement.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="bsApplicationData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>152, 17</value>
+  </metadata>
+  <data name="pageInfoCenter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pageInfoCenter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pageInfoCenter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="pageInfoCenter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>653, 629</value>
+  </data>
+  <data name="pageInfoCenter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pageInfoCenter.Name" xml:space="preserve">
+    <value>pageInfoCenter</value>
+  </data>
+  <data name="&gt;&gt;pageInfoCenter.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPageInfoCenter, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageInfoCenter.Parent" xml:space="preserve">
+    <value>pvMain_infoCenter</value>
+  </data>
+  <data name="&gt;&gt;pageInfoCenter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="bsApplicationData.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>152, 17</value>
+  </metadata>
+  <data name="pageDashBoard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pageDashBoard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pageDashBoard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="pageDashBoard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pageDashBoard.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageDashBoard.Name" xml:space="preserve">
+    <value>pageDashBoard</value>
+  </data>
+  <data name="&gt;&gt;pageDashBoard.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPageDashboard, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageDashBoard.Parent" xml:space="preserve">
+    <value>pvMain_dashboard</value>
+  </data>
+  <data name="&gt;&gt;pageDashBoard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pageCashFlowSummary.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pageCashFlowSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pageCashFlowSummary.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="pageCashFlowSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pageCashFlowSummary.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageCashFlowSummary.Name" xml:space="preserve">
+    <value>pageCashFlowSummary</value>
+  </data>
+  <data name="&gt;&gt;pageCashFlowSummary.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPageCashFlowSummary, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageCashFlowSummary.Parent" xml:space="preserve">
+    <value>pvMain_cashFlowSummary</value>
+  </data>
+  <data name="&gt;&gt;pageCashFlowSummary.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnPrintAR.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.HintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintAR_Top10Customers.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnPrintAR_Top10Customers.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintAR_Top10Customers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.Text" xml:space="preserve">
+    <value>Top 10 Customers Outstanding</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnPrintAR_Top10Customers.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.HintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintAR_AgedReceivables.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnPrintAR_AgedReceivables.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintAR_AgedReceivables.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.Text" xml:space="preserve">
+    <value>Receivables Forecast</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnPrintAR_AgedReceivables.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="btnPrintAR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 602</value>
+  </data>
+  <data name="btnPrintAR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <data name="btnPrintAR.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnPrintAR.Text" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR.Name" xml:space="preserve">
+    <value>btnPrintAR</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownButton, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR.Parent" xml:space="preserve">
+    <value>pvMain_arSummary</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pageARSummary.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pageARSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pageARSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pageARSummary.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageARSummary.Name" xml:space="preserve">
+    <value>pageARSummary</value>
+  </data>
+  <data name="&gt;&gt;pageARSummary.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPayeeSummary, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageARSummary.Parent" xml:space="preserve">
+    <value>pvMain_arSummary</value>
+  </data>
+  <data name="&gt;&gt;pageARSummary.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnPrintAP.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.HintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintAP_Top10Vendor.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnPrintAP_Top10Vendor.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintAP_Top10Vendor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.Text" xml:space="preserve">
+    <value>Top 10 Vendors Outstanding</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnPrintAP_Top10Vendor.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.HintText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.ImageKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.Text" xml:space="preserve">
+    <value>Payables Forecast</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.TextAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnPrintAP_AgedCashRequirements.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="btnPrintAP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 602</value>
+  </data>
+  <data name="btnPrintAP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <data name="btnPrintAP.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnPrintAP.Text" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP.Name" xml:space="preserve">
+    <value>btnPrintAP</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadDropDownButton, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP.Parent" xml:space="preserve">
+    <value>pvMain_apSummary</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pageAPSummary.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pageAPSummary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pageAPSummary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pageAPSummary.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageAPSummary.Name" xml:space="preserve">
+    <value>pageAPSummary</value>
+  </data>
+  <data name="&gt;&gt;pageAPSummary.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPayeeSummary, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageAPSummary.Parent" xml:space="preserve">
+    <value>pvMain_apSummary</value>
+  </data>
+  <data name="&gt;&gt;pageAPSummary.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pageLoan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pageLoan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pageLoan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>870, 629</value>
+  </data>
+  <data name="pageLoan.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pageLoan.Name" xml:space="preserve">
+    <value>pageLoan</value>
+  </data>
+  <data name="&gt;&gt;pageLoan.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages.SCPageLoanNative, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pageLoan.Parent" xml:space="preserve">
+    <value>pvMain_loan</value>
+  </data>
+  <data name="&gt;&gt;pageLoan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>912, 660</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAEAIABoBAAAJgAAACAgAAABACAAqBAAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAAAAE
+        AAASCwAAEgsAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wCbXU7/m11O/5td
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/////wD///8A////AP///wD///8A////AP///wD///8Am11O/5td
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv8/xo2wP8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aNgJtd
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/P8aN/z/Gjf9iz6H/ruPN/67jzf+u483/ruPN/4nZ
+        uMCbXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/z/Gjf9iz6H/mt7B/67jzf+u483/dIiA/67j
+        zf+J2bjAm11O/5tdTv+bXU7/m11OoJtdTqCbXU7/m11O/5tdTv8/xo3/ruPN/67jzf+u483/dIiA/1JS
+        Uv9SUlL/UlJS/1JSUv+bXU7/m11O/5tdTkCbXU5Am11O/5tdTv+bXU7/RsiR/67jzf+u483/ruPN/3SI
+        gP9SUlL/UlJS/1JSUv9SUlL/m11O/5tdTv+bXU6Am11OgJtdTv+bXU7/m11O/0bIkf9iz6H/mt7B/67j
+        zf+u483/dIiA/67jzf+o4cn+mmJSyJtdTv+bXU7/m11OwJtdTsCbXU7/m11O/5tdTsA/xo3/P8aN/2LP
+        of+u483/ruPN/67jzf+u483/ruPN/53Wu/eaYlLIm11O/5tdTqCbXU6gm11O/5tdTsCbXU4QP8aNsD/G
+        jf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN8Iq7kHHvrJWA76yVgLG1kkr///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AO+slTDvrJX/76yV/++slf/vrJX/76yVMP//
+        /wCu482gruPN/67jzf+u483/ruPN/67jzf+u483/ruPN/67jzf/it6Cg76yV/++slf/vrJX/76yV/++s
+        laD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A76yVgO+slf/vrJX/76yV/++s
+        lf/vrJWA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AO+slUDvrJX/76yV/++s
+        lf/vrJX/76yVMP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A76yVMO+s
+        lYDvrJWA76yVQP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD
+        AAD/gQAAAAEAAP+BAAD/gQAA/8MAAP//AAAoAAAAIAAAAEAAAAABACAAAAAAAAAQAAAlFgAAJRYAAAAA
+        AAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AJtdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5td
+        Tv+bXU7/m11O/5tdTv////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8Am11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5td
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/////wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wCbXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5td
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AJtdTv+bXU7/m11O/5tdTv+bXU7/m11O/5td
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv8/xo2AP8aN/z/Gjf8/xo3/P8aN/z/G
+        jf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf////8Am11O/5tdTv+bXU7/m11O/5td
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/z/Gjf8/xo3/P8aN/z/G
+        jf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/////wCbXU7/m11O/5td
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/P8aN/z/G
+        jf8/xo3/P8aN/z/Gjf9bzZ3/ruPN/67jzf+u483/ruPN/67jzf+u483/ruPN/67jzf+u483/////AJtd
+        Tv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5td
+        Tv8/xo3/P8aN/z/Gjf8/xo3/P8aN/3fVrf+u483/ruPN/67jzf+u483/ruPN/67jzf+u483/ruPN/67j
+        zf////8Am11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O/5td
+        Tv+bXU7/m11O/z/Gjf8/xo3/P8aN/z/Gjf9Uy5n/p+HJ/67jzf+u483/ruPN/67jzf+u483/dIiA/67j
+        zf+u483/ruPN/////wCbXU7/m11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11OoJtdTqCbXU7/m11O/5td
+        Tv+bXU7/m11O/5tdTv+bXU7/P8aN/z/Gjf9bzZ3/d9Wt/6fhyf+u483/ruPN/67jzf+u483/ruPN/3SI
+        gP9SUlL/ruPN/67jzf+u483/////AJtdTv+bXU7/m11O/5tdTv+bXU7/m11O/5tdTqD///8A////AJtd
+        TqCbXU7/m11O/5tdTv+bXU7/m11O/5tdTv8/xo3/P8aN/67jzf+u483/ruPN/67jzf+u483/ruPN/67j
+        zf90iID/UlJS/1JSUv9SUlL/UlJS/1JSUv9SUlL/UlJS/1JSUv+bXU7/m11O/5tdTv+bXU7/m11OQP//
+        /wD///8Am11OQJtdTv+bXU7/m11O/5tdTv+bXU7/m11O/z/Gjf8/xo3/ruPN/67jzf+u483/ruPN/67j
+        zf+u483/dIiA/1JSUv9SUlL/UlJS/1JSUv9SUlL/UlJS/1JSUv9SUlL/UlJS/5tdTv+bXU7/m11O/5td
+        Tv+bXU6A////AP///wCbXU6Am11O/5tdTv+bXU7/m11O/5tdTv+bXU7/P8aN/z/Gjf+u483/ruPN/67j
+        zf+u483/ruPN/67jzf90iID/UlJS/1JSUv9SUlL/UlJS/1JSUv9SUlL/UlJS/1JSUv9SUlL/m11O/5td
+        Tv+bXU7/m11O/5tdTsD///8A////AJtdTsCbXU7/m11O/5tdTv+bXU7/m11O/5tdTv8/xo3/RsiR/67j
+        zf+u483/ruPN/67jzf+u483/ruPN/67jzf90iID/UlJS/1JSUv9SUlL/UlJS/1JSUv9SUlL/UlJS/1JS
+        Uv+bXU7/m11O/5tdTv+bXU7/m11O/////wD///8Am11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11O8D/G
+        jf9GyJH/W82d/3fVrf+n4cn/ruPN/67jzf+u483/ruPN/67jzf90iID/UlJS/67jzf+u483/ruPN/5Db
+        u9ybXU6gm11O/5tdTv+bXU7/m11O/5tdTv+bXU7/m11OQJtdTkCbXU7/m11O/5tdTv+bXU7/m11O/5td
+        Tv+bXU6gP8aN/z/Gjf8/xo3/P8aN/1TLmf+n4cn/ruPN/67jzf+u483/ruPN/67jzf90iID/ruPN/67j
+        zf+u483/ruPN/4Wyk2ybXU7wm11O/5tdTv+bXU7/m11O/5tdTv+bXU6Am11OgJtdTv+bXU7/m11O/5td
+        Tv+bXU7/m11O8JtdTiA/xo3/P8aN/z/Gjf8/xo3/P8aN/3fVrf+u483/ruPN/67jzf+u483/ruPN/67j
+        zf+u483/ruPN/67jzf+u483/nd/D9o+Gb0mbXU7wm11O/5tdTv+bXU7/m11O/5tdTmCbXU5gm11O/5td
+        Tv+bXU7/m11O/5tdTvCbXU4w////AD/Gjf8/xo3/P8aN/z/Gjf8/xo3/W82d/67jzf+u483/ruPN/67j
+        zf+u483/ruPN/67jzf+u483/ruPN/67jzf+u483/nd/D9oWyk2ybXU6gm11O8JtdTv+bXU7g////AP//
+        /wCbXU7gm11O/5tdTvCbXU6gm11OIP///wD///8AP8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/G
+        jf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/GjaA/xo1Q////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wA/xo2AP8aN/z/Gjf8/xo3/P8aN/z/G
+        jf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/Gjf8/xo3/P8aN/z/G
+        jWDvrJWA76yV8O+slf/vrJX/76yV8O+slYA/xo0g////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A76yV0O+slf/vrJX/76yV/++slf/vrJX/76yV/++sldD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AO+slYDvrJX/76yV/++slf/vrJX/76yV/++slf/vrJX/76yV/++slYD///8A////AP//
+        /wCu483/ruPN/67jzf+u483/ruPN/67jzf+u483/ruPN/67jzf+u483/ruPN/67jzf+u483/ruPN/67j
+        zf+u483/ruPN/67jzf+u481w76yV8O+slf/vrJX/76yV/++slf/vrJX/76yV/++slf/vrJX/76yV8P//
+        /wD///8A////AK7jzaCu483/ruPN/67jzf+u483/ruPN/67jzf+u483/ruPN/67jzf+u483/ruPN/67j
+        zf+u483/ruPN/67jzf+u483/ruPN/7zXwUzvrJX/76yV/++slf/vrJX/76yV/++slf/vrJX/76yV/++s
+        lf/vrJX/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A76yVEO+slf/vrJX/76yV/++slf/vrJX/76yV/++s
+        lf/vrJX/76yV/++slf////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A76yV8O+slf/vrJX/76yV/++s
+        lf/vrJX/76yV/++slf/vrJX/76yV8P///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDvrJWA76yV/++s
+        lf/vrJX/76yV/++slf/vrJX/76yV/++slf/vrJWA////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wDvrJXQ76yV/++slf/vrJX/76yV/++slf/vrJX/76yV0P///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AO+slRDvrJWA76yV8O+slf/vrJX/76yV8O+slYD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP//AAD//wAA//8AAP//AAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+        AYAAAAGAAAABgAAAAYAAAAGAAAAAAAAAAAAAAAABAAABgwAAB/8AAAAP///wD///4AcAAAAHAAAAB///
+        wAf//+AH///gB///8A////Af////////////////
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>CashView Inquiry</value>
+  </data>
+  <data name="&gt;&gt;themeManager.Name" xml:space="preserve">
+    <value>themeManager</value>
+  </data>
+  <data name="&gt;&gt;themeManager.Type" xml:space="preserve">
+    <value>Telerik.WinControls.RadThemeManager, Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;fadingRingWaitingBarIndicatorElement1.Name" xml:space="preserve">
+    <value>fadingRingWaitingBarIndicatorElement1</value>
+  </data>
+  <data name="&gt;&gt;fadingRingWaitingBarIndicatorElement1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.FadingRingWaitingBarIndicatorElement, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;bsApplicationData.Name" xml:space="preserve">
+    <value>bsApplicationData</value>
+  </data>
+  <data name="&gt;&gt;bsApplicationData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR_Top10Customers.Name" xml:space="preserve">
+    <value>btnPrintAR_Top10Customers</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR_Top10Customers.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR_AgedReceivables.Name" xml:space="preserve">
+    <value>btnPrintAR_AgedReceivables</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAR_AgedReceivables.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP_Top10Vendor.Name" xml:space="preserve">
+    <value>btnPrintAP_Top10Vendor</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP_Top10Vendor.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP_AgedCashRequirements.Name" xml:space="preserve">
+    <value>btnPrintAP_AgedCashRequirements</value>
+  </data>
+  <data name="&gt;&gt;btnPrintAP_AgedCashRequirements.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadMenuItem, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadForm, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+</root>

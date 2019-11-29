@@ -1,0 +1,22 @@
+//
+// Table SCTRAN for view SCTRAN
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements_____________decimals____validator______presents_____________flags__________attributes_____________
+*	recType		-				RECTYPE		integer	-							-				-					RecTypeList
+*	source		-				SOURCE		string	SIZEOF_PGMID			-
+*	custVend		-				CUSTVEND		string	12							-
+*	docNum		-				DOCNUM		string	22							-
+*	paymentNbr	-				PAYMENTNBR	number	3							0
+!  audt_Date   -           AUDTDATE    date     -                    -
+!  audt_Time   -           AUDTTIME    time     -                    -
+!  audt_User   -           AUDTUSER    string   SIZEOF_USERID        -
+!  audt_Org    -           AUDTORG     string   SIZEOF_ORGID         -
+*	transType	-				TRANSTYPE	integer	-							-
+*	docDate		-				DOCDATE		date		-							-
+*	docDesc		-				DOCDESC		string	SIZEOF_STD_DESC		-
+*	dateDue		-				DATEDUE		date		-							-
+*	amtDueHC		-				AMTDUEHC		money		-							-
+*	amtPaidHC	-				AMTPAIDHC	money		-							-
+*20

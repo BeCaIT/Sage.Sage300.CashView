@@ -1,0 +1,32 @@
+//
+// Table SCBAL2 for view SCBAL
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements________________decimals____validator______presents_____________flags__________attributes_____________
+//*	grpCod	-				GRPCOD		integer	-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*25 balPerd1	-				BALPERD1		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd2		-				BALPERD2		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd3		-				BALPERD3		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd4		-				BALPERD4		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd5		-				BALPERD5		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd6		-				BALPERD6		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd7		-				BALPERD7		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd8		-				BALPERD8		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd9		-				BALPERD9		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd10	-				BALPERD10	money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd11	-				BALPERD11	money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd12	-				BALPERD12	money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd13	-				BALPERD13	money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd14	-				BALPERD14	money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balPerd15	-				BALPERD15	money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//*	curYear		-				CURYEAR		string	SIZEOF_YEAR					-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//*	curPeriod	-				CURPERIOD	integer	-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	netYear		-				NETYEAR		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	netYtd		-				NETYTD		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	balYtd		-				BALYTD		money		-								-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//*	acctFmttd	-				ACCTFMTTD	string	GLAMF_SIZ(ACCTFMTTD)		-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//*	acctDesc		-				ACCTDESC		string	GLAMF_SIZ(ACCTDESC)		-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//*	acctGrpCod	-				ACCTGRPCOD	string	GLACGRP_SIZ(ACCTGRPCOD)	-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//*	acctGrpDes	-				ACCTGRPDES	string	GLACGRP_SIZ(ACCTGRPDES)	-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+//*	acctGrpScd	-				ACCTGRPSCD	string	GLACGRP_SIZ(SORTCODE)	-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE

@@ -1,0 +1,69 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.PayeeSummaryViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.PayeeSummary>
+@using PayeeSummaryResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.PayeeSummaryResx
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Models.Enums
+@using AnnotationsResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.AnnotationsResx
+
+@{
+    bool _isAR = ((string)HttpContext.Current.Request.RequestContext.RouteData.Values["action"] == "AR"); 
+}
+
+<style>
+    .summary-grid.k-grid .k-grid-header .k-header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .summary-grid.k-grid tr td {
+        padding: 0 10px;
+        line-height: 25px;
+        height: 25px;
+    }
+</style>
+<script type="text/javascript">
+    @Html.ConvertToJsVariableUsingNewtonSoft("scPayeeSummaryViewModel", Model)
+</script>
+
+@Html.Partial("~/Areas/SC/Views/PayeeSummary/Partials/_Localization.cshtml")
+
+<div>@Html.ValidationSummary(true)</div>
+<div id="success" class="message"></div>
+
+<div class="form-screen">
+    <div id="message"></div>
+    <header>
+        <section class="header-group-1">
+            <div class="header-wrapper">
+                <div class="header-headline">@Html.SageHeader3Label("scPayeeSummaryHeader", _isAR ? PayeeSummaryResx.EntityAR : PayeeSummaryResx.EntityAP)</div>
+            </div>
+            @*<div class="flag-required">@Html.SageLabel(CommonResx.RequiredLegend, new { @class = "required" })</div>*@
+        </section>
+    </header>
+
+    <div class="wrapper-group clearfix">
+        <div class="datagrid-group">
+            @Html.KoKendoGrid("scPayeeSummaryGrid", "scPayeeSummaryUI.viewModel.DataList", "Ranking", "scPayeeSummaryUIGrid.scPayeeSummaryUIGridConfig", false, "gh320 summary-grid")
+        </div>
+
+        <div class="wrapper-group clearfix">
+            <div id="chart" class="chartAlignment" />
+        </div>
+
+        <section class="footer-group-1">
+            @if (_isAR)
+            {
+                @Html.KoSageButton("btnTop10Customers", new { }, new { @value = PayeeSummaryResx.PrintTop10CustomersOutstanding, @id = "btnTop10Customers", @class = "btn btn-secondary" })
+                @Html.KoSageButton("btnARForecast", new { }, new { @value = PayeeSummaryResx.PrintReceivablesForecast, @id = "btnARForecast", @class = "btn btn-secondary" })
+            }
+            else
+            {
+                @Html.KoSageButton("btnTop10Vendors", new { }, new { @value = PayeeSummaryResx.PrintTop10VendorsOutstanding, @id = "btnTop10Vendors", @class = "btn btn-secondary" })
+                @Html.KoSageButton("btnAPForecast", new { }, new { @value = PayeeSummaryResx.PrintPayablesForecast, @id = "btnAPForecast", @class = "btn btn-secondary" })
+            }
+        </section>
+    </div>

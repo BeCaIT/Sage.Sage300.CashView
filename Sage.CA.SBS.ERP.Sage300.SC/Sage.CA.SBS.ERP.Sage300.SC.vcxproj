@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\ENG\Reports\SCAPCASH.rpt" />
+    <None Include="Source\ENG\Reports\SCAPTOP.rpt" />
+    <None Include="Source\ENG\Reports\SCARAGED.rpt" />
+    <None Include="Source\ENG\Reports\SCARTOP.rpt" />
+    <None Include="Source\ENG\Reports\SCCABK.rpt" />
+    <None Include="Source\ENG\Reports\SCINOUT.rpt" />
+    <None Include="Source\ENG\Reports\SCOPT.rpt" />
+    <None Include="Source\ENG\Reports\SCSUM01.rpt" />
+    <None Include="Source\ENG\Reports\SCSUM03.rpt" />
+    <None Include="Source\ENG\Resource\24582-MYTermsAndConditions.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Source\ENG\Resource\80001Alert.mht" />
+    <None Include="Source\ENG\Resource\87021-SGLoanOffer.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Source\ENG\Resource\80001Alert.html" />
+    <None Include="Source\ENG\Resource\87022Combined.html" />
+    <None Include="Source\ENG\Resource\87021Offer.html" />
+    <None Include="Source\ENG\Resource\87021Offer.mht" />
+    <None Include="Source\ENG\Resource\87022Combined.mht" />
+    <None Include="Source\ENG\Resource\ENG.ptn" />
+    <None Include="Source\ENG\Resource\makefile" />
+    <None Include="Source\ENG\Resource\scEng.def" />
+    <None Include="Source\ENG\Resource\27021-SGLoanRequest.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Source\ENG\Resource\27022-SGTermsAndConditions.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Source\ENG\Resource\0011-TestEmail.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Source\ENG\Resource\80001-ThresholdAlert.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Source\Project\makefile" />
+    <None Include="Source\Project\makefile.gnumake" />
+    <None Include="Source\Project\sc.i" />
+    <None Include="Source\Project\sc.ini" />
+    <None Include="Source\Project\SC.ptn" />
+    <None Include="Source\Project\scdp.i" />
+    <None Include="Source\Project\scerr.i" />
+    <None Include="Source\Project\scrpt.ini" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACControl.cls" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACControls.cls" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACCustCtl.cls" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACCustCtls.cls" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACDBLinks.cls" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACDSControl.cls" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACDSControls.cls" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACLayoutManager.bas" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100.vbp" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100.vbw" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100Group.vbg" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE.vbp" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE.vbw" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE_Form.frm" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE_Form.frx" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100UICtrl.ctl" />
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100UICtrl.ctx" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACSystemManager.bas" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACTmplHelpIDs.bas" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACTmplResourceIDs.bas" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACTmplStrings.bas" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACUICustomizeBox.frm" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACUICustomizeBox.frx" />
+    <None Include="Source\UIs\AccpacSC9100\ACCPACUIGlobals.bas" />
+    <None Include="Source\UIs\AccpacSC9100\clsTabManager.cls" />
+    <None Include="Source\UIs\AccpacSC9100\MSSCCPRJ.SCC" />
+    <None Include="Source\UIs\AccpacSC9100\WINAPI.bas" />
+    <None Include="Source\UIs\BinaryCompat\AccpacSC9100.ocx" />
+    <None Include="Source\UIs\Reg.cmd" />
+    <None Include="Source\UIs\Resource\ENG\SCVersion.rc2" />
+    <None Include="Source\UIs\Resource\Makefile" />
+    <None Include="Source\UIs\Unreg.cmd" />
+    <None Include="Source\Views\makefile" />
+    <None Include="Source\Views\makefile.gnumake" />
+    <None Include="Source\Views\scAcct.def" />
+    <None Include="Source\Views\scAcct.gnumake" />
+    <None Include="Source\Views\scAcct.i" />
+    <None Include="Source\Views\scAcct.i.gnumake" />
+    <None Include="Source\Views\scAcct.mak" />
+    <None Include="Source\Views\SCACCT.ptn" />
+    <None Include="Source\Views\SCACCT.tbl" />
+    <None Include="Source\Views\SCACCT2.tbl" />
+    <None Include="Source\Views\scBal.def" />
+    <None Include="Source\Views\scBal.gnumake" />
+    <None Include="Source\Views\scBal.i" />
+    <None Include="Source\Views\scBal.i.gnumake" />
+    <None Include="Source\Views\scBal.mak" />
+    <None Include="Source\Views\SCBAL.ptn" />
+    <None Include="Source\Views\SCBAL.tbl" />
+    <None Include="Source\Views\SCBAL2.tbl" />
+    <None Include="Source\Views\scInit.def" />
+    <None Include="Source\Views\scInit.gnumake" />
+    <None Include="Source\Views\scInit.i" />
+    <None Include="Source\Views\scInit.i.gnumake" />
+    <None Include="Source\Views\scInit.mak" />
+    <None Include="Source\Views\SCINIT.ptn" />
+    <None Include="Source\Views\SCINIT.tbl" />
+    <None Include="Source\Views\scLoan.def" />
+    <None Include="Source\Views\scLoan.gnumake" />
+    <None Include="Source\Views\scLoan.i" />
+    <None Include="Source\Views\scLoan.i.gnumake" />
+    <None Include="Source\Views\scLoan.mak" />
+    <None Include="Source\Views\SCLOAN.ptn" />
+    <None Include="Source\Views\SCLOAN.tbl" />
+    <None Include="Source\Views\SCLOAN2.tbl" />
+    <None Include="Source\Views\scOpt.def" />
+    <None Include="Source\Views\scOpt.gnumake" />
+    <None Include="Source\Views\scOpt.i" />
+    <None Include="Source\Views\scOpt.i.gnumake" />
+    <None Include="Source\Views\scOpt.mak" />
+    <None Include="Source\Views\SCOPT.ptn" />
+    <None Include="Source\Views\SCOPT.tbl" />
+    <None Include="Source\Views\SCOPT2.tbl" />
+    <None Include="Source\Views\scPro.def" />
+    <None Include="Source\Views\scPro.gnumake" />
+    <None Include="Source\Views\scPro.i" />
+    <None Include="Source\Views\scPro.i.gnumake" />
+    <None Include="Source\Views\scPro.mak" />
+    <None Include="Source\Views\SCPRO.ptn" />
+    <None Include="Source\Views\SCPRO.tbl" />
+    <None Include="Source\Views\scSchdl.def" />
+    <None Include="Source\Views\scSchdl.gnumake" />
+    <None Include="Source\Views\scSchdl.i" />
+    <None Include="Source\Views\scSchdl.i.gnumake" />
+    <None Include="Source\Views\scSchdl.mak" />
+    <None Include="Source\Views\SCSCHDL.ptn" />
+    <None Include="Source\Views\SCSCHDL.tbl" />
+    <None Include="Source\Views\scTran.def" />
+    <None Include="Source\Views\scTran.gnumake" />
+    <None Include="Source\Views\scTran.i" />
+    <None Include="Source\Views\scTran.i.gnumake" />
+    <None Include="Source\Views\scTran.mak" />
+    <None Include="Source\Views\SCTRAN.ptn" />
+    <None Include="Source\Views\SCTRAN.tbl" />
+    <None Include="Source\Views\SCTRAN2.tbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Source\ENG\Resource\grp.txt" />
+    <Text Include="Source\Project\roto.txt" />
+    <Text Include="Source\Project\sc.txt" />
+    <Text Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE_Form.log" />
+    <Text Include="Source\UIs\AccpacSC9100\AUIWizard.log" />
+    <Text Include="Source\UIs\Build.txt" />
+    <Text Include="Source\UIs\Resource\ENG\DEP.TXT" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ENG\Resource\scEng.c" />
+    <ClCompile Include="Source\Project\sc.c" />
+    <ClCompile Include="Source\Views\scAcct.cpp" />
+    <ClCompile Include="Source\Views\scAcct1.cpp" />
+    <ClCompile Include="Source\Views\scBal.cpp" />
+    <ClCompile Include="Source\Views\scBal1.cpp" />
+    <ClCompile Include="Source\Views\scEmail.cpp" />
+    <ClCompile Include="Source\Views\scInit.cpp" />
+    <ClCompile Include="Source\Views\scInit1.cpp" />
+    <ClCompile Include="Source\Views\scLoan.cpp" />
+    <ClCompile Include="Source\Views\scLoan1.cpp" />
+    <ClCompile Include="Source\Views\scOpt.cpp" />
+    <ClCompile Include="Source\Views\scOpt1.cpp" />
+    <ClCompile Include="Source\Views\scPro.cpp" />
+    <ClCompile Include="Source\Views\scPro1.cpp" />
+    <ClCompile Include="Source\Views\scSample.cpp" />
+    <ClCompile Include="Source\Views\scSchdl.cpp" />
+    <ClCompile Include="Source\Views\scSchdl1.cpp" />
+    <ClCompile Include="Source\Views\scTran.cpp" />
+    <ClCompile Include="Source\Views\scTran1.cpp" />
+    <ClCompile Include="Source\Views\scUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Project\External\cscbsk.H" />
+    <ClInclude Include="Source\Project\External\cscom.H" />
+    <ClInclude Include="Source\Project\External\cssktb.H" />
+    <ClInclude Include="Source\Project\External\glacgrp.H" />
+    <ClInclude Include="Source\Project\External\glamf.H" />
+    <ClInclude Include="Source\Project\External\glfisc.H" />
+    <ClInclude Include="Source\Project\sc.h" />
+    <ClInclude Include="Source\UIs\Resource\ENG\SC1100ID.h" />
+    <ClInclude Include="Source\UIs\Resource\ENG\SC9100ID.h" />
+    <ClInclude Include="Source\UIs\Resource\ENG\SCClientID.h" />
+    <ClInclude Include="Source\Views\scAcct.h" />
+    <ClInclude Include="Source\Views\scAcct1.h" />
+    <ClInclude Include="Source\Views\scAcct2.h" />
+    <ClInclude Include="Source\Views\scAcct3.h" />
+    <ClInclude Include="Source\Views\scBal.h" />
+    <ClInclude Include="Source\Views\scBal1.h" />
+    <ClInclude Include="Source\Views\scBal2.h" />
+    <ClInclude Include="Source\Views\scBal3.h" />
+    <ClInclude Include="Source\Views\scEmail.h" />
+    <ClInclude Include="Source\Views\scInit.h" />
+    <ClInclude Include="Source\Views\scInit1.h" />
+    <ClInclude Include="Source\Views\scInit2.h" />
+    <ClInclude Include="Source\Views\scInit3.h" />
+    <ClInclude Include="Source\Views\scLoan.h" />
+    <ClInclude Include="Source\Views\scLoan1.h" />
+    <ClInclude Include="Source\Views\scLoan2.h" />
+    <ClInclude Include="Source\Views\scLoan3.h" />
+    <ClInclude Include="Source\Views\scOpt.h" />
+    <ClInclude Include="Source\Views\scOpt1.h" />
+    <ClInclude Include="Source\Views\scOpt2.h" />
+    <ClInclude Include="Source\Views\scOpt3.h" />
+    <ClInclude Include="Source\Views\scPro.h" />
+    <ClInclude Include="Source\Views\scPro1.h" />
+    <ClInclude Include="Source\Views\scPro2.h" />
+    <ClInclude Include="Source\Views\scPro3.h" />
+    <ClInclude Include="Source\Views\scSample.h" />
+    <ClInclude Include="Source\Views\scSchdl.h" />
+    <ClInclude Include="Source\Views\scSchdl1.h" />
+    <ClInclude Include="Source\Views\scSchdl2.h" />
+    <ClInclude Include="Source\Views\scSchdl3.h" />
+    <ClInclude Include="Source\Views\scTran.h" />
+    <ClInclude Include="Source\Views\scTran1.h" />
+    <ClInclude Include="Source\Views\scTran2.h" />
+    <ClInclude Include="Source\Views\scTran3.h" />
+    <ClInclude Include="Source\Views\scUtil.h" />
+    <ClInclude Include="Source\Views\scValidation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\ENG\Resource\scAcct.rc" />
+    <ResourceCompile Include="Source\ENG\Resource\scBal.rc" />
+    <ResourceCompile Include="Source\ENG\Resource\scdp.rc" />
+    <ResourceCompile Include="Source\ENG\Resource\scEng.rc" />
+    <ResourceCompile Include="Source\ENG\Resource\scerr.rc" />
+    <ResourceCompile Include="Source\ENG\Resource\scLoan.rc" />
+    <ResourceCompile Include="Source\ENG\Resource\scOpt.rc" />
+    <ResourceCompile Include="Source\ENG\Resource\scPro.rc" />
+    <ResourceCompile Include="Source\ENG\Resource\scTran.rc" />
+    <ResourceCompile Include="Source\UIs\Resource\ENG\SC1100.rc" />
+    <ResourceCompile Include="Source\UIs\Resource\ENG\SC9100.rc" />
+    <ResourceCompile Include="Source\UIs\Resource\ENG\SCClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Source\ENG\Resource\images\block.jpg" />
+    <Image Include="Source\ENG\Resource\images\divider.png" />
+    <Image Include="Source\ENG\Resource\images\dot.png" />
+    <Image Include="Source\ENG\Resource\images\fb.png" />
+    <Image Include="Source\ENG\Resource\images\ico1.png" />
+    <Image Include="Source\ENG\Resource\images\ico2.png" />
+    <Image Include="Source\ENG\Resource\images\ico3.png" />
+    <Image Include="Source\ENG\Resource\images\masthead.jpg" />
+    <Image Include="Source\ENG\Resource\images\sc.com.png" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{A999F011-E291-489C-9AA8-788F81860C18}</ProjectGuid>
+    <RootNamespace>SageCASBSERPSage300SC</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\Build32\Gen;$(ProjectDir)\Build32\Include;C:\Pluswdev\INCLUDE;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)\Build32\CodMap;$(ProjectDir)\Build32\Gen;$(ProjectDir)\Build32\Include;C:\Pluswdev\INCLUDE;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

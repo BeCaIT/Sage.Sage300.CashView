@@ -1,0 +1,19 @@
+﻿@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.OptionsViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Options>
+
+@using OptionsResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.OptionsResx
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Models.Enums
+@using AnnotationsResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.AnnotationsResx
+
+<div id="accountsOptions" ondragstart="return false;" draggable="false" class="sublevel-1">
+    <!-- Accounts Grid -->
+    <div class="datagrid-group">
+        @Html.Partial("~/Areas/SC/Views/Options/Partials/_AccountsGrid.cshtml", new Sage.CA.SBS.ERP.Sage300.SC.Web.Models.AccountViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Account>())
+    </div>
+</div>
+

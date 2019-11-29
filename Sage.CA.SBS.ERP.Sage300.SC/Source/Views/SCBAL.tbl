@@ -1,0 +1,32 @@
+//
+// Table SCBAL for view SCBAL
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements_____________decimals____validator______presents_____________flags__________attributes_____________
+*	recType		-				RECTYPE		integer	-							-				-					RecTypeList
+*	grpcod		-				GRPCOD		integer	-							-
+//*	acctId		-				ACCTID		string	GLAMF_SIZ(ACCTID)		-
+*	fscYear		-				FSCYEAR		string	SIZEOF_YEAR				-
+!  audt_Date   -           AUDTDATE    date     -                    -
+!  audt_Time   -           AUDTTIME    time     -                    -
+!  audt_User   -           AUDTUSER    string   SIZEOF_USERID        -
+!  audt_Org    -           AUDTORG     string   SIZEOF_ORGID         -
+//*	amtBalHC		-				AMTBALHC		money		-							-
+*	balOpen		-				BALOPEN		money		-							-
+*	netPerd1		-				NETPERD1		money		-							-
+*	netPerd2		-				NETPERD2		money		-							-
+*	netPerd3		-				NETPERD3		money		-							-
+*	netPerd4		-				NETPERD4		money		-							-
+*	netPerd5		-				NETPERD5		money		-							-
+*	netPerd6		-				NETPERD6		money		-							-
+*	netPerd7		-				NETPERD7		money		-							-
+*	netPerd8		-				NETPERD8		money		-							-
+*	netPerd9		-				NETPERD9		money		-							-
+*	netPerd10	-				NETPERD10	money		-							-
+*	netPerd11	-				NETPERD11	money		-							-
+*	netPerd12	-				NETPERD12	money		-							-
+*	netPerd13	-				NETPERD13	money		-							-
+*	netPerd14	-				NETPERD14	money		-							-
+*	netPerd15	-				NETPERD15	money		-							-
+*25

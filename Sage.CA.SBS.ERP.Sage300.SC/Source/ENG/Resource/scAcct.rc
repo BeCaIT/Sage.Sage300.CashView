@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------------
+
+    File        :   scAcct.rc
+    Purpose     :   Resource script for resource only DLL for a view.
+
+    Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+
+    Conventions:
+        0 -   299 view names/object names
+      300 -   599 key names
+      600 -  4999 field names
+     5000 -  8999 presentation
+     9000 -  9999 security
+    10000 - 59999 error messages and text
+    60000         program name
+    60001 - 65535 reserved by the system
+
+--------------------------------------------------------------------*/
+
+
+//////////////////////////////////////////////////////////////////////
+// For each view defined, add an include line for its ZZZZ.i resource
+// ID definition file.
+
+// +++
+#include "scAcct.i"
+// ---
+
+STRINGTABLE
+{
+   ///////////////////////////////////////////////////////////////////
+   // Duplicate the following section for each view defined, and fill
+   // in the string resource definitions appropriately for each view.
+
+   // +++
+
+   //// View name
+   IDS_SCACCT_VIEW_NAME			,    "Account"
+   IDS_SCACCT_VIEW_NOUN			,    "Accounts"
+   //
+   //// Key names
+   IDS_SCACCT_KEY_NAME			,    "Account Number"
+   //
+   //// Field names
+   IDS_SCACCT_ACCTID_FLD		,    "Account Number"
+   //IDS_SCACCT_FSCSDSG_FLD		,    "Fiscal Set Designator"
+   IDS_SCACCT_INCLUDE_FLD		,    "Include"
+	//
+	//// Field names (2)
+	IDS_SCACCT2_ACCTEXISTS_FLD	,    "Account Exists"
+	IDS_SCACCT2_ACCTFMTTD_FLD	,    "Account Number"
+	IDS_SCACCT2_ACCTDESC_FLD	,    "Account Description"
+	IDS_SCACCT2_AMTBALHC_FLD	,    "Amount Balance (Func.)"
+	IDS_SCACCT2_PROCESSCMD_FLD	,    "Process Command"
+	//
+   //// Presentation strings
+	//
+	//// Marks
+	//
+   //// Error messages
+}

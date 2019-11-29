@@ -1,0 +1,14 @@
+<bootstrapper>
+  <assemblies>
+    <!--
+    Since our Assembly Names starting with: "Sage.CA.SBS.ERP.Sage300",
+    We must remove the boostrapper, else, they are imported twice
+    (we guess the core program also perform import based on Assembly Name)
+    Importing twice lead to double menu
+    -->
+    <!--<add assembly="Sage.CA.SBS.ERP.Sage300.SC.*.dll" />-->
+  </assemblies>
+  <menuresx>
+    <add assembly="Sage.CA.SBS.ERP.Sage300.SC.Resources" name="MenuResx" />
+  </menuresx>
+</bootstrapper>

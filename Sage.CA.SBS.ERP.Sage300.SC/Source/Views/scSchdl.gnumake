@@ -1,0 +1,31 @@
+#############################################################################
+#
+#  Linux/Unix main makefile for scSchdl, application sc
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# See also scSchdl.i.gnumake
+#
+#############################################################################
+
+scSchdlOBJS = $(OBJPATH)/scSchdl.o $(OBJPATH)/scSchdl1.o
+
+$(RUNPATH)/scSchdl.so: $(scSchdlOBJS)
+
+# Require the scSchdl.ver at this stage so it will get built before the linking
+# stage.  (It cannot be a dependent of the scSchdl.so because that will upset the
+# linker)
+$(OBJPATH)/scSchdl.o: scSchdl.cpp $(isc) $(iscSchdl) scSchdl1.h scSchdl2.h scSchdl3.h scSchdl.ver
+
+$(OBJPATH)/scSchdl1.o: scSchdl1.cpp $(isc) $(iscSchdl) scSchdl1.h scSchdl2.h scSchdl3.h
+
+# If there is a SCSCHDL2 table add table generation dependencies here based
+# on the .tbl files
+$(GENPATH)/SCSCHDL.dep: SCSCHDL.tbl
+ifneq "scSchdl" "SCSCHDL"
+	gentable -ZscSchdl -T$^ -o$(GENPATH)
+	echo $@: $^ >$@
+endif
+
+ALL_VIEWS += $(RUNPATH)/scSchdl.so
+ALL_OBJS += $(scSchdlOBJS)

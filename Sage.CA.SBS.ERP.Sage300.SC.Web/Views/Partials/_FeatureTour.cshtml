@@ -1,0 +1,92 @@
+﻿@* Copyright (c) 1994-2014 Sage Software, Inc.  All rights reserved. *@
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources.Portal;
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.Utilities;
+@using CommonResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.CommonResx
+@using Constants = Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants.Shared;
+
+
+<!-- Feature Tour -->
+<div id="firstTimeLogin">
+    <div class="overlay"></div>
+    <div class="tourClose"></div>
+    <div class="completeTour">
+        <div>
+            <div class="tourContainer">
+                <h1 class="mt0 mb0">
+                    @HomePageResx.FeatureTourSlideWelcome <b>@HomePageResx.FeatureTourSlideWelcome1</b>
+                </h1>
+                <p class="mt53 mb0">@HomePageResx.FeatureTourSlideWelcome2<br>@HomePageResx.FeatureTourSlideWelcome3</p>
+                <p class="mt20 mb0">@Html.Raw(@HomePageResx.FeatureTourSlideWelcome4)</p>
+                <button class="mt64 btn btnTour" onclick="nextSlide(1,2)">@Html.Raw(HomePageResx.FeatureTourSlideWelcome5)</button>
+            </div>
+        </div>
+        <div>
+            <div class="tourContainer">
+                <div class="arrowData tourArrow"></div>
+                <div class="addWidgetHL"><div class="top-buttons"><span class="addWidgethighlight">@HomePageResx.AddWidgets</span><span></span></div></div>
+                <i class="tourSprite data"></i>
+                <div class="innerPage">
+                    <h1 class="mt0 mb0">
+                        @HomePageResx.FeatureTourSlideDashboard <b>@HomePageResx.FeatureTourSlideDashboard1</b>
+                    </h1>
+                    <p class="mt53 mb0">@HomePageResx.FeatureTourSlideDashboard2<br>@HomePageResx.FeatureTourSlideDashboard3 </p>
+                    <button class="mt64 btn btnTour" onclick="nextSlide(2,3)">@Html.Raw(@HomePageResx.FeatureTourSlideDashboard4)</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="arrowWindow tourArrow"></div>
+            <div class="addWindowtHL">
+                <div class="fixed_container">
+                    <div class="span_drag highlight">Drag<span class="triangleTr"></span></div>
+                    <div class="tour-task highlight">
+                        <span><i class="portalIcon taskIcon"></i>@HomePageResx.Windows (8)<span></span> </span>
+                    </div>
+                </div>
+            </div>
+            <div class="tourContainer">
+                <i class="tourSprite window"></i>
+                <div class="innerPage">
+                    <h1 class="mt0 mb0">
+                        @HomePageResx.FeatureTourSlideWindowManager<br><b>@HomePageResx.FeatureTourSlideWindowManager1</b>
+                    </h1>
+                    <p class="mt53 mb0">@HomePageResx.FeatureTourSlideWindowManager2<br>@HomePageResx.FeatureTourSlideWindowManager3<br>@HomePageResx.FeatureTourSlideWindowManager4</p>
+                    <button class="mt64 btn btnTour" onclick="nextSlide(3,4)">@Html.Raw(HomePageResx.FeatureTourSlideWindowManager5)</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="tourContainer">
+                <div class="arrowHelp tourArrow"></div>
+                <div class="addHelptHL tourSprite"></div>
+                <i class="tourSprite help"></i>
+                <div class="innerPage">
+                    <h1 class="mt0 mb0">
+                        @HomePageResx.FeatureTourSlideHelpCenter1 <b>@HomePageResx.FeatureTourSlideHelpCenter2</b>
+                    </h1>
+                    <p class="mt53 mb0">@HomePageResx.FeatureTourSlideHelpCenter3</p>
+                    <div class="mw400 underline">
+                        <p class="mt20 mb0"><a href=@Utilities.GetLearnMoreUrl("677001004") target="_blank"><span>@HomePageResx.FeatureTourSlideHelpCenter8</span> <i class="tourSprite wArrow"></i></a></p>
+                        <p class="mt15 mb0"><a href=@Utilities.GetLearnMoreUrl("677001006") target="_blank"><span>@HomePageResx.FeatureTourSlideHelpCenter6</span> <i class="tourSprite wArrow"></i></a></p>
+                    </div>
+                    <div class="mw400 underline">
+                        <p class="mt20 mb0"><a href=@Utilities.GetLearnMoreUrl("677001001") target="_blank"><span>@HomePageResx.FeatureTourSlideHelpCenter10</span> <i class="tourSprite wArrow"></i></a></p>
+                    </div>
+                    <div class="clear-fix"></div>
+                    <div class="mt64 buttn">
+                        <button class="btn btnTour" id="doneTour">@HomePageResx.FeatureTourSlideHelpCenter12</button>
+                        <a class="startAgain" onclick="nextSlide(4,1)"><i class="tourSprite"></i><span>@HomePageResx.FeatureTourSlideHelpCenter13</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- First time Login -->
+<script type="text/javascript">
+    var featureTourElements = {
+        firstTimeUser: "@ViewBag.FirstTimeUser"
+    };
+</script>

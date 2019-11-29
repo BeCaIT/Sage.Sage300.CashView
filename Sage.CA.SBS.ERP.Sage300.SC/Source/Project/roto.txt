@@ -1,0 +1,26 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Roto ID definitions for SC
+;;
+;; Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; View objects
+;;
+
+SC0001		VIEW			SCOPT.DLL										; S/C Options
+SC0010		VIEW			SCACCT.DLL										; S/C Accounts
+SC0100		VIEW			SCBAL.DLL										; S/C Balances
+SC0110		VIEW			SCTRAN.DLL										; S/C Transactions
+SC0200		VIEW			SCLOAN.DLL										; S/C Loans
+SC0800		VIEW			SCPRO.DLL										; S/C Processing
+SC0899		VIEW			SCSCHDL.DLL		SUBCLASSES		CS0030	; S/C Schedule
+SC0999		VIEW			SCINIT.DLL										; S/C Activation
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Visual Basic User Interfaces
+;;
+
+SC9100		COMOBJECT	AccpacSC9100.ocx/AccpacSC9100.AccpacSC9100UICtrl	; S/C Options

@@ -1,0 +1,72 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+//  File: scdp.rc
+//  Purpose: Datapipe resource sources
+//
+//  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+STRINGTABLE
+{
+   IDS_OPNQRYMEM,                 "Insufficient memory to allocate query context"
+   IDS_RECBUFSMEM,                "Insufficient memory to allocate record buffers"
+   IDS_ORGSTBL,                   "Error %u retrieving database profiles"
+   IDS_SYSLINK,                   "DBS error %u linking to system database"
+   IDS_CMPLINK,                   "DBS error %u linking to company database"
+   IDS_GETTBLINFO,                "DBS error %u retrieving information for %s"
+   IDS_GETFLDINFO,                "DBS error %u retrieving information for %s.%s"
+   IDS_OPNTBL,                    "DBS error %u opening table %s"
+   IDS_CANTFINDSTR,               "Cannot load string %u"
+   IDS_NTABLESWRONG,              "Value of N_TABLES is incorrect!"
+   IDS_NFIELDSWRONG,              "Value of N_FIELDS is incorrect!"
+   IDS_USERLOOKUP,                "Error %u retrieving user information"
+   IDS_QRYCPYBUF,                 "Insufficient memory to allocate query buffer"
+   IDS_TOOMANYARGS,               "Too many lines in the query (maximum=100)"
+   IDS_BADCALCFLD,                "Calculated field not handled!"
+
+   IDS_DBS_ERROR_1,               "Error executing database query.  [Datapipe driver: %s] %s."
+   IDS_DBS_ERROR_2,               "Error executing database query.  [Datapipe driver: %s] [Table: %s] %s."
+
+   IDS_DBS_DD_INCONSISTENT,       "Inconsistent data dictionary"
+   IDS_DBS_BAD_DATABASE,          "Bad database"
+   IDS_DBS_DATABASE_VERSION,      "Wrong database version"
+   IDS_DBS_CONNECT_ERROR,         "Unable to connect to database"
+   IDS_DBS_DATABASE_CONFIG,       "Database configuration error"
+   IDS_DBS_BAD_DATABASE_SPEC,     "Bad database specification"
+   IDS_DBS_DATABASE_NOT_STARTED,  "Database not started"
+   IDS_DBS_TOO_MANY_LINKS,        "Too many links"
+   IDS_DBS_INVALID_LINK_TYPE,     "Invalid link type"
+   IDS_DBS_INVALID_LINK,          "Invalid link"
+   IDS_DBS_MEMORY,                "Insufficient memory"
+   IDS_DBS_DISK_FULL,             "Disk full"
+   IDS_DBS_NOT_ALLOWED,           "Not allowed"
+   IDS_DBS_INVALID_HANDLE,        "Invalid handle"
+   IDS_DBS_INVALID_FLAGS,         "Invalid flags"
+   IDS_DBS_TOO_MANY_OPEN_TABLES,  "Too many open tables"
+   IDS_DBS_ACCESS_DENIED,         "Access denied"
+   IDS_DBS_BUFFER_SIZE,           "Buffer size"
+   IDS_DBS_ACTIVE_TRANSACTION,    "Active transaction"
+   IDS_DBS_LOCKED,                "Locked"
+   IDS_DBS_NOT_FOUND,             "Not found"
+   IDS_DBS_NO_MORE_DATA,          "No more data"
+   IDS_DBS_INVALID_POSITION,      "Invalid position"
+   IDS_DBS_CONFLICT,              "Conflict"
+   IDS_DBS_RECORD_NOT_LOCKED,     "Record not locked"
+   IDS_DBS_NOT_CURRENT_RECORD,    "Not current record"
+   IDS_DBS_BAD_USERID,            "Bad user ID"
+   IDS_DBS_BAD_PW,                "Bad password"
+   IDS_DBS_NOT_SUPPORTED,         "Not supported"
+   IDS_DBS_TABLE_NOT_FOUND,       "Table not found"
+   IDS_DBS_INVALID_KEY_NUMBER,    "Invalid key number"
+   IDS_DBS_FIELD_NOT_FOUND,       "Field not found"
+   IDS_DBS_DRIVER_NOT_DEFINED,    "Driver not defined"
+   IDS_DBS_BAD_DRIVER_SPEC,       "Bad driver specification"
+   IDS_DBS_DRIVER_EXEC,           "Driver exec"
+   IDS_DBS_DRIVER_INIT,           "Driver initialization"
+   IDS_DBS_BAD_REQUEST,           "Bad request"
+   IDS_DBS_NOT_MAPPED,            "Unknown"
+   IDS_DBS_OTHER,                 "Database error = %u"
+}

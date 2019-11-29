@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Offer702" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OfferSG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TermsAndConditionsMY" xml:space="preserve">
+    <value>&lt;h1&gt;Terms And Conditions&lt;/h1&gt;
+&lt;h3&gt;IMPORTANT NOTES&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li style="list-style-type: decimal;"&gt;Your company/business/partnership (“Company”) is receiving this notice about the a Standard Chartered Bank Malaysia Berhad (“Bank”) Business Instalment Loan (“Loan”) based solely on your Company’s financial and transactional information available on this platform. Receipt of this notice should therefore not be construed as a representation, warranty or undertaking by the Bank of Loan approval and for any quantum granted to your Company. For the avoidance of doubt, none of your Company’s financial and transactional information available on this platform has been made or will be made available to the Bank (unless otherwise provided by you to the Bank directly.&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;Loan approval remains entirely subject to your Company’s formal application and complete supporting documents being received by the Bank and the Bank’s full underwriting process in its sole and absolute discretion. The Bank reserves the right to reject or refuse any application for the Loan without giving any reason or notice.&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;The Bank further reserves the right to amend, suspend, withdraw or terminate, whether in whole or part, any of these terms and conditions without prior notice at the Bank’s sole and absolute discretion.&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;The Bank’s Loan product is only available to companies whose operating business address is within the Bank’s Geographic Coverage Areas* (“Coverage Areas”). The Bank accordingly reserves the right to reject any application for the Loan if your Company’s operating business address indicates that your Company is outside one of the Coverage Areas.&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;The Bank is not an agent of [insert Sage entity that will be contracting with SCB Malaysia] (“Sage”) and its affiliates, partners, intermediaries, and agents (collectively, “Sage entities”), and makes no representation or warranty of any kind, express, implied or statutory, regarding this platform or any information contained or referred to herein, and as to the quality, merchantability or fitness of any goods and services provided by any Sage entity, and accepts no liability for the goods and services provided by any Sage entity. Any dispute about the same must be resolved directly with the relevant Sage entity.&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;By clicking “Submit”, you:
+&lt;ol&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Confirm that you are authorised to act on behalf of your Company to submit your Company’s expression of interest in the Loan and to provide yours or another Company authorised representative’s (either, a “Representative”) business contact information herein for this purpose. You represent and warrant that the information provided is true, accurate and complete;&lt;/li&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Confirm, for and on behalf of your Company that you have read and understood and agree to these Important Notes;&lt;/li&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Confirm that you have the consent of the Representative to relay the business contact information provided herein to the Bank, whose representative(s) will contact the Representative to provide information on the Loan, and to assist your Company with the applicable application, account opening and other sales procedures in relation to the Loan;&lt;/li&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Confirm, for and on behalf of the company that, you have read, understood and agree that all information provided by the company will be handled in accordance with the Bank’s Privacy Statement for Malaysia Corporate and Institutional Clients available on the Bank’s website at https://www.sc.com/my/data-protection-privacy-statement/; and&lt;/li&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Acknowledge and understand that no Sage entity will be a party to any financial or other arrangements between your Company and the Bank, however the Bank may pay a Sage entity certain referral fees upon your Company’s successful application for the Loan on terms as agreed between the Bank and Sage. To this end, you, on behalf of your Company, acknowledge and agree that the Bank may disclose information relating to your Company, including status of approved or declined application for the Loan and estimated total value of the Loan with the Bank, to a Sage entity by virtue of the said referral fees paid or payable to a Sage entity.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li style="list-style-type: disc"&gt;The Bank’s Geographic Coverage Areas are as follows; 1. Perlis – All areas; 2. Kedah – All areas except Langkawi; 3. Perak – Ipoh, Sungai Siput, Tanjung Rambutan, Chemor, Kamunting, Taiping, Kuala Kangsar, Changkat Jering, Matang, Simpang Pulai; 4. Wilayah Persekutuan/Selangor – Entire Wilayah Persekutuan/Selangor, Sepang including Putrajaya and Cyberjaya except Dengkil and Pulau Ketam; 5. Negeri Sembilan – All Areas; 6. Melaka – All areas; 7. Johor – Johor Bahru, Gelang Patah, Kulai, Senai, Ulu TIram, Masai. Pasir Gudang, Kota Tinggi, Batu Pahat, Muar, Pontian, Pekan Nanas, Kluang, Yong Peng, Pagoh, Ayer Hitam, Simpang Renggam, Skudai; 8. Sarawak – Kuching; 9. Sabah – Kota Kinabalu, Menggatal, Sepanggar, Putatan, Lok Kawi, Penampang; 10. Penang- All areas. &lt;/li&gt;
+&lt;/ol&gt;</value>
+  </data>
+  <data name="TermsAndConditionsSG" xml:space="preserve">
+    <value>&lt;h1&gt;Terms And Conditions&lt;/h1&gt;
+&lt;h3&gt;IMPORTANT NOTES&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li style="list-style-type: decimal;"&gt;Your company/business/partnership (“Company”) is receiving this notice about the Standard Chartered Bank (Singapore) Limited (“Bank”) Business Instalment Loan (“Loan”) based solely on your Company’s financial and transactional information available on this platform. Receipt of this notice should therefore not be construed as a representation, warranty or undertaking by the Bank of Loan approval and for any quantum granted to your Company. For the avoidance of doubt, none of your Company’s financial and transactional information available on this platform has been or will be made available to the Bank (unless otherwise provided by you to the Bank directly).&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;Loan approval remains entirely subject to your Company’s formal application and complete supporting documents being received by the Bank and the Bank’s full underwriting process in its sole and absolute discretion. The Bank reserves the right to reject or refuse any application for the Loan without giving any reason or notice.&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;The Bank further reserves the right to amend, suspend, withdraw or terminate, whether in whole or part, any of these terms and conditions and of the Loan without prior notice at the Bank’s sole and absolute discretion.&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;The Bank is not an agent of [Sage Software Asia Pte Ltd] (“Sage”) and its affiliates, partners, intermediaries, and agents (collectively, “Sage entities”), and makes no representation or warranty of any kind, express, implied or statutory, regarding this platform or any information contained or referred to herein, and as to the quality, merchantability or fitness of any goods and services provided by any Sage entity, and accepts no liability for the goods and services provided by any Sage entity. Any dispute about the same must be resolved directly with the relevant Sage entity.&lt;/li&gt;
+&lt;li style="list-style-type: decimal;"&gt;By clicking “Submit”, you:
+&lt;ol&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Confirm that you are authorised to act on behalf of your Company to submit your Company’s expression of interest in the Loan and to provide yours or another Company authorised representative’s (“Representative”) business contact information herein for this purpose. You represent and warrant that the information provided is true, accurate and complete;&lt;/li&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Confirm, for and on behalf of your Company that, that you have read and understood and agree to these Important Notes;&lt;/li&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Confirm that you have the consent of the Representative to relay the business contact information provided herein to the Bank whose representative(s) will contact the Representative to provide information on the Loan, and to assist your Company with the applicable application, account opening and other sales procedures in relation to the Loan; and&lt;/li&gt;
+&lt;li style="list-style-type: lower-alpha;"&gt;Acknowledge and understand that no Sage entity will be a party to any financial or other arrangements between your Company and the Bank, however the Bank may pay a Sage entity certain referral fees upon your Company’s successful application for the Loan on terms as agreed between the Bank and Sage. To this end, you, on behalf of your Company, acknowledge and agree that the Bank may disclose information relating to your Company, including status of approved or declined application for the Loan and estimated total value of the Loan with the Bank, to a Sage entity by virtue of the said referral fees paid or payable to a Sage entity.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</value>
+  </data>
+</root>

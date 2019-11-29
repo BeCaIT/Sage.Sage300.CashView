@@ -1,0 +1,54 @@
+//
+// Table SCOPT for view SCOPT
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements_____________decimals____validator______presents_____________flags__________attributes_____________
+*	dummy			-				DUMMY			string	SIZEOF_ORGID			-				-					-							-					ATTR_EDITABLE
+!  audt_Date   -           AUDTDATE    date     -                    -
+!  audt_Time   -           AUDTTIME    time     -                    -
+!  audt_User   -           AUDTUSER    string   SIZEOF_USERID        -
+!  audt_Org    -           AUDTORG     string   SIZEOF_ORGID         -
+*	contact		-				CONTACT		string	SIZEOF_COMP_CONTACT	-				NotBlankValid	-							-					ATTR_REQUIRED
+*	jobTitle		-				JOBTITLE		integer	-							-				JobTitleValid	JobTitleList			-					ATTR_REQUIRED
+*	email			-				EMAIL			string	SIZEOF_EMAIL			-				EmailValid		-							-					ATTR_REQUIRED
+*	phone			-				PHONE			string	SIZEOF_PHONE			-				NotBlankValid	-							-					ATTR_REQUIRED
+*	mobile		-				MOBILE		string	SIZEOF_PHONE			-				-					-							-					
+*	country		-				COUNTRY		integer	-							-				RListNValid		CountryList				-					ATTR_CHECKEDITABLE|ATTR_REQUIRED
+*	industry		-				INDUSTRY		string	1							-				IndustryValid	IndustryList			-					ATTR_REQUIRED|ATTR_CALCULATE
+*	entityType	-				ENTITYTYPE	integer	-							-				EntTypeValid	EntityTypeList			-					ATTR_REQUIRED|ATTR_CALCULATE
+*	brYear		-				BRYEAR		string	SIZEOF_YEAR				-				BRYearValid		BRYearMask				-					ATTR_REQUIRED|ATTR_CALCULATE
+//
+// Processing Options
+//
+*	cbalThrhd	-				CBALTHRHD	money		-							-				-					-							-					ATTR_REQUIRED
+*	fcPeriod1E	-				FCPERIOD1E	integer	-							-				FCPeriodsValid	-							-					ATTR_REQUIRED
+*	fcPeriod2E	-				FCPERIOD2E	integer	-							-				FCPeriodsValid	-							-					ATTR_REQUIRED
+*	fcPeriod3E	-				FCPERIOD3E	integer	-							-				FCPeriodsValid	-							-					ATTR_REQUIRED
+*	fcPeriod4E	-				FCPERIOD4E	integer	-							-				FCPeriodsValid	-							-					ATTR_REQUIRED
+*	fcPeriod5E	-				FCPERIOD5E	integer	-							-				FCPeriodsValid	-							-					ATTR_REQUIRED
+*	pendingGL	-				PENDINGGL	boolean	-							-				-
+*	pendingAR	-				PENDINGAR	boolean	-							-				-
+*	pendingAP	-				PENDINGAP	boolean	-							-				-
+*	lProcDate	-				LPROCDATE	date		-							-				-					-							-					ATTR_REQUIRED
+*	lProcTime	-				LPROCTIME	time		-							-				-					-							-					ATTR_REQUIRED
+//
+// Emails
+//
+*	emailAlert	-				EMAILALERT	boolean	-							-
+*	emailOffer	-				EMAILOFFER	boolean	-							-
+*	emailSnUtl	-				EMAILSNUTL	date		-							-
+*	emailHost	-				EMAILHOST	string	SIZEOF_STD_DESC		-
+*	emailPort	-				EMAILPORT	integer	-							-
+*	emailSSL		-				EMAILSSL		boolean	-							-
+*	emailUser	-				EMAILUSER	string	SIZEOF_STD_DESC		-
+*	emailPswd	-				EMAILPSWD	binary	SIZEOF_PASSWORD		-
+*	emailAddr	-				EMAILADDR	string	SIZEOF_EMAIL			-
+*	emailTo		-				EMAILTO		string	MAX_FIELD_LENGTH		-
+//
+// Document Numbering
+//
+*	cfeLength	-				CFELENGTH	integer	-							-				DocNumLValid
+*	cfePrefix	-				CFEPREFIX	string	SC_SIZEOF_DOCPREFIX	-				NotBlankValid	DocNumPrefixMask
+*	cfeNextNbr	-				CFENEXTNBR	number	SIZEOF_MONEY			0				DocNumNValid	-	
+*50

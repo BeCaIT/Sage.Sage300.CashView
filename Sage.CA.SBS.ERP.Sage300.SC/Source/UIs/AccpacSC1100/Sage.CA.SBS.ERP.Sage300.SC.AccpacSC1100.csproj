@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23D82FF0-73F3-4700-B9C7-EB203ACED2BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100</RootNamespace>
+    <AssemblyName>AccpacSC1100</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Build32\Runtime\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\lib\RCWF\2019.2.618.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\lib\RCWF\2019.2.618.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\lib\RCWF\2019.2.618.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\SCAccpacDataSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SCAccpacDataSource.Designer.cs">
+      <DependentUpon>SCAccpacDataSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SCAutoSizeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SCAxHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SCDataSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SCFieldEditControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SCFlashingDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SCIndicatorGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SCIndicatorGauge.Designer.cs">
+      <DependentUpon>SCIndicatorGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SCIndicatorArrow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SCLoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SCLoan.Designer.cs">
+      <DependentUpon>SCLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SCNetGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SCNetGauge.Designer.cs">
+      <DependentUpon>SCNetGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Native\WINAPI.cs" />
+    <Compile Include="Pages\SCPageCashFlowSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\SCPageCashFlowSummary.Designer.cs">
+      <DependentUpon>SCPageCashFlowSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SCPageDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\SCPageDashboard.Designer.cs">
+      <DependentUpon>SCPageDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SCPageInfoCenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\SCPageInfoCenter.Designer.cs">
+      <DependentUpon>SCPageInfoCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SCPageLoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\SCPageLoan.Designer.cs">
+      <DependentUpon>SCPageLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SCPageLoanNative.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\SCPageLoanNative.Designer.cs">
+      <DependentUpon>SCPageLoanNative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SCPayeeSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\SCPayeeSummary.Designer.cs">
+      <DependentUpon>SCPayeeSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\PopupAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\PopupAlert.Designer.cs">
+      <DependentUpon>PopupAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\PopupLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUps\PopupLoan.Designer.cs">
+      <DependentUpon>PopupLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sage300Application.cs" />
+    <Compile Include="TermsAndConditionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermsAndConditionsForm.Designer.cs">
+      <DependentUpon>TermsAndConditionsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\SCAccpacDataSource.resx">
+      <DependentUpon>SCAccpacDataSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SCAutoSizeLabel.resx">
+      <DependentUpon>SCAutoSizeLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SCFlashingDropDownButton.resx">
+      <DependentUpon>SCFlashingDropDownButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SCIndicatorArrow.resx">
+      <DependentUpon>SCIndicatorArrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SCIndicatorGauge.resx">
+      <DependentUpon>SCIndicatorGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SCLoan.resx">
+      <DependentUpon>SCLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SCNetGauge.resx">
+      <DependentUpon>SCNetGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Pages\SCPageCashFlowSummary.resx">
+      <DependentUpon>SCPageCashFlowSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\SCPageDashboard.resx">
+      <DependentUpon>SCPageDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\SCPageInfoCenter.resx">
+      <DependentUpon>SCPageInfoCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\SCPageLoan.resx">
+      <DependentUpon>SCPageLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\SCPageLoanNative.resx">
+      <DependentUpon>SCPageLoanNative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\SCPayeeSummary.resx">
+      <DependentUpon>SCPayeeSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\PopupAlert.resx">
+      <DependentUpon>PopupAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUps\PopupLoan.resx">
+      <DependentUpon>PopupLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TermsAndConditionsForm.resx">
+      <DependentUpon>TermsAndConditionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\DataSources\Sage.CA.SBS.ERP.Sage300.SC.Data.ApplicationData.datasource" />
+    <None Include="Properties\DataSources\Sage.CA.SBS.ERP.Sage300.SC.Data.Loan.datasource" />
+    <None Include="Properties\DataSources\Sage.CA.SBS.ERP.Sage300.SC.Data.PayeeSummary.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Themes\Sage300.tssp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <ProjectReference Include="..\..\..\..\Sage.CA.SBS.ERP.Sage300.SC.Data\Sage.CA.SBS.ERP.Sage300.SC.Data.csproj">
+      <Project>{6f65bc8b-a900-4f31-a225-b57889cbdf0c}</Project>
+      <Name>Sage.CA.SBS.ERP.Sage300.SC.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AccpacCOMAPI">
+      <Guid>{4E5368A1-A652-11D2-9B94-00104B71EB3F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AccpacDataSrc">
+      <Guid>{5F7FA996-AD93-11D3-8ED1-000094847112}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AccpacFinder">
+      <Guid>{F3D12FB1-B257-11D3-A866-00C04F8135CB}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AccpacFldEdit">
+      <Guid>{D07665A1-D89F-11D2-9BD2-00104B71EB3F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AccpacFldList">
+      <Guid>{A46D8382-C397-11D3-9FF2-00C04F815D63}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AccpacMeter">
+      <Guid>{A40FD030-1A4B-11D5-A8C8-00105A0AF272}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AccpacReportViewer">
+      <Guid>{86F27151-8B1F-11D4-BE4A-00B0D075DD04}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AccpacSessionManager">
+      <Guid>{98A512F3-8207-4CFF-98C3-6FF69B0A04D3}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAccpacDataSrc">
+      <Guid>{5F7FA996-AD93-11D3-8ED1-000094847112}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxAccpacFldEdit">
+      <Guid>{D07665A1-D89F-11D2-9BD2-00104B71EB3F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxAccpacFldList">
+      <Guid>{A46D8382-C397-11D3-9FF2-00C04F815D63}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="LocResources">
+      <Guid>{69A26BE9-AEC1-11D4-90D3-00C04F46F00E}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlertNotice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DASHBOARD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOAN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUMMARY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAMPLE_LOAN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmailSend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCBK19076_SCB x SAGE web banner_R1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarningSign.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoSign.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ShouldAddDPIScalingManifest="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>del $(TargetDir)*.xml</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

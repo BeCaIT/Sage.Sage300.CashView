@@ -1,0 +1,11 @@
+CPPVIEW							; pattern type (C++ template)
+AAAA=SC							; application id - symbolic constants
+aaaa=sc							; application id - filenames
+ZZZZ=SCBAL						; view name - symbolic constants and module name
+zzzz=scBal						; view name - filenames
+xxxx=scBal						; view name - view routine prefix
+dddd=Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+									; copyright notice or view description
+tttt=SCBAL						; table name
+pppp={'S','C','B','A','L',' ',' ',' '}
+									; table name - padded to eight characters

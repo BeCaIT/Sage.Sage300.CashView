@@ -1,0 +1,61 @@
+//*****************************************************************
+//
+// File: <THIS FILE'S NAME: i.e. SC9100.rc>
+// UI: <UI'S DISPLAY NAME: i.e. Banks>
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd.
+//   All rights reserved.
+//
+//*****************************************************************
+
+#include "SC9100ID.h"
+#include "SCClientID.h"
+#include "SCVersion.rc2"
+
+// Required icon (displayed in UI's "About" box)
+101  ICON  DISCARDABLE  "Settings_32.ICO"
+
+STRINGTABLE
+BEGIN
+  // Required strings
+  101  "S/C Options"  // UI's display name
+
+  // UI-specific strings
+  // (Use ID constants defined in <RotoID>ID.h)
+  // EXAMPLE:  IDS_MyMsg  "My message"
+	IDS_TAB_COMPANY		"C&ompany"
+	IDS_TAB_PROCESSING	"&Processing"
+	IDS_TAB_ACCOUNTS		"&Account"
+	IDS_TAB_EMAIL			"&Email"
+
+	IDS_PROCESSING_FRAME_SETTINGS		"Settings"
+	IDS_PROCESSING_FRAME_STATISTICS	"Statistics"
+	IDS_PROCESSING_LABEL_PERIODS		"Forecast Periods"
+	IDS_PROCESSING_PERIOD_FROM			"From"
+	IDS_PROCESSING_PERIOD_TO			"To"
+	IDS_PROCESSING_PERIOD_CURRENT		"Current"
+	IDS_PROCESSING_PERIOD_OVER			"Over"
+	IDS_PROCESSING_LABEL_DOCNUMBERS	"Document Numbers"
+	IDS_PROCESSING_DOCNUM_TYPE			"Document Type"
+	IDS_PROCESSING_DOCNUM_LENGTH		"Length"
+	IDS_PROCESSING_DOCNUM_PREFIX		"Prefix"
+	IDS_PROCESSING_DOCNUM_NEXTNBR		"Next Number"
+	IDS_PROCESSING_DOCNUM_FORECAST	"Forecast Entry"
+
+	IDS_EMAIL_FRAME_SETTINGS			"Settings"
+	IDS_EMAIL_FRAME_SENDTEST			"Send Test Email"
+	IDS_EMAIL_FRAME_ADVISORY			"ADVISORY"
+	IDS_EMAIL_LABEL_SENDTEST			"To"
+	IDS_EMAIL_BUTTON_SENDTEST			"Send"
+	IDS_EMAIL_LABEL_ADVISORY			"The email setting here is used to support email notifications when cash flow thresholds are breached. When such situations arise, email notifications will be sent out. Emails will contain sensitive and confidential information about your cash flow status. You should take extra care in choosing the right people to receive the notifications."
+
+	IDS_EMAIL_CONSENT						"I agree to receiving promotional materials from Sage and other third-party companies via email, in accordance with the Personal Data Protection Act 2012 and our data protection policy (available at our website). Please note that all communications sent to you will be through Sage."
+END
+
+
+// Other UI-specific resources
+// (Use ID constants defined in <RotoID>ID.h)
+// EXAMPLE: IDI_PicCust  ICON  DISCARDABLE  "PICCUST.ICO"
+
+
+// +++

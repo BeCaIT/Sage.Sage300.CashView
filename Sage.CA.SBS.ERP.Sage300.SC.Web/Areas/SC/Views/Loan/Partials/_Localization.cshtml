@@ -1,0 +1,44 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@using LoanResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.LoanResx
+@using LoanStatusResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.Enums.LoanStatusResx
+@using CommonResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.CommonResx
+
+<script type="text/javascript">
+    var scLoanResources = {
+        FinderTitle: '@CommonResx.Select'
+        ,ProcessFailedMessage: '@CommonResx.ProcessFailedMessage'
+        ,DeleteConfirmMessage: '@CommonResx.DeleteConfirmMessage'
+        ,DeleteTitle: '@CommonResx.Delete'
+        ,LoanTitle: '@LoanResx.Entity'
+        ,Status: '@Html.SageRaw(LoanResx.Status)'
+        ,Reference: '@Html.SageRaw(LoanResx.Reference)'
+        ,DateSubmitted: '@Html.SageRaw(LoanResx.DateSubmitted)'
+        ,AmountOffer: '@Html.SageRaw(LoanResx.AmountOffer)'
+        ,AmountRequest: '@Html.SageRaw(LoanResx.AmountRequest)'
+        ,LoanStatusNew: '@LoanStatusResx.New'
+        ,LoanStatusSubmitted: '@LoanStatusResx.Submitted'
+        ,LoanStatusCancelled: '@LoanStatusResx.Cancelled'
+        ,LoanStatusRejected: '@LoanStatusResx.Rejected'
+        ,LoanStatusApproved: '@LoanStatusResx.Approved'
+        ,ConfirmationApproved: '@Html.SageRaw(LoanResx.ConfirmationApproved)'
+        ,ConfirmationRejected: '@Html.SageRaw(LoanResx.ConfirmationRejected)'
+        ,ConfirmationCancel: '@Html.SageRaw(LoanResx.ConfirmationCancel)'
+        ,ConfirmationResubmit: '@Html.SageRaw(LoanResx.ConfirmationResubmit)'
+        ,ConfirmationSubmit: '@Html.SageRaw(LoanResx.ConfirmationSubmit)'
+        ,Confirmation: '@CommonResx.Confirmation'
+
+        ,TermsAndConditions: '@LoanResx.TermsAndConditions'
+        ,TermsAndConditionsHtml: '<div id="termsAndConditions" class="modal-msg" style="overflow-y: hidden !important;">'
+            + '<div class="message-control multiInfo-msg" style="margin: 0px">'
+            + '<div class="title">'
+            + '<span class="icon multiInfo-icon"></span>'
+            + '<h3>@Html.SageRaw(LoanResx.TermsAndConditions)</h3>'
+            + '</div>'
+            + '<div class="msg-content" style="max-height: 430px; overflow-y: scroll"></div>'
+            + '<div class="button-group" style="width: 100%;margin: 0px;padding: 10px;">'
+            + '<input id="kendoConfirmationAcceptButton" class="btn btn-primary" type="button" value="@Html.SageRaw(LoanResx.Accept)" />'
+            + '<input id="kendoConfirmationCancelButton" class="btn btn-secondary right" type="button" value="@Html.SageRaw(CommonResx.Cancel)" />'
+            + '</div></div></div>'
+    };
+</script>

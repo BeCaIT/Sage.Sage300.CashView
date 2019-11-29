@@ -1,0 +1,18 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@using DashboardResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.DashboardResx
+@using SCCommonResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.SCCommonResx
+@using CommonResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.CommonResx
+
+<script type="text/javascript">
+    var scDashboardResources = {
+        FinderTitle: '@CommonResx.Select'
+        ,ProcessFailedMessage: '@Html.SageRaw(CommonResx.ProcessFailedMessage)'
+        ,DeleteConfirmMessage: '@Html.SageRaw(CommonResx.DeleteConfirmMessage)'
+        ,DeleteTitle: '@Html.SageRaw(CommonResx.Delete)'
+        ,ThresholdBreached: '@Html.SageRaw(SCCommonResx.ThresholdBreached)'
+        ,CashIn: '@Html.SageRaw(DashboardResx.CashIn)'
+        ,CashOut: '@Html.SageRaw(DashboardResx.CashOut)'
+        ,CashEndingBalance: '@Html.SageRaw(DashboardResx.CashEndingBalance)'
+    };
+</script>

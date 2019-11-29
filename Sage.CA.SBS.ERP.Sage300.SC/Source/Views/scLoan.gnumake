@@ -1,0 +1,31 @@
+#############################################################################
+#
+#  Linux/Unix main makefile for scLoan, application sc
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# See also scLoan.i.gnumake
+#
+#############################################################################
+
+scLoanOBJS = $(OBJPATH)/scLoan.o $(OBJPATH)/scLoan1.o
+
+$(RUNPATH)/scLoan.so: $(scLoanOBJS)
+
+# Require the scLoan.ver at this stage so it will get built before the linking
+# stage.  (It cannot be a dependent of the scLoan.so because that will upset the
+# linker)
+$(OBJPATH)/scLoan.o: scLoan.cpp $(isc) $(iscLoan) scLoan1.h scLoan2.h scLoan3.h scLoan.ver
+
+$(OBJPATH)/scLoan1.o: scLoan1.cpp $(isc) $(iscLoan) scLoan1.h scLoan2.h scLoan3.h
+
+# If there is a SCLOAN2 table add table generation dependencies here based
+# on the .tbl files
+$(GENPATH)/SCLOAN.dep: SCLOAN.tbl
+ifneq "scLoan" "SCLOAN"
+	gentable -ZscLoan -T$^ -o$(GENPATH)
+	echo $@: $^ >$@
+endif
+
+ALL_VIEWS += $(RUNPATH)/scLoan.so
+ALL_OBJS += $(scLoanOBJS)

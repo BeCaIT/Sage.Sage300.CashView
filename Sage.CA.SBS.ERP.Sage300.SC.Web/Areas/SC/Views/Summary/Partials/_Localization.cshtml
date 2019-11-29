@@ -1,0 +1,27 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@using SummaryResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.SummaryResx
+@using ForecastEntryResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.ForecastEntryResx
+@using SCCommonResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.SCCommonResx
+@using CommonResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.CommonResx
+
+<script type="text/javascript">
+    var scSummaryResources = {
+        FinderTitle: '@CommonResx.Select'
+        ,ProcessFailedMessage: '@Html.SageRaw(CommonResx.ProcessFailedMessage)'
+        ,DeleteConfirmMessage: '@Html.SageRaw(CommonResx.DeleteConfirmMessage)'
+        ,DeleteTitle: '@Html.SageRaw(CommonResx.Delete)'
+        ,Title: '@Html.SageRaw(SummaryResx.Entity)'
+        ,ThresholdBreached: '@Html.SageRaw(SCCommonResx.ThresholdBreached)'
+        ,Description: '@Html.SageRaw(SummaryResx.Description)'
+        ,Total: '@Html.SageRaw(SummaryResx.AmountTotal)'
+    };
+    var scForecastEntryResources = {
+        Title: '@Html.SageRaw(ForecastEntryResx.Title)'
+        ,DocumentNumber: '@Html.SageRaw(ForecastEntryResx.DocumentNumber)'
+        ,EffectiveDate: '@Html.SageRaw(ForecastEntryResx.EffectiveDate)'
+        ,Description: '@Html.SageRaw(ForecastEntryResx.Description)'
+        ,Inflow: '@Html.SageRaw(ForecastEntryResx.Inflow)'
+        ,OutFlow: '@Html.SageRaw(ForecastEntryResx.Outflow)'
+    };
+</script>

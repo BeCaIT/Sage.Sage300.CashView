@@ -1,0 +1,31 @@
+#############################################################################
+#
+#  Linux/Unix main makefile for scPro, application sc
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# See also scPro.i.gnumake
+#
+#############################################################################
+
+scProOBJS = $(OBJPATH)/scPro.o $(OBJPATH)/scPro1.o
+
+$(RUNPATH)/scPro.so: $(scProOBJS)
+
+# Require the scPro.ver at this stage so it will get built before the linking
+# stage.  (It cannot be a dependent of the scPro.so because that will upset the
+# linker)
+$(OBJPATH)/scPro.o: scPro.cpp $(isc) $(iscPro) scPro1.h scPro2.h scPro3.h scPro.ver
+
+$(OBJPATH)/scPro1.o: scPro1.cpp $(isc) $(iscPro) scPro1.h scPro2.h scPro3.h
+
+# If there is a SCPRO2 table add table generation dependencies here based
+# on the .tbl files
+$(GENPATH)/SCPRO.dep: SCPRO.tbl
+ifneq "scPro" "SCPRO"
+	gentable -ZscPro -T$^ -o$(GENPATH)
+	echo $@: $^ >$@
+endif
+
+ALL_VIEWS += $(RUNPATH)/scPro.so
+ALL_OBJS += $(scProOBJS)

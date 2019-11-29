@@ -1,0 +1,617 @@
+----------------------------------------
+Timestamp: 10/4/2019 10:55:39 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/6/2019 7:55:48 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/6/2019 7:55:51 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/6/2019 7:55:51 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/8/2019 8:37:31 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/8/2019 8:37:41 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/8/2019 8:37:41 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/9/2019 10:34:07 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/9/2019 10:34:17 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/9/2019 10:34:18 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/15/2019 6:32:34 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/15/2019 6:32:44 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/15/2019 6:32:44 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/16/2019 4:50:06 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/16/2019 4:50:16 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/16/2019 4:50:16 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/18/2019 3:44:11 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/19/2019 4:26:40 PM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2019 7:48:49 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/24/2019 7:05:06 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/24/2019 4:05:20 PM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/24/2019 4:05:30 PM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/24/2019 4:05:30 PM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/28/2019 6:27:26 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/4/2019 3:28:03 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/5/2019 3:44:09 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/5/2019 4:04:18 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/5/2019 4:04:28 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/5/2019 4:04:28 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/8/2019 3:12:33 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/8/2019 3:12:43 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/8/2019 3:12:43 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/8/2019 8:33:03 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/8/2019 8:33:13 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/8/2019 8:33:13 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/11/2019 3:45:26 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/13/2019 2:25:52 PM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/22/2019 5:01:33 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/22/2019 5:01:43 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/22/2019 5:01:43 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2019 6:26:18 AM
+
+Message: Error-[Tenant:] [Company:] [Module:Global] [User:] - Application:
+Exception Source:      mscorlib
+Exception Type:        System.IO.DirectoryNotFoundException
+Exception Message:     Could not find a part of the path 'C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC.Web\App_Data\MenuDetail'.
+---- Stack Trace ----
+   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1.CommonInit() in mscorlib.dll
+   System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost) in mscorlib.dll
+   System.IO.Directory.GetDirectories(String path) in mscorlib.dll
+   Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.Menu.MenuModuleHelperManager.MergeMasterFileToCompanyCache(String dataSubFolder) in Sage.CA.SBS.ERP.Sage300.Common.BusinessRepository.dll
+   Sage.CA.SBS.ERP.Sage300.Web.MvcApplication.Application_Start() in Sage.CA.SBS.ERP.Sage300.Web.dll
+
+
+
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2019 6:26:28 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs started.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2019 6:26:28 AM
+
+Message: Verbose-[Tenant:] [Company:] [Module:Global] [User:] - ClearSessionLogs completed.
+
+Machine Name: SAGE300-2016
+
+----------------------------------------

@@ -1,0 +1,51 @@
+#ifndef __SC_VERSION_RC2
+#define __SC_VERSION_RC2
+
+//*****************************************************************
+//
+// File: SCVersion.rc2
+// Purpose: DLL version information
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd.
+//   All rights reserved.
+//
+// NOTE: _APP_FILE_VERSION_RES_ (and ...RES2_) are defined through
+//       the BUILDVER macro in the client-side DLL Makefile.
+//       _APP_PRODUCT_VERSION_RES_ is defined through the DISPLAYVER
+//       macro in the client-side DLL Makefile.
+//
+//******************************************************************
+
+1 VERSIONINFO
+ FILEVERSION _APP_FILE_VERSION_RES2_
+ PRODUCTVERSION _APP_FILE_VERSION_RES2_
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Sage Software Asia Pte Ltd.\0"
+            VALUE "FileDescription", "Client-Side Language Resources\0"
+            VALUE "FileVersion", _APP_FILE_VERSION_RES_
+            VALUE "LegalCopyright", "Copyright © 2019 Sage Software Asia Pte Ltd.  All rights reserved.>\0"
+            VALUE "LegalTrademarks", "Sage 300\0"
+            VALUE "ProductName", "CashView for Sage 300\0"
+            VALUE "ProductVersion", _APP_PRODUCT_VERSION_RES_
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif  // __SCVERSION_RC2

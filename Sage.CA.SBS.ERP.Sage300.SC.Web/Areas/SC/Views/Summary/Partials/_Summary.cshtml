@@ -1,0 +1,75 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.SummaryViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Summary>
+@using SummaryResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.SummaryResx
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Models.Enums
+@using Sage.CA.SBS.ERP.Sage300.SC.Models
+@using Sage.CA.SBS.ERP.Sage300.SC.Web.Models
+@using AnnotationsResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.AnnotationsResx
+
+<style>
+    .summary-grid.k-grid .k-grid-header .k-header {
+        padding: 10px !important;
+        text-align: center !important;
+    }
+
+    .summary-grid.k-grid tr td {
+        padding: 0 10px !important;
+        line-height: 25px !important;
+        height: 25px !important;
+    }
+</style>
+<script type="text/javascript">
+    @Html.ConvertToJsVariableUsingNewtonSoft("scSummaryViewModel", Model)
+</script>
+
+@Html.Partial("~/Areas/SC/Views/Summary/Partials/_Localization.cshtml")
+
+<div>@Html.ValidationSummary(true)</div>
+<div id="success" class="message"></div>
+
+<div class="form-screen">
+    <div id="message"></div>
+    <header>
+        <section class="header-group-1">
+            <div class="header-wrapper">
+                <div class="header-headline">@Html.SageHeader3Label("scSummaryHeader", SummaryResx.Entity)</div>
+            </div>
+            @*<div class="flag-required">@Html.SageLabel(CommonResx.RequiredLegend, new { @class = "required" })</div>*@
+        </section>
+    </header>
+
+    <div class="wrapper-group clearfix">
+        <div class="datagrid-group">
+            @Html.KoKendoGrid("scSummaryGrid", "scSummaryUI.viewModel.DataList", "SerialNumber", "scSummaryUIGrid.scSummaryUIGridConfig", false, "gh320 summary-grid")
+        </div>
+
+        <div class="panel-header">
+            <span class="panel-icon"></span>
+            <h3>@SummaryResx.OtherActivitiesEntry</h3>
+        </div>
+        @if (Model.Data != null && Model.Data.UIOptions != null && Model.Data.UIOptions.HasForecastEntryRight)
+        {
+            <section class="gridcontrols-group clearfix">
+                @Html.KoSageButtonNoName(CommonResx.AddLine, null, new { id = "btnCreateForecast", @class = "btn btn-default btn-grid-control btn-add " })
+                @Html.KoSageButtonNoName(CommonResx.DeleteLine, null, new { id = "btnDeleteForecast", @class = "btn btn-default btn-grid-control btn-delete " })
+            </section>
+        }
+        @if (Model.UserMessage.IsSuccess)
+        {
+            <div class="datagrid-group">
+                @Html.Partial("~/Areas/SC/Views/Summary/Partials/_ForecastEntryGrid.cshtml", new ForecastEntry())
+            </div>
+        }
+
+        <section class="footer-group-1">
+            @Html.KoSageButton("btnPrintCashFlowSummary", new { }, new { @value = SummaryResx.PrintCashFlowSummary, @id = "btnPrintCashFlowSummary", @class = "btn btn-secondary" })
+            @Html.KoSageButton("btnPrintCashBankAccounts", new { }, new { @value = SummaryResx.PrintCashAndBankAccount, @id = "btnPrintCashBankAccounts", @class = "btn btn-secondary" })
+            @Html.KoSageButton("btnPrintInflowOutflowEntries", new { }, new { @value = SummaryResx.PrintInflowAndOutflowEntries, @id = "btnPrintInflowOutflowEntries", @class = "btn btn-secondary" })
+        </section>
+    </div>
+</div>

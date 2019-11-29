@@ -1,0 +1,77 @@
+﻿@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.OptionsViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Options>
+@using OptionsResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.OptionsResx
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Models.Enums
+@using AnnotationsResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.AnnotationsResx
+
+<div id="processingOptions" class="sublevel-1" ondragstart="return false" draggable="false">
+    <div class="wrapper-group clearfix">
+        <div class="w460 left">
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-icon"></span>
+                    <h3>@OptionsResx.ProcessingSettings</h3>
+                </div>
+                <div class="panel-content">
+                    <div class="form-group">
+                        <div class="input-group">
+                            @Html.SageLabelFor(model => model.Data.FunctionalCurrency)
+                            @Html.KoSageTextBoxFor(model => model.Data.FunctionalCurrency, new { sagevalue = "Data.FunctionalCurrency", sagedisable = "true" }, new { @class = "w188" })
+                        </div>
+                        <div class="numeric-group">
+                            @Html.SageLabelFor(model => model.Data.Threshold, new { @class = "required" })
+                            @Html.KoSageTextBoxFor(model => model.Data.Threshold, new { sagevalue = "Data.Threshold" }, new { @class = "w188 numeric" })
+                            @Html.ValidationMessageFor(model => model.Data.Threshold)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="w460 margin-left-base left">
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-icon"></span>
+                    <h3>@OptionsResx.ProcessingStatistics</h3>
+                </div>
+                <div class="panel-content">
+                    <div class="form-group">
+                        <div class="datepicker-group">
+                            @Html.SageLabelFor(model => model.Data.LastProcessedDate)
+                            @Html.KoSageTextBoxFor(model => model.Data.LastProcessedDate, new { sageDatePicker = "Data.LastProcessedDate", sagedisable = "true" }, new { @class = "datepicker w188" })
+                        </div>
+                        <div class="input-group">
+                            @Html.SageLabelFor(model => model.Data.LastProcessedTime)
+                            @Html.KoSageTextBoxFor(model => model.Data.LastProcessedTime, new { sagedisable = "true" }, new { @class = "w188" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Forecast Periods Grid -->
+    <div class="wrapper-group clearfix">
+        <div class="w460 left">
+            <div class="form-group">
+                <label class="bold">@OptionsResx.ProcessingForecastPeriod</label>
+            </div>
+            <div class="datagrid-group">
+                @Html.Partial("~/Areas/SC/Views/Options/Partials/_ForecastPeriodsGrid.cshtml")
+            </div>
+        </div>
+    </div>
+    <!-- Document Numbers Grid -->
+    <div class="wrapper-group clearfix">
+        <div class="form-group">
+            <label class="bold">@OptionsResx.ProcessingDocumentNumbers</label>
+        </div>
+        <div class="datagrid-group">
+            @Html.Partial("~/Areas/SC/Views/Options/Partials/_DocumentNumbersGrid.cshtml")
+        </div>
+    </div>
+</div>

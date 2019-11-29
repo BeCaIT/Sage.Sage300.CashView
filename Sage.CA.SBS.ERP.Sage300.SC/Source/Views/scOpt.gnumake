@@ -1,0 +1,31 @@
+#############################################################################
+#
+#  Linux/Unix main makefile for scOpt, application sc
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# See also scOpt.i.gnumake
+#
+#############################################################################
+
+scOptOBJS = $(OBJPATH)/scOpt.o $(OBJPATH)/scOpt1.o
+
+$(RUNPATH)/scOpt.so: $(scOptOBJS)
+
+# Require the scOpt.ver at this stage so it will get built before the linking
+# stage.  (It cannot be a dependent of the scOpt.so because that will upset the
+# linker)
+$(OBJPATH)/scOpt.o: scOpt.cpp $(isc) $(iscOpt) scOpt1.h scOpt2.h scOpt3.h scOpt.ver
+
+$(OBJPATH)/scOpt1.o: scOpt1.cpp $(isc) $(iscOpt) scOpt1.h scOpt2.h scOpt3.h
+
+# If there is a SCOPT2 table add table generation dependencies here based
+# on the .tbl files
+$(GENPATH)/SCOPT.dep: SCOPT.tbl
+ifneq "scOpt" "SCOPT"
+	gentable -ZscOpt -T$^ -o$(GENPATH)
+	echo $@: $^ >$@
+endif
+
+ALL_VIEWS += $(RUNPATH)/scOpt.so
+ALL_OBJS += $(scOptOBJS)

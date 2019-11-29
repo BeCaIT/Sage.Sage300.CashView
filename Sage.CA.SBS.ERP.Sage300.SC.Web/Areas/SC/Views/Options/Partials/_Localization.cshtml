@@ -1,0 +1,34 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@using OptionsResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.OptionsResx
+@using AccountResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.AccountResx
+@using CommonResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.CommonResx
+
+<script type="text/javascript">
+    var scOptionsResources = {
+        FinderTitle: '@CommonResx.Select'
+        ,ProcessFailedMessage: '@Html.SageRaw(CommonResx.ProcessFailedMessage)'
+        ,DeleteConfirmMessage: '@Html.SageRaw(CommonResx.DeleteConfirmMessage)'
+        ,DeleteTitle: '@Html.SageRaw(CommonResx.Delete)'
+        ,Title: '@Html.SageRaw(OptionsResx.Entity)'
+        ,ForecastPeriodsFrom: '@Html.SageRaw(CommonResx.From)'
+        ,ForecastPeriodsTo: '@Html.SageRaw(CommonResx.To)'
+        ,ForecastPeriodsCurrent: '@Html.SageRaw(OptionsResx.Current)'
+        ,ForecastPeriodsOver: '@Html.SageRaw(OptionsResx.Over)'
+        // Document Numbers Grid
+        ,DocumentNumberType: '@Html.SageRaw(OptionsResx.DocumentType)'
+        ,DocumentNumberLength: '@Html.SageRaw(OptionsResx.Length)'
+        ,DocumentNumberPrefix: '@Html.SageRaw(OptionsResx.Prefix)'
+        ,DocumentNumberNextNumber: '@Html.SageRaw(OptionsResx.NextNumber)'
+        ,DocumentNumberFE: '@Html.SageRaw(OptionsResx.FE)'
+        // Account Grids
+        ,Yes: '@Html.SageRaw(CommonResx.Yes)'
+        ,No: '@Html.SageRaw(CommonResx.No)'
+        ,Include: '@Html.SageRaw(AccountResx.Include)'
+        ,AccountNumber: '@Html.SageRaw(AccountResx.AccountNumberFormatted)'
+        ,AccountDescription: '@Html.SageRaw(AccountResx.AccountDescription)'
+        // Email
+        ,EmailTestSuccessed: '@Html.SageRaw(OptionsResx.EmailTestSuccessed)'
+        ,EmailTestFailed: '@Html.SageRaw(OptionsResx.EmailTestFailed)'
+    };
+</script>

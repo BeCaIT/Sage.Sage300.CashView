@@ -1,0 +1,31 @@
+#############################################################################
+#
+#  Linux/Unix main makefile for scTran, application sc
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# See also scTran.i.gnumake
+#
+#############################################################################
+
+scTranOBJS = $(OBJPATH)/scTran.o $(OBJPATH)/scTran1.o
+
+$(RUNPATH)/scTran.so: $(scTranOBJS)
+
+# Require the scTran.ver at this stage so it will get built before the linking
+# stage.  (It cannot be a dependent of the scTran.so because that will upset the
+# linker)
+$(OBJPATH)/scTran.o: scTran.cpp $(isc) $(iscTran) scTran1.h scTran2.h scTran3.h scTran.ver
+
+$(OBJPATH)/scTran1.o: scTran1.cpp $(isc) $(iscTran) scTran1.h scTran2.h scTran3.h
+
+# If there is a SCTRAN2 table add table generation dependencies here based
+# on the .tbl files
+$(GENPATH)/SCTRAN.dep: SCTRAN.tbl
+ifneq "scTran" "SCTRAN"
+	gentable -ZscTran -T$^ -o$(GENPATH)
+	echo $@: $^ >$@
+endif
+
+ALL_VIEWS += $(RUNPATH)/scTran.so
+ALL_OBJS += $(scTranOBJS)

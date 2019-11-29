@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------------
+
+    File        :   scPro.rc
+    Purpose     :   Resource script for resource only DLL for a view.
+
+    Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+
+    Conventions:
+        0 -   299 view names/object names
+      300 -   599 key names
+      600 -  4999 field names
+     5000 -  8999 presentation
+     9000 -  9999 security
+    10000 - 59999 error messages and text
+    60000         program name
+    60001 - 65535 reserved by the system
+
+--------------------------------------------------------------------*/
+
+
+//////////////////////////////////////////////////////////////////////
+// For each view defined, add an include line for its ZZZZ.i resource
+// ID definition file.
+
+// +++
+#include "scPro.i"
+// ---
+
+STRINGTABLE
+{
+   ///////////////////////////////////////////////////////////////////
+   // Duplicate the following section for each view defined, and fill
+   // in the string resource definitions appropriately for each view.
+
+   // +++
+
+   //// View name
+   IDS_SCPRO_VIEW_NAME			,    "Cashflow Process"
+   IDS_SCPRO_VIEW_NOUN			,    "Cashflow Processes"
+   //
+   //// Key names
+   //IDS_SCPRO_KEY_NAME			,    "Account Number"
+   //
+   //// Field names
+   IDS_SCPRO_PROCESSCMD_FLD	,    "Process Command"
+	//
+   //// Presentation strings
+	IDS_SCPRO_METER_CAPTION					,    "Processing..."
+	IDS_SCPRO_METER_SCBAL_NORMAL_LABEL	,    "Balances\nGroup: %d\nYear: %.4s"
+	IDS_SCPRO_METER_SCBAL_PENDING_LABEL	,    "Pending Balances\nGroup: %d\nYear: %.4s"
+	IDS_SCPRO_METER_SCTRAN_NORMAL_LABEL	,    "Transactions\nSource: %.2s\nCustomer/Vendor: %.12s - Doc. No.: %.22s"
+	IDS_SCPRO_METER_SCTRAN_PENDING_LABEL,    "Pending Transactions\nSource: %.2s\nCustomer/Vendor: %.12s - Doc. No.: %.22s"
+	//
+	//// Email Subjects
+	IDS_SCPRO_EMAIL_SUBJECT_ALERT			,    "[Send from Sage CashView] Alert for %.60s"
+	IDS_SCPRO_EMAIL_SUBJECT_ALERTLOAN	,    "[Send from Sage CashView] Alert for %.60s"
+	IDS_SCPRO_EMAIL_SUBJECT_LOAN			,    "[Send from Sage CashView] Alert for %.60s"
+	//
+	//// Marks
+	//
+   //// Error messages
+}
+
+
+//
+//// HTML Files
+//80001	HTML	"80001-ThresholdAlert.htm"
+80001	HTML	"80001Alert.mht"
+//87021	HTML	"87021-SGLoanOffer.htm"
+87021	HTML	"87021Offer.mht"
+87022	HTML	"87022Combined.mht"
+//8002	HTML	".\\TemplateQuickReference.htm"
+//8003	HTML	".\\TemplateQuickReference.htm"

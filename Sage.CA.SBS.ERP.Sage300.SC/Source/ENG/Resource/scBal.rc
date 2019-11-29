@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------------
+
+    File        :   scBal.rc
+    Purpose     :   Resource script for resource only DLL for a view.
+
+    Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+
+    Conventions:
+        0 -   299 view names/object names
+      300 -   599 key names
+      600 -  4999 field names
+     5000 -  8999 presentation
+     9000 -  9999 security
+    10000 - 59999 error messages and text
+    60000         program name
+    60001 - 65535 reserved by the system
+
+--------------------------------------------------------------------*/
+
+
+//////////////////////////////////////////////////////////////////////
+// For each view defined, add an include line for its ZZZZ.i resource
+// ID definition file.
+
+// +++
+#include "scBal.i"
+// ---
+
+STRINGTABLE
+{
+   ///////////////////////////////////////////////////////////////////
+   // Duplicate the following section for each view defined, and fill
+   // in the string resource definitions appropriately for each view.
+
+   // +++
+
+   //// View name
+   IDS_SCBAL_VIEW_NAME			,    "Balance"
+   IDS_SCBAL_VIEW_NOUN			,    "Balances"
+   //
+   //// Key names
+   IDS_SCBAL_KEY_NAME			,    "Record Type/Group/Fsc. Year"
+   //
+   //// Field names
+	IDS_SCBAL_RECTYPE_FLD		,    "Record Type"
+	IDS_SCBAL_GRPCOD_FLD			,    "Group Category"
+	//IDS_SCBAL_ACCTID_FLD			,    "Account Number"
+	IDS_SCBAL_FSCYEAR_FLD		,    "Fiscal Year"
+	//
+	IDS_SCBAL_BALOPEN_FLD		,    "Begining Balance"
+	IDS_SCBAL_NETPERD1_FLD		,    "Period 01 net amount"
+	IDS_SCBAL_NETPERD2_FLD		,    "Period 02 net amount"
+	IDS_SCBAL_NETPERD3_FLD		,    "Period 03 net amount"
+	IDS_SCBAL_NETPERD4_FLD		,    "Period 04 net amount"
+	IDS_SCBAL_NETPERD5_FLD		,    "Period 05 net amount"
+	IDS_SCBAL_NETPERD6_FLD		,    "Period 06 net amount"
+	IDS_SCBAL_NETPERD7_FLD		,    "Period 07 net amount"
+	IDS_SCBAL_NETPERD8_FLD		,    "Period 08 net amount"
+	IDS_SCBAL_NETPERD9_FLD		,    "Period 09 net amount"
+	IDS_SCBAL_NETPERD10_FLD		,    "Period 10 net amount"
+	IDS_SCBAL_NETPERD11_FLD		,    "Period 11 net amount"
+	IDS_SCBAL_NETPERD12_FLD		,    "Period 12 net amount"
+	IDS_SCBAL_NETPERD13_FLD		,    "Period 13 net amount"
+	IDS_SCBAL_NETPERD14_FLD		,    "Period 14 net amount"
+	IDS_SCBAL_NETPERD15_FLD		,    "Period 15 net amount"
+	//IDS_SCBAL_AMTBALHC_FLD		,    "Amount Balance (Func.)"
+	//
+	//// Field names (2)
+	IDS_SCBAL2_BALPERD1_FLD		,    "Period 01 balance amount"
+	IDS_SCBAL2_BALPERD2_FLD		,    "Period 02 balance amount"
+	IDS_SCBAL2_BALPERD3_FLD		,    "Period 03 balance amount"
+	IDS_SCBAL2_BALPERD4_FLD		,    "Period 04 balance amount"
+	IDS_SCBAL2_BALPERD5_FLD		,    "Period 05 balance amount"
+	IDS_SCBAL2_BALPERD6_FLD		,    "Period 06 balance amount"
+	IDS_SCBAL2_BALPERD7_FLD		,    "Period 07 balance amount"
+	IDS_SCBAL2_BALPERD8_FLD		,    "Period 08 balance amount"
+	IDS_SCBAL2_BALPERD9_FLD		,    "Period 09 balance amount"
+	IDS_SCBAL2_BALPERD10_FLD	,    "Period 10 balance amount"
+	IDS_SCBAL2_BALPERD11_FLD	,    "Period 11 balance amount"
+	IDS_SCBAL2_BALPERD12_FLD	,    "Period 12 balance amount"
+	IDS_SCBAL2_BALPERD13_FLD	,    "Period 13 balance amount"
+	IDS_SCBAL2_BALPERD14_FLD	,    "Period 14 balance amount"
+	IDS_SCBAL2_BALPERD15_FLD	,    "Period 15 balance amount"
+	//IDS_SCBAL2_CURYEAR_FLD		,    "Current Year"
+	//IDS_SCBAL2_CURPERIOD_FLD	,    "Current Period"
+	IDS_SCBAL2_NETYEAR_FLD		,    "Total year net amount"
+	IDS_SCBAL2_NETYTD_FLD		,    "Year-to-date net amount"
+	IDS_SCBAL2_BALYTD_FLD		,    "Year-to-date balance amount"
+	//
+	//IDS_SCBAL2_ACCTFMTTD_FLD	,    "Account Number"
+	//IDS_SCBAL2_ACCTDESC_FLD		,    "Account Description"
+	//IDS_SCBAL2_ACCTGRPCOD_FLD	,    "Group Code"
+	//IDS_SCBAL2_ACCTGRPDES_FLD	,    "Group Description"
+	//IDS_SCBAL2_ACCTGRPSCD_FLD	,    "Group Sort Code"
+	//
+   //// Presentation strings
+	//
+	//// Marks
+	//
+   //// Error messages
+}

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Navigation>
+  <!--TODO configure the menus for integrated with sage 300c-->
+  <!--Second Level Menu Item, define the menu showed on Sage 300 online portal menu bar-->
+  <item>
+    <MenuID>SC0000</MenuID>
+    <MenuName>CashView</MenuName>
+    <ResourceKey>SC0000</ResourceKey>
+    <ParentMenuID>101</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>N/A</ScreenURL>
+    <MenuItemLevel>2</MenuItemLevel>
+    <MenuItemOrder>3</MenuItemOrder>
+    <ColOrder>-1</ColOrder>
+    <SecurityResourceKey>N/A</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <IconName>SC/icon_sc.png</IconName>
+    <MenuBackGoundImage>SC/bg_menu_sc.png</MenuBackGoundImage>
+  </item>
+  <!--Third Level Menu Items Section Starts-->
+  <item>
+    <MenuID>SC1000</MenuID>
+    <MenuName>S/C Inquiry</MenuName>
+    <ResourceKey>SC1000</ResourceKey>
+    <ParentMenuID>SC0000</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>N/A</ScreenURL>
+    <MenuItemLevel>3</MenuItemLevel>
+    <MenuItemOrder>1</MenuItemOrder>
+    <ColOrder>-1</ColOrder>
+    <SecurityResourceKey>N/A</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+  </item>
+  <item>
+    <MenuID>SC9000</MenuID>
+    <MenuName>S/C Setup</MenuName>
+    <ResourceKey>SC9000</ResourceKey>
+    <ParentMenuID>SC0000</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>N/A</ScreenURL>
+    <MenuItemLevel>3</MenuItemLevel>
+    <MenuItemOrder>2</MenuItemOrder>
+    <ColOrder>-1</ColOrder>
+    <SecurityResourceKey>N/A</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+  </item>
+
+  <!--Fourth Level Menu Items Section S/C Setup - Start-->
+  <item>
+    <MenuID>SC9000H</MenuID>
+    <MenuName>S/C Setup</MenuName>
+    <ResourceKey>SC9000</ResourceKey>
+    <ParentMenuID>SC9000</ParentMenuID>
+    <IsGroupHeader>true</IsGroupHeader>
+    <ScreenURL>N/A</ScreenURL>
+    <MenuItemLevel>4</MenuItemLevel>
+    <MenuItemOrder>1</MenuItemOrder>
+    <ColOrder>1</ColOrder>
+    <SecurityResourceKey>N/A</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <ModuleName>SC</ModuleName>
+  </item>
+  <item>
+    <MenuID>SC9100</MenuID>
+    <MenuName>S/C Options</MenuName>
+    <ResourceKey>SC9100</ResourceKey>
+    <ParentMenuID>SC9000</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>SC/Options</ScreenURL>
+    <MenuItemLevel>4</MenuItemLevel>
+    <MenuItemOrder>2</MenuItemOrder>
+    <ColOrder>1</ColOrder>
+    <SecurityResourceKey>SCSETUP</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <ModuleName>SC</ModuleName>
+  </item>
+  <!--Fourth Level Menu Items Section S/C Setup - End-->
+
+  <!--Fourth Level Menu Items Section S/C Inquiry - Start-->
+  <item>
+    <MenuID>SC1000H</MenuID>
+    <MenuName>S/C Inquiry</MenuName>
+    <ResourceKey>SC1000</ResourceKey>
+    <ParentMenuID>SC1000</ParentMenuID>
+    <IsGroupHeader>true</IsGroupHeader>
+    <ScreenURL>N/A</ScreenURL>
+    <MenuItemLevel>4</MenuItemLevel>
+    <MenuItemOrder>0</MenuItemOrder>
+    <ColOrder>1</ColOrder>
+    <SecurityResourceKey>N/A</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <ModuleName>SC</ModuleName>
+  </item>
+  <item>
+    <MenuID>SC1101</MenuID>
+    <MenuName>Dashboard</MenuName>
+    <ResourceKey>SC1101</ResourceKey>
+    <ParentMenuID>SC1000</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>SC/Dashboard</ScreenURL>
+    <MenuItemLevel>4</MenuItemLevel>
+    <MenuItemOrder>1</MenuItemOrder>
+    <ColOrder>1</ColOrder>
+    <SecurityResourceKey>SCINQUIRY</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <ModuleName>SC</ModuleName>
+  </item>
+  <item>
+    <MenuID>SC1102</MenuID>
+    <MenuName>Cash Flow Summary</MenuName>
+    <ResourceKey>SC1102</ResourceKey>
+    <ParentMenuID>SC1000</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>SC/Summary</ScreenURL>
+    <MenuItemLevel>4</MenuItemLevel>
+    <MenuItemOrder>2</MenuItemOrder>
+    <ColOrder>1</ColOrder>
+    <SecurityResourceKey>SCINQUIRY</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <ModuleName>SC</ModuleName>
+  </item>
+  <item>
+    <MenuID>SC1103</MenuID>
+    <MenuName>A/R Summary</MenuName>
+    <ResourceKey>SC1103</ResourceKey>
+    <ParentMenuID>SC1000</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>SC/PayeeSummary/AR</ScreenURL>
+    <MenuItemLevel>4</MenuItemLevel>
+    <MenuItemOrder>3</MenuItemOrder>
+    <ColOrder>1</ColOrder>
+    <SecurityResourceKey>SCINQUIRY</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <ModuleName>SC</ModuleName>
+  </item>
+  <item>
+    <MenuID>SC1104</MenuID>
+    <MenuName>A/P Summary</MenuName>
+    <ResourceKey>SC1104</ResourceKey>
+    <ParentMenuID>SC1000</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>SC/PayeeSummary/AP</ScreenURL>
+    <MenuItemLevel>4</MenuItemLevel>
+    <MenuItemOrder>4</MenuItemOrder>
+    <ColOrder>1</ColOrder>
+    <SecurityResourceKey>SCINQUIRY</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <ModuleName>SC</ModuleName>
+  </item>
+  <item>
+    <MenuID>SC1105</MenuID>
+    <MenuName>Loan</MenuName>
+    <ResourceKey>SC1105</ResourceKey>
+    <ParentMenuID>SC1000</ParentMenuID>
+    <IsGroupHeader>false</IsGroupHeader>
+    <ScreenURL>SC/Loan</ScreenURL>
+    <MenuItemLevel>4</MenuItemLevel>
+    <MenuItemOrder>5</MenuItemOrder>
+    <ColOrder>1</ColOrder>
+    <SecurityResourceKey>SCLINQUIRY-SCLENTRY</SecurityResourceKey>
+    <IsReport>false</IsReport>
+    <IsActive>true</IsActive>
+    <IsGroupEnd>false</IsGroupEnd>
+    <IsWidget>false</IsWidget>
+    <Isintelligence>false</Isintelligence>
+    <ModuleName>SC</ModuleName>
+  </item>
+  <!--Fourth Level Menu Items Section S/C Inquiry - End-->
+</Navigation>

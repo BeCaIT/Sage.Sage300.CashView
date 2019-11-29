@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sage.CA.SBS.ERP.Sage300.SC.Setup", "Sage.CA.SBS.ERP.Sage300.SC.Setup\Sage.CA.SBS.ERP.Sage300.SC.Setup.vdproj", "{9038A04D-3BCF-46BD-9A25-CFA50DEA4E1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9038A04D-3BCF-46BD-9A25-CFA50DEA4E1B}.Debug|Default.ActiveCfg = Debug
+		{9038A04D-3BCF-46BD-9A25-CFA50DEA4E1B}.Debug|Default.Build.0 = Debug
+		{9038A04D-3BCF-46BD-9A25-CFA50DEA4E1B}.Release|Default.ActiveCfg = Release
+		{9038A04D-3BCF-46BD-9A25-CFA50DEA4E1B}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBB88D0A-79D7-42E2-B5E9-45CAF266D879}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,311 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.LoanViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Loan>
+@using LoanResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.LoanResx
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Models.Enums
+@using AnnotationsResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.AnnotationsResx
+
+<script type="text/javascript">
+    @Html.ConvertToJsVariableUsingNewtonSoft("scLoanViewModel", Model)
+</script>
+
+@Html.Partial("~/Areas/SC/Views/Loan/Partials/_Localization.cshtml")
+@{
+    const string newLayout = "~/Areas/Shared/Views/Shared/_GlobalLayout.cshtml";
+    bool newLayoutExists = System.IO.File.Exists(Server.MapPath(newLayout));
+}
+
+<div>@Html.ValidationSummary(true)</div>
+<div id="success" class="message"></div>
+
+<div class="form-screen">
+    <div id="message"></div>
+    <div id="dialogConfirmation"></div>
+    <header>
+        <section class="header-group-1">
+            <div class="header-wrapper">
+                <div class="header-headline">
+                    @Html.SageHeader1Label("LoanHeader", LoanResx.Entity)
+                </div>
+            </div>
+            <div class="flag-required">
+                <span class="req-option">@CommonResx.RequiredLegend</span>
+            </div>
+        </section>
+    </header>
+
+    <!-- Request Details -->
+    <div id="scLoanRequestDetails" class="wrapper-group clearfix" style="display: none">
+        <!-- Loan Request Details -->
+        <div class="panel collapse">
+            <div class="panel-header">
+                <span class="panelIcon"></span>
+                <h3>@LoanResx.LoanRequestDetails</h3>
+            </div>
+            <div class="panel-content">
+                <div class="form-group">
+                    <!-- Reference -->
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Reference)
+                        @Html.KoSageTextBoxFor(m => m.Data.Reference, new { sagevalue = "Data.Reference", sagedisable = "true" }, new { @class = "small" })
+                    </div>
+                    <!-- BRN -->
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.BRN)
+                        @Html.KoSageTextBoxFor(m => m.Data.BRN, new { sagevalue = "Data.BRN", sagedisable = "true" }, new { @class = "small" })
+                    </div>
+                    <!-- Status -->
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Status)
+                        @Html.KoSageDropDownList("Status", new { options = "Statuses", @sagevalue = "Data.Status", optionsText = "'Text'", optionsValue = "'Value'", sagedisable = "true" }, new { @class = "small" })
+                    </div>
+                    <!-- Submitted Date -->
+                    <div class="datepicker-group" data-bind="visible: Data.Status() != 0">
+                        @Html.SageLabelFor(m => m.Data.DateSubmitted)
+                        @Html.KoSageTextBoxFor(m => m.Data.DateSubmitted, new { sageDatePicker = "Data.DateSubmitted", sagedisable = "true" }, new { @class = "small datepicker", @placeholder = "" })
+                    </div>
+                </div>
+                <!-- Currency / Loan Cap Amount / Loan Request Amount -->
+                <div class="form-group">
+                    <!-- Currency -->
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Currency)
+                        @Html.KoSageTextBoxFor(m => m.Data.Currency, new { sagevalue = "Data.Currency", sagedisable = "true" }, new { @class = "small" })
+                    </div>
+                    <!-- Loan Cap Amount -->
+                    <div class="numeric-group">
+                        @Html.SageLabelFor(m => m.Data.AmountOffer)
+                        @Html.KoSageTextBoxFor(m => m.Data.AmountOffer, new { sagevalue = "Data.AmountOffer", sagedisable = "true" }, new { @class = "small numeric" })
+                    </div>
+                    <!-- Amount Request -->
+                    <div class="numeric-group">
+                        @Html.SageLabelFor(m => m.Data.AmountRequest, new { @class = "required" })
+                        @Html.KoSageTextBoxFor(m => m.Data.AmountRequest, new { sagevalue = "Data.AmountRequest", sagedisable = "IsReadOnly" }, new { @class = "small numeric" })
+                        @Html.ValidationMessageFor(m => m.Data.AmountRequest)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Information -->
+    <div id="scLoanContactInformation" class="wrapper-group clearfix" style="display: none">
+        <div class="panel collapse clearfix">
+            <div id="contactInformation" class="panel-header">
+                <span class="panel-icon panel-icon-up"></span>
+                <h3>@LoanResx.ContactInformation</h3>
+                @if (newLayoutExists)
+                {
+                    <span class="glyphicon glyphicon-more more hide"></span>
+                }
+            </div>
+            <div class="panel-content clearfix">
+                <!-- Key Contact / Phone / Mobile -->
+                <div class="form-group">
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Contact, new { @class = "required" })
+                        @Html.KoSageTextBoxFor(m => m.Data.Contact, new { sagevalue = "Data.Contact", sagedisable = "IsReadOnly" }, new { @class = "medium required" })
+                        @Html.ValidationMessageFor(m => m.Data.Contact)
+                    </div>
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Phone, new { @class = "required" })
+                        @Html.KoSageTextBoxFor(m => m.Data.Phone, new { sagevalue = "Data.Phone", sagedisable = "IsReadOnly" }, new { @class = "small required" })
+                        @Html.ValidationMessageFor(m => m.Data.Phone)
+                    </div>
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Mobile)
+                        @Html.KoSageTextBoxFor(m => m.Data.Mobile, new { sagevalue = "Data.Mobile", sagedisable = "IsReadOnly" }, new { @class = "small" })
+                        @Html.ValidationMessageFor(m => m.Data.Mobile)
+                    </div>
+                </div>
+                <!-- Legal Name / Email -->
+                <div class="form-group">
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.CompanyName, new { @class = "required" })
+                        @Html.KoSageTextBoxFor(m => m.Data.CompanyName, new { sagevalue = "Data.CompanyName", sagedisable = "IsReadOnly" }, new { @class = "medium required" })
+                        @Html.ValidationMessageFor(m => m.Data.CompanyName)
+                    </div>
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Email, new { @class = "required" })
+                        @Html.KoSageTextBoxFor(m => m.Data.Email, new { sagevalue = "Data.Email", sagedisable = "IsReadOnly" }, new { @class = "medium required" })
+                        @Html.ValidationMessageFor(m => m.Data.Email)
+                    </div>
+                </div>
+                <!-- Address 1 / Address 2 -->
+                <div class="form-group">
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Address1)
+                        @Html.KoSageTextBoxFor(m => m.Data.Address1, new { sagevalue = "Data.Address1", sagedisable = "IsReadOnly" }, new { @class = "medium required" })
+                        @Html.ValidationMessageFor(m => m.Data.Address1)
+                    </div>
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Address2)
+                        @Html.KoSageTextBoxFor(m => m.Data.Address2, new { sagevalue = "Data.Address2", sagedisable = "IsReadOnly" }, new { @class = "medium" })
+                        @Html.ValidationMessageFor(m => m.Data.Address2)
+                    </div>
+                </div>
+                <!-- Address 3 / Address 4 -->
+                <div class="form-group">
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Address3)
+                        @Html.KoSageTextBoxFor(m => m.Data.Address3, new { sagevalue = "Data.Address3", sagedisable = "IsReadOnly" }, new { @class = "medium" })
+                        @Html.ValidationMessageFor(m => m.Data.Address3)
+                    </div>
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Address4)
+                        @Html.KoSageTextBoxFor(m => m.Data.Address4, new { sagevalue = "Data.Address4", sagedisable = "IsReadOnly" }, new { @class = "medium" })
+                        @Html.ValidationMessageFor(m => m.Data.Address4)
+                    </div>
+                </div>
+                <!-- City / State / Country / Postal Code -->
+                <div class="form-group">
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.City)
+                        @Html.KoSageTextBoxFor(m => m.Data.City, new { sagevalue = "Data.City", sagedisable = "IsReadOnly" }, new { @class = "small" })
+                        @Html.ValidationMessageFor(m => m.Data.City)
+                    </div>
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.State)
+                        @Html.KoSageTextBoxFor(m => m.Data.State, new { sagevalue = "Data.State", sagedisable = "IsReadOnly" }, new { @class = "small" })
+                        @Html.ValidationMessageFor(m => m.Data.State)
+                    </div>
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.Country)
+                        @Html.KoSageTextBoxFor(m => m.Data.Country, new { sagevalue = "Data.Country", sagedisable = "IsReadOnly" }, new { @class = "small" })
+                        @Html.ValidationMessageFor(m => m.Data.Country)
+                    </div>
+                    <div class="input-group">
+                        @Html.SageLabelFor(m => m.Data.PostalCode)
+                        @Html.KoSageTextBoxFor(m => m.Data.PostalCode, new { sagevalue = "Data.PostalCode", sagedisable = "IsReadOnly" }, new { @class = "small" })
+                        @Html.ValidationMessageFor(m => m.Data.PostalCode)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Submission Details -->
+    <div id="scLoanSubmissionDetails" class="wrapper-group clearfix" style="display: none">
+        <div class="panel collapse">
+            <div class="panel-header">
+                <span class="panelIcon"></span>
+                <h3>@LoanResx.EmailSubmissionDetails</h3>
+            </div>
+            <div class="panel-content">
+                <div class="wrapper-group">
+                    <!-- Email Submission Details -->
+                    <div class="left">
+                        <!-- Email From -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                @Html.SageLabelFor(m => m.Data.EmailFrom)
+                                @Html.KoSageTextBoxFor(m => m.Data.EmailFrom, new { sagevalue = "Data.EmailFrom", sagedisable = "true" }, new { @class = "large" })
+                            </div>
+                        </div>
+                        <!-- Email To -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                @Html.SageLabelFor(m => m.Data.EmailTo)
+                                @Html.KoSageTextBoxFor(m => m.Data.EmailTo, new { sagevalue = "Data.EmailTo", sagedisable = "true" }, new { @class = "large" })
+                            </div>
+                        </div>
+                        <!-- Email CC -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                @Html.SageLabelFor(m => m.Data.EmailCC)
+                                @Html.KoSageTextBoxFor(m => m.Data.EmailCC, new { sagevalue = "Data.EmailCC", sagedisable = "IsReadOnly" }, new { @class = "large" })
+                                @Html.ValidationMessageFor(m => m.Data.EmailCC)
+                            </div>
+                        </div>
+                        <!-- Email Subject -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                @Html.SageLabelFor(m => m.Data.EmailSubject)
+                                @Html.KoSageTextBoxFor(m => m.Data.EmailSubject, new { sagevalue = "Data.EmailSubject", sagedisable = "true" }, new { @class = "large" })
+                            </div>
+                        </div>
+                        <!-- Email Message -->
+                        <div class="form-group">
+                            <div class="textarea-group">
+                                @Html.SageLabelFor(m => m.Data.Message)
+                                @Html.KoSageTextAreaFor(m => m.Data.Message, new { sagevalue = "Data.Message", sagedisable = "IsReadOnly" }, new { @class = "large" })
+                                @Html.ValidationMessageFor(m => m.Data.Message)
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Loan Actions -->
+                    <div class="margin-left-base right w300">
+                        <div class="form-group">
+                            <div class="button-group" style="width: 100%">
+                                @Html.KoSageButton("btnViewTermsAndConditions", new { }, new { @value = LoanResx.ViewTermsAndConditions, @id = "btnViewTermsAndConditions", @class = "btn btn-secondary", style = "width: 100%" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="ctrl-group">
+                                <div class="child block">
+                                    @Html.KoSageCheckBox("chkAgreeTermsAndConditions", false, new { @checked = "TnCAgreed", sagedisable = "TnCAgreeDisabled" }, new { })
+                                    @Html.SageLabel(@LoanResx.AgreeTermsAndConditions, new { @class = "checkBox-info optionpostingcheck" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="ctrl-group">
+                                <div class="child block">
+                                    @Html.SageLabel(@LoanResx.SubmissionNote, new { @class = "checkBox-info optionpostingcheck" })
+                                </div>
+                            </div>
+                        </div>
+                        @if (Model.UserAccess.SecurityType.HasFlag(SecurityType.Modify))
+                        {
+                            <div class="form-group" data-bind="visible: Data.Status() == 0">
+                                <div class="button-group">
+                                    @Html.KoSageButton("btnSave", new { sagedisable = "IsReadOnly", visible = "!IsReadOnly()" }, new { @value = CommonResx.Save, @id = "btnSave", @class = "btn btn-primary" })
+                                    @Html.KoSageButton("btnSubmit", new { sagedisable = "IsReadOnly() || !TnCAgreed()", visible = "!IsReadOnly()" }, new { @value = LoanResx.Submit, @id = "btnSubmit", @class = "btn btn-secondary" })
+                                </div>
+                            </div>
+                            <div class="panel collapse clearfix" data-bind="visible: Data.Status() == 1" style="width: 100%">
+                                <div id="statusUpdate" class="panel-header">
+                                    <span class="panel-icon panel-icon-up"></span>
+                                    <h3>@LoanResx.StatusUpdate</h3>
+                                    @if (newLayoutExists)
+                                    {
+                                        <span class="glyphicon glyphicon-more more hide"></span>
+                                    }
+                                </div>
+                                <div class="panel-content clearfix">
+                                    <div class="button-group" style="width: 100%">
+                                        @Html.KoSageButton("btnUpdateCancel", new { sagedisable = "Data.Status() != 1" }, new { @value = LoanResx.UpdateCancel, @id = "btnUpdateCancel", @class = "btn btn-secondary", style = "width: 100%" })
+                                    </div>
+                                    <div class="button-group" style="width: 100%">
+                                        @Html.KoSageButton("btnUpdateRejected", new { sagedisable = "Data.Status() != 1" }, new { @value = LoanResx.UpdateRejected, @id = "btnUpdateRejected", @class = "btn btn-secondary", style = "width: 100%" })
+                                    </div>
+                                    <div class="button-group" style="width: 100%">
+                                        @Html.KoSageButton("btnUpdateApproved", new { sagedisable = "Data.Status() != 1" }, new { @value = LoanResx.UpdateApproved, @id = "btnUpdateApproved", @class = "btn btn-secondary", style = "width: 100%" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel collapse clearfix" data-bind="visible: Data.Status() == 1" style="width: 100%">
+                                <div class="panel-content clearfix">
+                                    <div class="button-group" style="width: 100%">
+                                        @Html.KoSageButton("btnResubmit", new { sagedisable = "Data.Status() != 1" }, new { @value = LoanResx.Resubmit, @id = "btnResubmit", @class = "btn btn-secondary", style = "width: 100%" })
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loan Activities -->
+    <div id="scLoanActivities" class="panel wrapper-group clearfix" style="display: none">
+        <div class="panel-header">
+            <span class="panel-icon"></span>
+            <h3>@LoanResx.LoanActivities</h3>
+        </div>
+        <div class="grid-group">
+            @Html.KoKendoGrid("scLoansGrid", "scLoanUI.viewModel.DataList", "LoanNumber", "scLoansGrid.config")
+        </div>
+    </div>
+    </div>

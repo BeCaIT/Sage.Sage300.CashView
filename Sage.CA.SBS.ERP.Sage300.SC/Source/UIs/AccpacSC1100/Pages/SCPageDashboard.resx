@@ -1,0 +1,1311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnPrint.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnPrint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>687, 573</value>
+  </data>
+  <data name="btnPrint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnPrint.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnPrint.Text" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Name" xml:space="preserve">
+    <value>btnPrint</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnPrint.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tlDashboard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="tlDashboard.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <metadata name="bsDashboard.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="igCurrentRatio.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="igCurrentRatio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="igCurrentRatio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 115</value>
+  </data>
+  <data name="igCurrentRatio.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;igCurrentRatio.Name" xml:space="preserve">
+    <value>igCurrentRatio</value>
+  </data>
+  <data name="&gt;&gt;igCurrentRatio.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Controls.SCIndicatorGauge, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;igCurrentRatio.Parent" xml:space="preserve">
+    <value>grdCurrentRatio</value>
+  </data>
+  <data name="&gt;&gt;igCurrentRatio.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grdCurrentRatio.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grdCurrentRatio.HeaderText" xml:space="preserve">
+    <value>CURRENT RATIO</value>
+  </data>
+  <data name="grdCurrentRatio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 3</value>
+  </data>
+  <data name="grdCurrentRatio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 135</value>
+  </data>
+  <data name="grdCurrentRatio.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="grdCurrentRatio.Text" xml:space="preserve">
+    <value>CURRENT RATIO</value>
+  </data>
+  <data name="&gt;&gt;grdCurrentRatio.Name" xml:space="preserve">
+    <value>grdCurrentRatio</value>
+  </data>
+  <data name="&gt;&gt;grdCurrentRatio.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grdCurrentRatio.Parent" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;grdCurrentRatio.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="igQuickRatio.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="igQuickRatio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="igQuickRatio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 115</value>
+  </data>
+  <data name="igQuickRatio.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;igQuickRatio.Name" xml:space="preserve">
+    <value>igQuickRatio</value>
+  </data>
+  <data name="&gt;&gt;igQuickRatio.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Controls.SCIndicatorGauge, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;igQuickRatio.Parent" xml:space="preserve">
+    <value>grpQuickRatio</value>
+  </data>
+  <data name="&gt;&gt;igQuickRatio.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpQuickRatio.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grpQuickRatio.HeaderText" xml:space="preserve">
+    <value>QUICK RATIO</value>
+  </data>
+  <data name="grpQuickRatio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="grpQuickRatio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 135</value>
+  </data>
+  <data name="grpQuickRatio.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpQuickRatio.Text" xml:space="preserve">
+    <value>QUICK RATIO</value>
+  </data>
+  <data name="&gt;&gt;grpQuickRatio.Name" xml:space="preserve">
+    <value>grpQuickRatio</value>
+  </data>
+  <data name="&gt;&gt;grpQuickRatio.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpQuickRatio.Parent" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;grpQuickRatio.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ngNetCashFromOperations.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ngNetCashFromOperations.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 4.812872pt</value>
+  </data>
+  <data name="ngNetCashFromOperations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="ngNetCashFromOperations.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="ngNetCashFromOperations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 115</value>
+  </data>
+  <data name="ngNetCashFromOperations.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ngNetCashFromOperations.Name" xml:space="preserve">
+    <value>ngNetCashFromOperations</value>
+  </data>
+  <data name="&gt;&gt;ngNetCashFromOperations.Type" xml:space="preserve">
+    <value>Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Controls.SCNetGauge, AccpacSC1100, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ngNetCashFromOperations.Parent" xml:space="preserve">
+    <value>grpNetCashFromOperations</value>
+  </data>
+  <data name="&gt;&gt;ngNetCashFromOperations.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpNetCashFromOperations.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grpNetCashFromOperations.HeaderText" xml:space="preserve">
+    <value>NET CASH FROM OPERATIONS</value>
+  </data>
+  <data name="grpNetCashFromOperations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 144</value>
+  </data>
+  <data name="grpNetCashFromOperations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 135</value>
+  </data>
+  <data name="grpNetCashFromOperations.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="grpNetCashFromOperations.Text" xml:space="preserve">
+    <value>NET CASH FROM OPERATIONS</value>
+  </data>
+  <data name="&gt;&gt;grpNetCashFromOperations.Name" xml:space="preserve">
+    <value>grpNetCashFromOperations</value>
+  </data>
+  <data name="&gt;&gt;grpNetCashFromOperations.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpNetCashFromOperations.Parent" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;grpNetCashFromOperations.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rgDSO.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rgDSO_value.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDSO_value.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDSO_value.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_value.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_value.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_value.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rgDSO_value.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDSO_value.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_background.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDSO_background.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDSO_background.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_background.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_background.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_background.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_background.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDSO_background.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDSO_background.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_needle.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDSO_needle.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDSO_needle.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_needle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_needle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_needle.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_needle.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rgDSO_needle.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDSO_needle.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_labelValue.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDSO_labelValue.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDSO_labelValue.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_labelValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_labelValue.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_labelValue.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_labelValue.Text" xml:space="preserve">
+    <value>radialGaugeSingleLabel1</value>
+  </data>
+  <data name="rgDSO_labelValue.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDSO_labelValue.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_labelRange.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDSO_labelRange.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDSO_labelRange.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_labelRange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_labelRange.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDSO_labelRange.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO_labelRange.Text" xml:space="preserve">
+    <value>radialGaugeLabels2</value>
+  </data>
+  <data name="rgDSO_labelRange.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDSO_labelRange.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDSO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="rgDSO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 115</value>
+  </data>
+  <data name="rgDSO.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="rgDSO.Text" xml:space="preserve">
+    <value>radRadialGauge1</value>
+  </data>
+  <data name="&gt;&gt;rgDSO.Name" xml:space="preserve">
+    <value>rgDSO</value>
+  </data>
+  <data name="&gt;&gt;rgDSO.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadRadialGauge, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDSO.Parent" xml:space="preserve">
+    <value>grpDaysSalesOutstanding</value>
+  </data>
+  <data name="&gt;&gt;rgDSO.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpDaysSalesOutstanding.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grpDaysSalesOutstanding.HeaderText" xml:space="preserve">
+    <value>DAYS SALES OUTSTANDING</value>
+  </data>
+  <data name="grpDaysSalesOutstanding.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 3</value>
+  </data>
+  <data name="grpDaysSalesOutstanding.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 135</value>
+  </data>
+  <data name="grpDaysSalesOutstanding.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="grpDaysSalesOutstanding.Text" xml:space="preserve">
+    <value>DAYS SALES OUTSTANDING</value>
+  </data>
+  <data name="&gt;&gt;grpDaysSalesOutstanding.Name" xml:space="preserve">
+    <value>grpDaysSalesOutstanding</value>
+  </data>
+  <data name="&gt;&gt;grpDaysSalesOutstanding.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpDaysSalesOutstanding.Parent" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;grpDaysSalesOutstanding.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rgARC.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rgARC_amountPaid.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgARC_amountPaid.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgARC_amountPaid.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC_amountPaid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgARC_amountPaid.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgARC_amountPaid.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC_amountPaid.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rgARC_amountPaid.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgARC_amountPaid.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC_amountDue.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgARC_amountDue.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgARC_amountDue.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC_amountDue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgARC_amountDue.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgARC_amountDue.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC_amountDue.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgARC_amountDue.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgARC_amountDue.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC_labelValue.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgARC_labelValue.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgARC_labelValue.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC_labelValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgARC_labelValue.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgARC_labelValue.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC_labelValue.Text" xml:space="preserve">
+    <value>radialGaugeSingleLabel1</value>
+  </data>
+  <data name="rgARC_labelValue.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgARC_labelValue.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgARC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="rgARC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 115</value>
+  </data>
+  <data name="rgARC.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="rgARC.Text" xml:space="preserve">
+    <value>radRadialGauge1</value>
+  </data>
+  <data name="&gt;&gt;rgARC.Name" xml:space="preserve">
+    <value>rgARC</value>
+  </data>
+  <data name="&gt;&gt;rgARC.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadRadialGauge, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgARC.Parent" xml:space="preserve">
+    <value>grpAccountReceivablesCollection</value>
+  </data>
+  <data name="&gt;&gt;rgARC.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpAccountReceivablesCollection.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grpAccountReceivablesCollection.HeaderText" xml:space="preserve">
+    <value>ACCOUNTS RECEIVABLE COLLECTIONS</value>
+  </data>
+  <data name="grpAccountReceivablesCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>518, 3</value>
+  </data>
+  <data name="grpAccountReceivablesCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 135</value>
+  </data>
+  <data name="grpAccountReceivablesCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="grpAccountReceivablesCollection.Text" xml:space="preserve">
+    <value>ACCOUNTS RECEIVABLE COLLECTIONS</value>
+  </data>
+  <data name="&gt;&gt;grpAccountReceivablesCollection.Name" xml:space="preserve">
+    <value>grpAccountReceivablesCollection</value>
+  </data>
+  <data name="&gt;&gt;grpAccountReceivablesCollection.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpAccountReceivablesCollection.Parent" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;grpAccountReceivablesCollection.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rgDPO.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rgDPO_value.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDPO_value.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDPO_value.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_value.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_value.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_value.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rgDPO_value.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDPO_value.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_background.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDPO_background.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDPO_background.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_background.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_background.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_background.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_background.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDPO_background.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDPO_background.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_needle.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDPO_needle.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDPO_needle.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_needle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_needle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_needle.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_needle.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rgDPO_needle.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDPO_needle.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_labelValue.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDPO_labelValue.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDPO_labelValue.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_labelValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_labelValue.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_labelValue.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_labelValue.Text" xml:space="preserve">
+    <value>radialGaugeSingleLabel1</value>
+  </data>
+  <data name="rgDPO_labelValue.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDPO_labelValue.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_labelRange.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgDPO_labelRange.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgDPO_labelRange.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_labelRange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_labelRange.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgDPO_labelRange.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO_labelRange.Text" xml:space="preserve">
+    <value>radialGaugeLabels2</value>
+  </data>
+  <data name="rgDPO_labelRange.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgDPO_labelRange.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgDPO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="rgDPO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 115</value>
+  </data>
+  <data name="rgDPO.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="rgDPO.Text" xml:space="preserve">
+    <value>radRadialGauge1</value>
+  </data>
+  <data name="&gt;&gt;rgDPO.Name" xml:space="preserve">
+    <value>rgDPO</value>
+  </data>
+  <data name="&gt;&gt;rgDPO.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadRadialGauge, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDPO.Parent" xml:space="preserve">
+    <value>grpDaysPayablesOutstanding</value>
+  </data>
+  <data name="&gt;&gt;rgDPO.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpDaysPayablesOutstanding.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grpDaysPayablesOutstanding.HeaderText" xml:space="preserve">
+    <value>DAYS PAYABLES OUTSTANDING</value>
+  </data>
+  <data name="grpDaysPayablesOutstanding.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 144</value>
+  </data>
+  <data name="grpDaysPayablesOutstanding.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 135</value>
+  </data>
+  <data name="grpDaysPayablesOutstanding.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="grpDaysPayablesOutstanding.Text" xml:space="preserve">
+    <value>DAYS PAYABLES OUTSTANDING</value>
+  </data>
+  <data name="&gt;&gt;grpDaysPayablesOutstanding.Name" xml:space="preserve">
+    <value>grpDaysPayablesOutstanding</value>
+  </data>
+  <data name="&gt;&gt;grpDaysPayablesOutstanding.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpDaysPayablesOutstanding.Parent" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;grpDaysPayablesOutstanding.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rgCCC.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rgCCC_value.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgCCC_value.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgCCC_value.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgCCC_value.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgCCC_value.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_value.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="rgCCC_value.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgCCC_value.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_background.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgCCC_background.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgCCC_background.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_background.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgCCC_background.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgCCC_background.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_background.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgCCC_background.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgCCC_background.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radialGaugeNeedle1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="radialGaugeNeedle1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radialGaugeNeedle1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radialGaugeNeedle1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radialGaugeNeedle1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radialGaugeNeedle1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radialGaugeNeedle1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="radialGaugeNeedle1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="radialGaugeNeedle1.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_labelValue.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgCCC_labelValue.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgCCC_labelValue.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_labelValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgCCC_labelValue.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgCCC_labelValue.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_labelValue.Text" xml:space="preserve">
+    <value>radialGaugeSingleLabel1</value>
+  </data>
+  <data name="rgCCC_labelValue.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgCCC_labelValue.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_labelRange.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="rgCCC_labelRange.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgCCC_labelRange.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_labelRange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgCCC_labelRange.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rgCCC_labelRange.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC_labelRange.Text" xml:space="preserve">
+    <value>radialGaugeLabels2</value>
+  </data>
+  <data name="rgCCC_labelRange.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="rgCCC_labelRange.TextWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgCCC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="rgCCC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 115</value>
+  </data>
+  <data name="rgCCC.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="rgCCC.Text" xml:space="preserve">
+    <value>radRadialGauge1</value>
+  </data>
+  <data name="&gt;&gt;rgCCC.Name" xml:space="preserve">
+    <value>rgCCC</value>
+  </data>
+  <data name="&gt;&gt;rgCCC.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadRadialGauge, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgCCC.Parent" xml:space="preserve">
+    <value>grpCashConversionCycle</value>
+  </data>
+  <data name="&gt;&gt;rgCCC.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpCashConversionCycle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grpCashConversionCycle.HeaderText" xml:space="preserve">
+    <value>CASH CONVERSION CYCLE</value>
+  </data>
+  <data name="grpCashConversionCycle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>518, 144</value>
+  </data>
+  <data name="grpCashConversionCycle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 135</value>
+  </data>
+  <data name="grpCashConversionCycle.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="grpCashConversionCycle.Text" xml:space="preserve">
+    <value>CASH CONVERSION CYCLE</value>
+  </data>
+  <data name="&gt;&gt;grpCashConversionCycle.Name" xml:space="preserve">
+    <value>grpCashConversionCycle</value>
+  </data>
+  <data name="&gt;&gt;grpCashConversionCycle.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpCashConversionCycle.Parent" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;grpCashConversionCycle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chtCashFlow.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="chtCashFlow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 18</value>
+  </data>
+  <data name="chtCashFlow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 256</value>
+  </data>
+  <data name="chtCashFlow.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chtCashFlow.Name" xml:space="preserve">
+    <value>chtCashFlow</value>
+  </data>
+  <data name="&gt;&gt;chtCashFlow.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadChartView, Telerik.WinControls.ChartView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;chtCashFlow.Parent" xml:space="preserve">
+    <value>grpCashFlowChart</value>
+  </data>
+  <data name="&gt;&gt;chtCashFlow.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="resource.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="grpCashFlowChart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="grpCashFlowChart.HeaderText" xml:space="preserve">
+    <value>CASH FLOW</value>
+  </data>
+  <data name="grpCashFlowChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 285</value>
+  </data>
+  <data name="grpCashFlowChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 276</value>
+  </data>
+  <data name="grpCashFlowChart.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="grpCashFlowChart.Text" xml:space="preserve">
+    <value>CASH FLOW</value>
+  </data>
+  <data name="&gt;&gt;grpCashFlowChart.Name" xml:space="preserve">
+    <value>grpCashFlowChart</value>
+  </data>
+  <data name="&gt;&gt;grpCashFlowChart.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;grpCashFlowChart.Parent" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;grpCashFlowChart.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tlDashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="tlDashboard.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tlDashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 564</value>
+  </data>
+  <data name="tlDashboard.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tlDashboard.Name" xml:space="preserve">
+    <value>tlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tlDashboard.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.DoubleBufferedTableLayoutPanel, Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;tlDashboard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tlDashboard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlDashboard.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="grdCurrentRatio" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="grpQuickRatio" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="grpNetCashFromOperations" Row="1" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="grpDaysSalesOutstanding" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="grpAccountReceivablesCollection" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="grpDaysPayablesOutstanding" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="grpCashConversionCycle" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="grpCashFlowChart" Row="2" RowSpan="1" Column="0" ColumnSpan="4" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,15,Percent,15,Percent,35,Percent,35" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="radOffice2007ScreenTipElement1.Alignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="radOffice2007ScreenTipElement1.AngleTransform" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radOffice2007ScreenTipElement1.FlipText" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radOffice2007ScreenTipElement1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radOffice2007ScreenTipElement1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="radOffice2007ScreenTipElement1.RightToLeft" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radOffice2007ScreenTipElement1.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="radOffice2007ScreenTipElement1.TextOrientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="btnRefresh.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 573</value>
+  </data>
+  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnRefresh.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_value.Name" xml:space="preserve">
+    <value>rgDSO_value</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_value.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeArc, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_background.Name" xml:space="preserve">
+    <value>rgDSO_background</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_background.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeArc, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_needle.Name" xml:space="preserve">
+    <value>rgDSO_needle</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_needle.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeNeedle, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_labelValue.Name" xml:space="preserve">
+    <value>rgDSO_labelValue</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_labelValue.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeSingleLabel, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_labelRange.Name" xml:space="preserve">
+    <value>rgDSO_labelRange</value>
+  </data>
+  <data name="&gt;&gt;rgDSO_labelRange.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeLabels, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgARC_amountPaid.Name" xml:space="preserve">
+    <value>rgARC_amountPaid</value>
+  </data>
+  <data name="&gt;&gt;rgARC_amountPaid.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeArc, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgARC_amountDue.Name" xml:space="preserve">
+    <value>rgARC_amountDue</value>
+  </data>
+  <data name="&gt;&gt;rgARC_amountDue.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeArc, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgARC_labelValue.Name" xml:space="preserve">
+    <value>rgARC_labelValue</value>
+  </data>
+  <data name="&gt;&gt;rgARC_labelValue.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeSingleLabel, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_value.Name" xml:space="preserve">
+    <value>rgDPO_value</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_value.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeArc, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_background.Name" xml:space="preserve">
+    <value>rgDPO_background</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_background.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeArc, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_needle.Name" xml:space="preserve">
+    <value>rgDPO_needle</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_needle.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeNeedle, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_labelValue.Name" xml:space="preserve">
+    <value>rgDPO_labelValue</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_labelValue.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeSingleLabel, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_labelRange.Name" xml:space="preserve">
+    <value>rgDPO_labelRange</value>
+  </data>
+  <data name="&gt;&gt;rgDPO_labelRange.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeLabels, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgCCC_value.Name" xml:space="preserve">
+    <value>rgCCC_value</value>
+  </data>
+  <data name="&gt;&gt;rgCCC_value.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeArc, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgCCC_background.Name" xml:space="preserve">
+    <value>rgCCC_background</value>
+  </data>
+  <data name="&gt;&gt;rgCCC_background.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeArc, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radialGaugeNeedle1.Name" xml:space="preserve">
+    <value>radialGaugeNeedle1</value>
+  </data>
+  <data name="&gt;&gt;radialGaugeNeedle1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeNeedle, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgCCC_labelValue.Name" xml:space="preserve">
+    <value>rgCCC_labelValue</value>
+  </data>
+  <data name="&gt;&gt;rgCCC_labelValue.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeSingleLabel, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;rgCCC_labelRange.Name" xml:space="preserve">
+    <value>rgCCC_labelRange</value>
+  </data>
+  <data name="&gt;&gt;rgCCC_labelRange.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.Gauges.RadialGaugeLabels, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radOffice2007ScreenTipElement1.Name" xml:space="preserve">
+    <value>radOffice2007ScreenTipElement1</value>
+  </data>
+  <data name="&gt;&gt;radOffice2007ScreenTipElement1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadOffice2007ScreenTipElement, Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;bsDashboard.Name" xml:space="preserve">
+    <value>bsDashboard</value>
+  </data>
+  <data name="&gt;&gt;bsDashboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SCPageDashboard</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

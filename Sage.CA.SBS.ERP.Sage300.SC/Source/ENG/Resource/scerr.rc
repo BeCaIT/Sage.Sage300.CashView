@@ -1,0 +1,93 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+// Resource strings for C view template standard error messages
+//
+/////////////////////////////////////////////////////////////////////////////
+
+STRINGTABLE
+{
+   // Message bodies
+   IDERR_SC_KEYNUM_MSG           , "%s\n\nInvalid key number: %s."
+   IDERR_SC_FLDNUM_MSG           , "%s\n\nInvalid field number: %s."
+   IDERR_SC_FLDIDX_MSG           , "%s\n\nInvalid field index: %s."
+   IDERR_SC_MEMORY_MSG           , "%s\n\n%s failed due to insufficient memory.\nExit from one or more applications and retry."
+   IDERR_SC_DISABLED_MSG         , "%s\n\nAttempt to access disabled field '%s'."
+   IDERR_SC_READONLY_MSG         , "%s\n\nAttempt to change read-only field '%s'."
+   IDERR_SC_LIST_MSG             , "%s\n\nInvalid list choice put to field '%s'."
+   IDERR_SC_MASK_MSG             , "%s\n\nInvalid characters put to field '%s'."
+   IDERR_SC_DATUM_MSG            , "%s\n\nCorrupt data put to field '%s'."
+   IDERR_SC_SECURITY_MSG         , "%s\n\nAttempt to perform %s without security authorization."
+   IDERR_SC_FWDONLY_MSG          , "%s\n\nRecords cannot be read in reverse order.\nDatabase format does not support this operation."
+   IDERR_SC_VIEWLOAD_MSG         , "%s\n\nFailed to load view '%s'."
+   IDERR_SC_VIEWCALL_MSG         , "%s\n\nInvalid view operation requested: %s."
+   IDERR_SC_VIEWOPEN_MSG         , "%s\n\nFailed to open view."
+   IDERR_SC_VIEWCOMP_MSG         , "%s\n\nFailed to compose views."
+   IDERR_SC_SUBCMP_MSG           , "%s\n\nThis subclass view's composition list is incompatible with the base view's."
+   IDERR_SC_CMPKEY_MSG           , "%s\n\nThis view's foreign key declaration is incompatible with the composite view '%s'."
+   IDERR_SC_FILTER_DELETE_MSG    , "%s\n\nView's order must be set to primary key before calling %s."
+   IDERR_SC_BUFFER_MSG           , "%s\n\nBuffer used to access field '%s' is too small."
+
+   IDERR_SC_INVALID_OP           , "(Unknown view operation)"
+
+   IDERR_SC_ATTRIBUTES_OP        , "Field Attributes"
+   IDERR_SC_BLKGET_OP            , "Block Field Get"
+   IDERR_SC_BLKPUT_OP            , "Block Field Put"
+   IDERR_SC_BROWSE_OP            , "Query Browse"
+   IDERR_SC_CANCEL_OP            , "Transaction Cancel"
+   IDERR_SC_CLOSE_OP             , "Close View"
+   IDERR_SC_COMPOSE_OP           , "Compose Views"
+   IDERR_SC_COMPOSITES_OP        , "Composite Names"
+   IDERR_SC_CREATE_OP            , "Data Create"
+   IDERR_SC_DELETE_OP            , "Delete Record"
+   IDERR_SC_DIRTY_OP             , "Record Dirty"
+   IDERR_SC_DROP_OP              , "Data Drop"
+   IDERR_SC_EXISTS_OP            , "Record Exists"
+   IDERR_SC_FETCH_OP             , "Query Fetch"
+   IDERR_SC_FETCH_OP_LOCK        , "Query Fetch With Lock"
+   IDERR_SC_FIELD_OP             , "Field Information"
+   IDERR_SC_FIELDS_OP            , "Field Count"
+   IDERR_SC_GET_OP               , "Field Get"
+   IDERR_SC_INITIALIZE_OP        , "Record Initialize"
+   IDERR_SC_INSERT_OP            , "Record Insert"
+   IDERR_SC_KEY_OP               , "Key Information"
+   IDERR_SC_KEYS_OP              , "Key Count"
+   IDERR_SC_NAME_OP              , "Field Name"
+   IDERR_SC_OPEN_OP              , "Open View"
+   IDERR_SC_ORDER_OP             , "Set Order"
+   IDERR_SC_POST_OP              , "Transaction Commit"
+   IDERR_SC_PRESENTATION_OP      , "Field Presentation"
+   IDERR_SC_PROCESS_OP           , "Transaction Process"
+   IDERR_SC_PUT_OP               , "Field Put"
+   IDERR_SC_READ_OP              , "Record Read"
+   IDERR_SC_READ_OP_LOCK         , "Record Read With Lock"
+   IDERR_SC_SECURITY_OP          , "Security Attributes"
+   IDERR_SC_TYPE_OP              , "Field Type"
+   IDERR_SC_UNLOCK_OP            , "Record Unlock"
+   IDERR_SC_UPDATE_OP            , "Record Update"
+   IDERR_SC_VERIFY_OP            , "Record Verify"
+
+   IDERR_SC_INSTANCE_OPEN_OP     , "Instance Open"
+   IDERR_SC_FILTER_DELETE_OP     , "Filter Delete"
+   IDERR_SC_FILTER_FETCH_OP      , "Filter Fetch"
+   IDERR_SC_REVISION_CANCEL_OP   , "Revision Cancel"
+   IDERR_SC_REVISION_EXISTS_OP   , "Revision Exists"
+   IDERR_SC_REVISION_POST_OP     , "Revision Post"
+   IDERR_SC_REVISION_UNPOSTED_OP , "Revision Unposted"
+   IDERR_SC_TABLE_EMPTY_OP       , "Table Empty"
+
+   IDERR_SC_FILTER_SELECT_OP     , "Filter Select"
+   IDERR_SC_INSTANCE_NOTIFY_OP   , "Instance Notify"
+   IDERR_SC_INSTANCE_SECURITY_OP , "Instance Security"
+   IDERR_SC_RECORD_CLEAR_OP      , "Record Clear"
+   IDERR_SC_RECORD_GENERATE_OP   , "Record Generate"
+
+   IDERR_SC_FILTER_COUNT_OP      , "Filter Count"
+   IDERR_SC_REVISION_REKEY_OP    , "Revision Rekey"
+   IDERR_SC_INSTANCE_PROTOCOL_OP , "Instance Protocol"
+
+   IDERR_SC_INSTANCE_FIELDLIST_OP, "Instance Field List"
+   IDERR_SC_FIELD_NAME_OP        , "Field Long Name"
+   IDERR_SC_FIELD_EXISTS_OP      , "Field Exists"
+}

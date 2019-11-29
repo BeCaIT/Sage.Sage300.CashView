@@ -1,0 +1,129 @@
+//
+// Glyphicons
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+// Import the fonts
+@font-face {
+  font-family: 'Sage Armonye Icons';
+  src: url('@{icon-font-path}@{icon-font-name}.eot');
+  src: url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype'),
+       url('@{icon-font-path}@{icon-font-name}.woff') format('woff'),
+       url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype'),
+       url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
+}
+
+[data-icon]:before {
+  font-family: "Sage Armonye Icons";
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon {
+  position: relative;
+  display: inline-block;
+
+  &:before {
+    font-family: "Sage Armonye Icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    vertical-align: top;
+  }
+}
+
+.glyphicon-tick:before             { content: "a"; }
+.glyphicon-up:before               { content: "\25b2"; }
+.glyphicon-updown:before           { content: "c"; }
+.glyphicon-user:before             { content: "d"; }
+.glyphicon-window:before           { content: "e"; }
+.glyphicon-quick-help:before       { content: "f"; }
+.glyphicon-quick-close:before      { content: "\2297"; }
+.glyphicon-quick-add:before        { content: "\2295"; }
+.glyphicon-print:before            { content: "p"; }
+.glyphicon-prev-all:before         { content: "\ab"; }
+.glyphicon-quick-info:before       { content: "\a1"; }
+.glyphicon-quick-subtract:before   { content: "\2205"; }
+.glyphicon-refresh:before          { content: "m"; }
+.glyphicon-report:before           { content: "n"; }
+.glyphicon-setting:before          { content: "\2217"; }
+.glyphicon-star:before             { content: "\2666"; }
+.glyphicon-subtract:before         { content: "-"; }
+.glyphicon-task:before             { content: "r"; }
+.glyphicon-prev:before             { content: "<"; }
+.glyphicon-pound:before            { content: "\a3"; }
+.glyphicon-pin:before              { content: "u"; }
+.glyphicon-pencil:before           { content: "v"; }
+.glyphicon-note:before             { content: "w"; }
+.glyphicon-next-all:before         { content: "\bb"; }
+.glyphicon-next:before             { content: ">"; }
+.glyphicon-more:before             { content: "\2026"; }
+.glyphicon-menu:before             { content: "\39e"; }
+.glyphicon-mail:before             { content: "B"; }
+.glyphicon-magnifying-glass:before { content: "C"; }
+.glyphicon-lock:before             { content: "D"; }
+.glyphicon-leftright:before        { content: "\2194"; }
+.glyphicon-error:before            { content: "\f8"; }
+.glyphicon-euro:before             { content: "\20ac"; }
+.glyphicon-exit:before             { content: "H"; }
+.glyphicon-filter:before           { content: "F"; }
+.glyphicon-folder:before           { content: "J"; }
+.glyphicon-garbage:before          { content: "K"; }
+.glyphicon-graph-bar:before        { content: "L"; }
+.glyphicon-grid:before             { content: "M"; }
+.glyphicon-help:before             { content: "?"; }
+.glyphicon-home:before             { content: "O"; }
+.glyphicon-info:before             { content: "I"; }
+.glyphicon-inventory:before        { content: "Q"; }
+.glyphicon-layout:before           { content: "R"; }
+.glyphicon-email:before            { content: "S"; }
+.glyphicon-download:before         { content: "T"; }
+.glyphicon-down:before             { content: "\25bc"; }
+.glyphicon-dollar:before           { content: "$"; }
+.glyphicon-document:before         { content: "W"; }
+.glyphicon-doc-search:before       { content: "X"; }
+.glyphicon-doc-pdf:before          { content: "Y"; }
+.glyphicon-diagram:before          { content: "Z"; }
+.glyphicon-confirm:before          { content: "0"; }
+.glyphicon-columns:before          { content: "1"; }
+.glyphicon-collaborate:before      { content: "\2234"; }
+.glyphicon-close:before            { content: "x"; }
+.glyphicon-clock:before            { content: "4"; }
+.glyphicon-add:before              { content: "+"; }
+.glyphicon-alert:before            { content: "!"; }
+.glyphicon-ap:before               { content: "7"; }
+.glyphicon-ar:before               { content: "8"; }
+.glyphicon-arrow-left:before       { content: "\2190"; }
+.glyphicon-arrow-right:before      { content: "\2192"; }
+.glyphicon-bell:before             { content: "\""; }
+.glyphicon-bidirection:before      { content: "#"; }
+.glyphicon-calendar:before         { content: "\3c8"; }
+.glyphicon-cart:before             { content: "%"; }
+.glyphicon-chat:before             { content: "&"; }
+.glyphicon-check:before            { content: "\3bd"; }
+.glyphicon-clip:before             { content: "\a7"; }
+.glyphicon-zoom-in:before          { content: "g"; }
+.glyphicon-zoom-out:before         { content: "h"; }
+.glyphicon-list:before             { content: "i"; }
+.glyphicon-scroll-down:before      { content: "j"; }
+.glyphicon-scroll-up:before        { content: "k"; }
+.glyphicon-fax:before              { content: "l"; }
+.glyphicon-list-2:before           { content: "o"; }
+.glyphicon-start:before            { content: "q"; }
+

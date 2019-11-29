@@ -1,0 +1,36 @@
+//
+// Table SCLOAN for view SCLOAN
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements_____________decimals____validator______presents_____________flags__________attributes_____________
+*	loanNum		-				LOANNUM		string	SC_SIZEOF_DOCNUM		-				-					-							-					
+!  audt_Date   -           AUDTDATE    date     -                    -
+!  audt_Time   -           AUDTTIME    time     -                    -
+!  audt_User   -           AUDTUSER    string   SIZEOF_USERID        -
+!  audt_Org    -           AUDTORG     string   SIZEOF_ORGID         -
+*	status		-				STATUS		integer	-							-				StatusValid		StatusList				-					ATTR_CHECKEDITABLE
+*	reference	-				REFERENCE	string	SIZEOF_STD_DESC		-				-					-							-					ATTR_EDITABLE
+*	dtOffer		-				DTOFFER		date		-							-				-					-							-					ATTR_EDITABLE
+*	dtSubmit		-				DTSUBMIT		date		-							-				-					-							-					ATTR_EDITABLE
+*	usrSubmit	-				USRSUBMIT	string	SIZEOF_USERID			-				-					-							-					ATTR_EDITABLE
+*	emlSubmit	-				EMLSUBMIT	string	SIZEOF_EMAIL			-				-					-							-					ATTR_EDITABLE
+*	amtOffer		-				AMTOFFER		money		-							-				-					-							-					ATTR_EDITABLE
+*	amtRequest	-				AMTREQUEST	money		-							-				AmtRequestValid -							-					ATTR_CHECKEDITABLE|ATTR_REQUIRED
+*	contact		-				CONTACT		string	SIZEOF_COMP_CONTACT	-				NotBlankValid	-							-					ATTR_CHECKEDITABLE|ATTR_REQUIRED
+*	jobTitle		-				JOBTITLE		integer	-							-				-					-							-					ATTR_CHECKEDITABLE|ATTR_REQUIRED
+*	email			-				EMAIL			string	SIZEOF_EMAIL			-				EmailValid		-							-					ATTR_CHECKEDITABLE|ATTR_REQUIRED
+*	phone			-				PHONE			string	SIZEOF_PHONE			-				NotBlankValid	-							-					ATTR_CHECKEDITABLE|ATTR_REQUIRED
+*	mobile		-				MOBILE		string	SIZEOF_PHONE			-				-					-							-					ATTR_CHECKEDITABLE
+*	message		-				MESSAGE		string	255						-				-					-							-					ATTR_CHECKEDITABLE
+*	compName		-				COMPNAME		string	SIZEOF_COMP_NAME		-				-					-							-					ATTR_CHECKEDITABLE|ATTR_REQUIRED
+*	address1		-				ADDRESS1		string	SIZEOF_COMP_ADDRESS	-				-					-							-					ATTR_CHECKEDITABLE|ATTR_REQUIRED
+*	address2		-				ADDRESS2		string	SIZEOF_COMP_ADDRESS	-				-					-							-					ATTR_CHECKEDITABLE
+*	address3		-				ADDRESS3		string	SIZEOF_COMP_ADDRESS	-				-					-							-					ATTR_CHECKEDITABLE
+*	address4		-				ADDRESS4		string	SIZEOF_COMP_ADDRESS	-				-					-							-					ATTR_CHECKEDITABLE
+*	city			-				CITY			string	SIZEOF_COMP_CITY		-				-					-							-					ATTR_CHECKEDITABLE
+*	state			-				STATE			string	SIZEOF_COMP_STATE		-				-					-							-					ATTR_CHECKEDITABLE
+*	country		-				COUNTRY		string	SIZEOF_COMP_COUNTRY	-				-					-							-					ATTR_CHECKEDITABLE
+*	postal		-				POSTAL		string	SIZEOF_COMP_POSTCODE	-				-					-							-					ATTR_CHECKEDITABLE
+*	emailCC		-				EMAILCC		string	SIZEOF_EMAIL			-				-					-							-					ATTR_CHECKEDITABLE
+*35

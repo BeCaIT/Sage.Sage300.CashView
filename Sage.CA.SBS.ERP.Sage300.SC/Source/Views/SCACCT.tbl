@@ -1,0 +1,14 @@
+//
+// Table SCACCT for view SCACCT
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements_____________decimals____validator______presents_____________flags__________attributes_____________
+*	acctId		-				ACCTID		string	GLAMF_SIZ(ACCTID)		-
+!  audt_Date   -           AUDTDATE    date     -                    -
+!  audt_Time   -           AUDTTIME    time     -                    -
+!  audt_User   -           AUDTUSER    string   SIZEOF_USERID        -
+!  audt_Org    -           AUDTORG     string   SIZEOF_ORGID         -
+//*	fscsDsg		-				FSCSDSG		string	GLFISC_SIZ(FSCSDSG)	-
+*	include		-				INCLUDE		integer	-							-				-					YesNoList
+*10

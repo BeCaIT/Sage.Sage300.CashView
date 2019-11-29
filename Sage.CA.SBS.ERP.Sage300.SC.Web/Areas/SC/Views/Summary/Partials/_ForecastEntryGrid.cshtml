@@ -1,0 +1,15 @@
+﻿@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@*@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.ForecastEntryViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.ForecastEntry>*@
+@model Sage.CA.SBS.ERP.Sage300.SC.Models.ForecastEntry
+
+<script type="text/javascript">
+        var scForecastEntryGridFields = {
+            txtEffectiveDate: '@Html.SageTextBoxFor(m => m.EffectiveDate, new { id = "txtEffectiveDate", @class = "datepicker" })',
+            txtDescription: '@Html.SageTextBoxFor(m => m.Description, new { id = "txtDescription", @class = "" })',
+            txtInflow: '@Html.SageTextBoxFor(m => m.Inflow, new { id = "txtInflow", @class = "numeric" })',
+            txtOutflow: '@Html.SageTextBoxFor(m => m.Outflow, new { id = "txtOutflow", @class = "numeric" })'
+        };
+</script>
+
+@Html.KoKendoGrid("scForecastEntryGrid", "scForecastEntryGrid.data", "DocumentNumber", "scForecastEntryGrid.config", false, "gh180 summary-grid")

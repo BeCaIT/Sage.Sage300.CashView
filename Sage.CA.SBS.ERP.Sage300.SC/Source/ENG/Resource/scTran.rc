@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------------
+
+    File        :   scTran.rc
+    Purpose     :   Resource script for resource only DLL for a view.
+
+    Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+
+    Conventions:
+        0 -   299 view names/object names
+      300 -   599 key names
+      600 -  4999 field names
+     5000 -  8999 presentation
+     9000 -  9999 security
+    10000 - 59999 error messages and text
+    60000         program name
+    60001 - 65535 reserved by the system
+
+--------------------------------------------------------------------*/
+
+
+//////////////////////////////////////////////////////////////////////
+// For each view defined, add an include line for its ZZZZ.i resource
+// ID definition file.
+
+// +++
+#include "scTran.i"
+// ---
+
+STRINGTABLE
+{
+   ///////////////////////////////////////////////////////////////////
+   // Duplicate the following section for each view defined, and fill
+   // in the string resource definitions appropriately for each view.
+
+   // +++
+
+   //// View name
+   IDS_SCTRAN_VIEW_NAME			,    "Forecast Transaction"
+   IDS_SCTRAN_VIEW_NOUN			,    "Forecast Transactions"
+   //
+   //// Key names
+   IDS_SCTRAN_KEY_NAME			,    "Record Type/Source/Cust-Vend/Document/Payment"
+   //
+   //// Field names
+	IDS_SCTRAN_RECTYPE_FLD		,    "Record Type"
+	IDS_SCTRAN_SOURCE_FLD		,    "Source"
+   IDS_SCTRAN_CUSTVEND_FLD		,    "Customer/Vendor"
+   IDS_SCTRAN_DOCNUM_FLD		,    "Document Number"
+	IDS_SCTRAN_PAYMENTNBR_FLD	,    "Payment Number"
+	IDS_SCTRAN_TRANSTYPE_FLD	,    "Transaction Type"
+	//IDS_SCTRAN_PAYEE_FLD			,    "Payee"
+	IDS_SCTRAN_DOCDATE_FLD		,    "Document Date"
+	IDS_SCTRAN_DOCDESC_FLD		,    "Description"
+	IDS_SCTRAN_DATEDUE_FLD		,    "Due Date"
+	IDS_SCTRAN_AMTDUEHC_FLD		,    "Amount Due (Func.)"
+	IDS_SCTRAN_AMTPAIDHC_FLD	,    "Amount Paid (Func.)"
+	//
+	//// Field names (2)
+	IDS_SCTRAN2_AMTRMNHC_FLD	,    "Amount Remain (Func.)"
+	IDS_SCTRAN2_DAYSTOPAY_FLD	,    "Days To Pay"
+	IDS_SCTRAN2_AMTPRD0HC_FLD	,    "Amount Current (Func.)"
+	IDS_SCTRAN2_AMTPRD1HC_FLD	,    "Amount Period 1 (Func.)"
+	IDS_SCTRAN2_AMTPRD2HC_FLD	,    "Amount Period 1 (Func.)"
+	IDS_SCTRAN2_AMTPRD3HC_FLD	,    "Amount Period 1 (Func.)"
+	IDS_SCTRAN2_AMTPRD4HC_FLD	,    "Amount Period 1 (Func.)"
+	IDS_SCTRAN2_AMTPRD5HC_FLD	,    "Amount Period 1 (Func.)"
+	IDS_SCTRAN2_AMTPRD6HC_FLD	,    "Amount Period 1 (Func.)"
+	//
+   //// Presentation strings
+	//
+	//// Marks
+	//
+   //// Error messages
+}

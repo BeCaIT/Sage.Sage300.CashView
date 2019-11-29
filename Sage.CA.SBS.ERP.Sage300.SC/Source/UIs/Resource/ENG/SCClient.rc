@@ -1,0 +1,32 @@
+//*****************************************************************
+//
+// File: SCClient.rc
+// Application: Cashflow Management
+//
+// Copyright © 2019, Sage Software Asia Pte Ltd.  All rights reserved.
+//   All rights reserved.
+//
+//*****************************************************************
+
+#include "SCClientID.h"
+#include "SCVersion.rc2"
+
+STRINGTABLE
+BEGIN
+  // Required strings
+  101  "CashView"  // Application's display name
+  102  "Version 6.3A"  // Application's version
+  103  "Copyright © 2019 Sage Software Asia Pte.  All rights reserved."
+
+  // Strings used by multiple UIs in this application
+  // (Use ID constants defined in <AppID>Client.h)
+  // EXAMPLE:  IDS_AppwideMsg  "Application-wide shared message"
+END
+
+
+// Other resources used by multiple UIs in this application
+// (Use ID constants defined in <AppID>Client.h)
+// EXAMPLE: IDI_PicAppCust  ICON  DISCARDABLE  "PICAPPCUST.ICO"
+
+
+// +++

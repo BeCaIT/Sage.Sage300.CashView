@@ -1,0 +1,11 @@
+CPPVIEW							; pattern type (C++ template)
+AAAA=SC							; application id - symbolic constants
+aaaa=sc							; application id - filenames
+ZZZZ=SCTRAN						; view name - symbolic constants and module name
+zzzz=scTran						; view name - filenames
+xxxx=scTran						; view name - view routine prefix
+dddd=Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+									; copyright notice or view description
+tttt=SCTRAN						; table name
+pppp={'S','C','T','R','A','N',' ',' '}
+									; table name - padded to eight characters

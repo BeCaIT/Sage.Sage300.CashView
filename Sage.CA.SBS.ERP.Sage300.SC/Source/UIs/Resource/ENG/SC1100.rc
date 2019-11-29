@@ -1,0 +1,34 @@
+//*****************************************************************
+//
+// File: SC1100.rc
+// UI:	Cash Flow Management Dashboard
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd.
+//   All rights reserved.
+//
+//*****************************************************************
+
+#include "SC1100ID.h"
+#include "SCClientID.h"
+#include "SCVersion.rc2"
+
+// Required icon (displayed in UI's "About" box)
+101  ICON  DISCARDABLE  "ACCBUDG.ICO"
+
+STRINGTABLE
+BEGIN
+  // Required strings
+  101  "S/C Cash Flow Management Dashboard"  // UI's display name
+
+  // UI-specific strings
+  // (Use ID constants defined in <RotoID>ID.h)
+  // EXAMPLE:  IDS_MyMsg  "My message"
+END
+
+
+// Other UI-specific resources
+// (Use ID constants defined in <RotoID>ID.h)
+// EXAMPLE: IDI_PicCust  ICON  DISCARDABLE  "PICCUST.ICO"
+
+
+// +++

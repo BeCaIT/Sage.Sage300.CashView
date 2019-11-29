@@ -1,0 +1,46 @@
+#############################################################################
+#
+#  Linux/Unix main Makefile for application SC views
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+#  This main makefile includes an include and a main makefile for each view.
+#
+#############################################################################
+
+# Flag the phony targets
+.PHONY: all SeeBelow clean
+
+# Here you may set the various variables that may be required by accpac.mak
+# For example COPTS, INCSRCH, etc.
+
+include $(PLUS_INCLUDE)/accpac.gnumake
+
+# Note that iSC is a requirement but cannot be made; it must already exist.
+iSC = $(INCPATH)/sc.h $(INCPATH)/sc.i
+
+# Each of the following variables is augmented by the views' makefiles.
+ALL_VIEWS=
+ALL_INCLUDES=
+ALL_GENS=
+ALL_OBJS=
+
+# This is the first target.  However we won't know the value of ALL_VIEWS etc.
+# until after we have included all the gnumake and i.gnumake files.
+all: SeeBelow
+
+# A rule to generate the ver file corresponding to a def file
+%.ver: 
+	echo 'VER_1 {global:rotoEntry;identifyEntry;local:*;};' >$@
+
+# include each view's include makefile here
+include scOpt.i.gnumake
+
+# include each view's main makefile here
+include scOpt.gnumake
+
+# Now we know how to build the main target.
+SeeBelow: $(iSC) $(ALL_INCLUDES) $(ALL_VIEWS)
+
+clean:
+	rm -f $(ALL_INCLUDES) $(ALL_VIEWS) $(ALL_OBJS) $(ALL_GENS)

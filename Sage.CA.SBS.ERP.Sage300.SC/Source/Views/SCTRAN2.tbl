@@ -1,0 +1,15 @@
+//
+// Table SCTRAN2 for view SCTRAN
+//
+// Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+//
+//_C-name______C-type______name________type_____elements_____________decimals____validator______presents_____________flags__________attributes_____________
+*20 amtRmnHC	-				AMTRMNHC		money		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	daysToPay	-				DAYSTOPAY	integer	-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	amtPrd0HC	-				AMTPRD0HC	money		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	amtPrd1HC	-				AMTPRD1HC	money		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	amtPrd2HC	-				AMTPRD2HC	money		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	amtPrd3HC	-				AMTPRD3HC	money		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	amtPrd4HC	-				AMTPRD4HC	money		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	amtPrd5HC	-				AMTPRD5HC	money		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE
+*	amtPrd6HC	-				AMTPRD6HC	money		-							-				-					-							-					ATTR_EDITABLE|ATTR_CALCULATE

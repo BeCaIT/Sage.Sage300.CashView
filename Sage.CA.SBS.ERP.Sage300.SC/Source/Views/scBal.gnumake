@@ -1,0 +1,31 @@
+#############################################################################
+#
+#  Linux/Unix main makefile for scBal, application sc
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# See also scBal.i.gnumake
+#
+#############################################################################
+
+scBalOBJS = $(OBJPATH)/scBal.o $(OBJPATH)/scBal1.o
+
+$(RUNPATH)/scBal.so: $(scBalOBJS)
+
+# Require the scBal.ver at this stage so it will get built before the linking
+# stage.  (It cannot be a dependent of the scBal.so because that will upset the
+# linker)
+$(OBJPATH)/scBal.o: scBal.cpp $(isc) $(iscBal) scBal1.h scBal2.h scBal3.h scBal.ver
+
+$(OBJPATH)/scBal1.o: scBal1.cpp $(isc) $(iscBal) scBal1.h scBal2.h scBal3.h
+
+# If there is a SCBAL2 table add table generation dependencies here based
+# on the .tbl files
+$(GENPATH)/SCBAL.dep: SCBAL.tbl
+ifneq "scBal" "SCBAL"
+	gentable -ZscBal -T$^ -o$(GENPATH)
+	echo $@: $^ >$@
+endif
+
+ALL_VIEWS += $(RUNPATH)/scBal.so
+ALL_OBJS += $(scBalOBJS)

@@ -1,0 +1,24 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@using PayeeSummaryResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.PayeeSummaryResx
+@using SCCommonResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.SCCommonResx
+@using CommonResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.CommonResx
+
+<script type="text/javascript">
+    var scPayeeSummaryResources = {
+        FinderTitle: '@CommonResx.Select'
+        ,ProcessFailedMessage: '@Html.SageRaw(CommonResx.ProcessFailedMessage)'
+        ,DeleteConfirmMessage: '@Html.SageRaw(CommonResx.DeleteConfirmMessage)'
+        ,DeleteTitle: '@Html.SageRaw(CommonResx.Delete)'
+        ,ThresholdBreached: '@Html.SageRaw(SCCommonResx.ThresholdBreached)'
+        ,Ranking: '@Html.SageRaw(PayeeSummaryResx.Ranking)'
+        ,Customer: '@Html.SageRaw(PayeeSummaryResx.CustomerNumber)'
+        ,Vendor: '@Html.SageRaw(PayeeSummaryResx.VendorNumber)'
+        ,Customer: '@Html.SageRaw(PayeeSummaryResx.CustomerNumber)'
+        ,Payee: '@Html.SageRaw(((string)HttpContext.Current.Request.RequestContext.RouteData.Values["action"] == "AR") ? PayeeSummaryResx.CustomerNumber : PayeeSummaryResx.VendorNumber)'
+        ,Name: '@Html.SageRaw(PayeeSummaryResx.Name)'
+        ,CreditLimit: '@Html.SageRaw(PayeeSummaryResx.CreditLimit)'
+        ,HighestBalance: '@Html.SageRaw(PayeeSummaryResx.HighestBalance)'
+        ,OutstandingBalance: '@Html.SageRaw(PayeeSummaryResx.OutstandingBalance)'
+    };
+</script>

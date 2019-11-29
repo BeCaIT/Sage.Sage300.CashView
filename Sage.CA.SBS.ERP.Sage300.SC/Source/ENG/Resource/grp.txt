@@ -1,0 +1,53 @@
+; -----------------------------------------------------
+;
+;   Group resource file for SC
+;
+;   Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+;
+; -----------------------------------------------------
+
+[ HEADER ]
+application = "SC"
+version = "63A"
+language = "ENG"
+
+[ MENU ]
+id = "SC0000"
+icon = "FOLDER1"
+title = "CashView"
+caption = "CashView"
+parent = "DESKTOP"
+
+[ MENU ]
+id = "SC9000"
+icon = "ACCOUNT6"
+title = "S/C Setup"
+caption = "SETUP"
+parent = "SC0000"
+
+[ ITEM ]
+id = "SC9100"
+icon = "SETUPGL"
+title = "S/C Options"
+caption = "Options"
+parent = "SC9000"
+objectid = "SC9100"
+rsc="SCSETUP"
+
+;[ ITEM ]
+;id = "SC9999"
+;icon = "SETUPGL"
+;title = "S/C License Information"
+;caption = "License Information"
+;parent = "SC9000"
+;objectid = "SC9100"
+;rsc="SCSETUP"
+
+[ ITEM ]
+id = "SC1100"
+icon = "ACCBUDG"
+title = "S/C Inquiry"
+caption = "Inquiry"
+parent = "SC0000"
+objectid = "SC1100"
+rsc="SCINQUIRY"

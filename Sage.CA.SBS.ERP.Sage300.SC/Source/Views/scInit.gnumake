@@ -1,0 +1,31 @@
+#############################################################################
+#
+#  Linux/Unix main makefile for scInit, application sc
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# See also scInit.i.gnumake
+#
+#############################################################################
+
+scInitOBJS = $(OBJPATH)/scInit.o $(OBJPATH)/scInit1.o
+
+$(RUNPATH)/scInit.so: $(scInitOBJS)
+
+# Require the scInit.ver at this stage so it will get built before the linking
+# stage.  (It cannot be a dependent of the scInit.so because that will upset the
+# linker)
+$(OBJPATH)/scInit.o: scInit.cpp $(isc) $(iscInit) scInit1.h scInit2.h scInit3.h scInit.ver
+
+$(OBJPATH)/scInit1.o: scInit1.cpp $(isc) $(iscInit) scInit1.h scInit2.h scInit3.h
+
+# If there is a SCINIT2 table add table generation dependencies here based
+# on the .tbl files
+$(GENPATH)/SCINIT.dep: SCINIT.tbl
+ifneq "scInit" "SCINIT"
+	gentable -ZscInit -T$^ -o$(GENPATH)
+	echo $@: $^ >$@
+endif
+
+ALL_VIEWS += $(RUNPATH)/scInit.so
+ALL_OBJS += $(scInitOBJS)

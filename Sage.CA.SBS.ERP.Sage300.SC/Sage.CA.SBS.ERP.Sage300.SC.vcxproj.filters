@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Project">
+      <UniqueIdentifier>{c47075cf-0da0-425f-8636-69d1b98bc6de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENG">
+      <UniqueIdentifier>{6d05be20-65db-4760-afbd-8e3183e969c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIs">
+      <UniqueIdentifier>{5d884fe3-d737-4808-ad85-f31466465e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views">
+      <UniqueIdentifier>{6b826506-55f0-49a3-a3cf-e0f58759f32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENG\Resource">
+      <UniqueIdentifier>{817391d1-f310-4bd2-aa62-e1766725fcf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Header Files">
+      <UniqueIdentifier>{9a91162d-647a-4e6d-ae19-8a05f03d442f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Source Files">
+      <UniqueIdentifier>{e2f35dde-bee6-4408-80a3-82a500dc276a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Resource Files">
+      <UniqueIdentifier>{3009d4e0-f24a-4780-afa2-4eb2587a455b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0001 - SCOPT">
+      <UniqueIdentifier>{db3d0ec0-3795-4ba5-bca7-11109b9f7b34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0010 - SCACCT">
+      <UniqueIdentifier>{16472b48-5151-4599-92ab-4692c2adcfb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0100 - SCBAL">
+      <UniqueIdentifier>{674f3ceb-f9a7-4946-8874-73cee27dce12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0110 - SCTRAN">
+      <UniqueIdentifier>{3543d968-3199-4fe3-93d8-3e835998c21f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0800 - SCPRO">
+      <UniqueIdentifier>{332b33e2-30a6-4f9e-b205-c30ea3dd3f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0999 - SCINIT">
+      <UniqueIdentifier>{41fe5ff9-5f85-4f7f-8130-b32f2f218a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0001 - SCOPT\Header Files">
+      <UniqueIdentifier>{1388450e-f61d-4b38-987c-6fcd5da49df7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0001 - SCOPT\Resource Files">
+      <UniqueIdentifier>{4c9af783-8c6c-47ca-b91b-1287e3eac60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0001 - SCOPT\Source Files">
+      <UniqueIdentifier>{2da8aefe-a81b-40b6-b60c-a58b8cf1b4a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0010 - SCACCT\Header Files">
+      <UniqueIdentifier>{369bb13d-d3aa-4697-be20-389a0e62f2ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0010 - SCACCT\Source Files">
+      <UniqueIdentifier>{456c9086-8869-4c28-a968-ec0a18f98ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0010 - SCACCT\Resource Files">
+      <UniqueIdentifier>{a73cfd58-aecd-40c6-ac96-af53b1217dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0100 - SCBAL\Header Files">
+      <UniqueIdentifier>{ecf0d733-607a-4057-9133-863a3bb34b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0100 - SCBAL\Source Files">
+      <UniqueIdentifier>{94020d5c-5b1d-4ce5-bff3-8c9bc83a1de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0100 - SCBAL\Resource Files">
+      <UniqueIdentifier>{0e3a91a9-342e-4532-baed-f173aa738523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0110 - SCTRAN\Header Files">
+      <UniqueIdentifier>{acd61d5a-18f5-4889-9c40-47ce5db1edf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0110 - SCTRAN\Resource Files">
+      <UniqueIdentifier>{bc6b64dc-cc6f-4b54-b0a0-519f60f25b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0110 - SCTRAN\Source Files">
+      <UniqueIdentifier>{4bb1224b-f54c-45bc-b136-da07fabdccb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0800 - SCPRO\Header Files">
+      <UniqueIdentifier>{31c0eb91-452e-4b37-8ef5-9ae991f5bcf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0800 - SCPRO\Source Files">
+      <UniqueIdentifier>{412d5af1-3dc8-4564-a82a-355a7ef205ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0800 - SCPRO\Resource Files">
+      <UniqueIdentifier>{7a66bf62-b8d5-426a-aec3-3b9eb7ce9e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENG\Resource\Resource Files">
+      <UniqueIdentifier>{6e4c9e83-b6b6-42af-8fc8-31e18594b335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENG\Resource\Source Files">
+      <UniqueIdentifier>{2c03d716-92e8-4865-8da6-70e10ae07407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIs\Resource">
+      <UniqueIdentifier>{cd65f415-27e4-44fe-bf2c-7941999a5c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIs\Resource\ENG">
+      <UniqueIdentifier>{f4237e0e-d777-4355-a734-3bb386579f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0200 - SCLOAN">
+      <UniqueIdentifier>{e62bf18f-49db-4633-8e90-65c87ab09297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0200 - SCLOAN\Header Files">
+      <UniqueIdentifier>{64b47e6d-60c5-4e96-bc81-24349761e129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0200 - SCLOAN\Resource Files">
+      <UniqueIdentifier>{2de44b6f-8f3a-4945-8d54-a9445224af25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0200 - SCLOAN\Source Files">
+      <UniqueIdentifier>{f8b6552a-db47-486e-b93f-eaec7c3a3eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0999 - SCINIT\Header Files">
+      <UniqueIdentifier>{916e1196-b801-4142-add4-253bf19da3a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0999 - SCINIT\Source Files">
+      <UniqueIdentifier>{f985c593-fda4-4b72-b8a2-0bfadb799b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0999 - SCINIT\Resource Files">
+      <UniqueIdentifier>{4b0f26ad-14e4-4a85-9c64-aa20a903d3bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0899 - SCSCHDL">
+      <UniqueIdentifier>{4de8260a-fcf3-4b16-bd73-d4084bd688c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0899 - SCSCHDL\Header Files">
+      <UniqueIdentifier>{0c30b437-3adf-4409-9d04-5f69dc91307d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0899 - SCSCHDL\Source Files">
+      <UniqueIdentifier>{9b7c514a-d205-4610-893d-79a7192d0e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SC0899 - SCSCHDL\Resource Files">
+      <UniqueIdentifier>{2bef67aa-2bd2-4362-b5cd-6e30d67420f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\External">
+      <UniqueIdentifier>{3f9b2e3f-a926-4876-84de-e09709829604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIs\AccpacSC9100">
+      <UniqueIdentifier>{4f7df161-2e01-49cc-9c26-1420ad393983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\SCXXXX - SCUTIL">
+      <UniqueIdentifier>{f110fa1d-5ddf-4991-8613-1eeaf0a68538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENG\Reports">
+      <UniqueIdentifier>{b7f1228e-558d-4338-a614-5a7bd2b85aa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIs\BinaryCompat">
+      <UniqueIdentifier>{e9e87584-b822-487f-8e70-d4deae054af0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENG\Resource\Resource Files\images">
+      <UniqueIdentifier>{26be7348-b62c-4eac-8f5f-169017b27e1d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Project\SC.ptn">
+      <Filter>Project</Filter>
+    </None>
+    <None Include="Source\Project\makefile">
+      <Filter>Project</Filter>
+    </None>
+    <None Include="Source\Project\makefile.gnumake">
+      <Filter>Project</Filter>
+    </None>
+    <None Include="Source\Project\sc.i">
+      <Filter>Project\Header Files</Filter>
+    </None>
+    <None Include="Source\Project\sc.ini">
+      <Filter>Project\Resource Files</Filter>
+    </None>
+    <None Include="Source\Project\scdp.i">
+      <Filter>Project\Header Files</Filter>
+    </None>
+    <None Include="Source\Project\scerr.i">
+      <Filter>Project\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\scAcct.def">
+      <Filter>Views\SC0010 - SCACCT</Filter>
+    </None>
+    <None Include="Source\Views\scAcct.gnumake">
+      <Filter>Views\SC0010 - SCACCT</Filter>
+    </None>
+    <None Include="Source\Views\scAcct.i.gnumake">
+      <Filter>Views\SC0010 - SCACCT</Filter>
+    </None>
+    <None Include="Source\Views\scAcct.mak">
+      <Filter>Views\SC0010 - SCACCT</Filter>
+    </None>
+    <None Include="Source\Views\SCACCT.ptn">
+      <Filter>Views\SC0010 - SCACCT</Filter>
+    </None>
+    <None Include="Source\Views\scOpt.def">
+      <Filter>Views\SC0001 - SCOPT</Filter>
+    </None>
+    <None Include="Source\Views\scOpt.gnumake">
+      <Filter>Views\SC0001 - SCOPT</Filter>
+    </None>
+    <None Include="Source\Views\scOpt.i.gnumake">
+      <Filter>Views\SC0001 - SCOPT</Filter>
+    </None>
+    <None Include="Source\Views\scOpt.mak">
+      <Filter>Views\SC0001 - SCOPT</Filter>
+    </None>
+    <None Include="Source\Views\SCOPT.ptn">
+      <Filter>Views\SC0001 - SCOPT</Filter>
+    </None>
+    <None Include="Source\Views\scOpt.i">
+      <Filter>Views\SC0001 - SCOPT\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\SCOPT.tbl">
+      <Filter>Views\SC0001 - SCOPT\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCOPT2.tbl">
+      <Filter>Views\SC0001 - SCOPT\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\scAcct.i">
+      <Filter>Views\SC0010 - SCACCT\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\SCACCT.tbl">
+      <Filter>Views\SC0010 - SCACCT\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCACCT2.tbl">
+      <Filter>Views\SC0010 - SCACCT\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCBAL.ptn">
+      <Filter>Views\SC0100 - SCBAL</Filter>
+    </None>
+    <None Include="Source\Views\scBal.def">
+      <Filter>Views\SC0100 - SCBAL</Filter>
+    </None>
+    <None Include="Source\Views\scBal.gnumake">
+      <Filter>Views\SC0100 - SCBAL</Filter>
+    </None>
+    <None Include="Source\Views\scBal.i.gnumake">
+      <Filter>Views\SC0100 - SCBAL</Filter>
+    </None>
+    <None Include="Source\Views\scBal.mak">
+      <Filter>Views\SC0100 - SCBAL</Filter>
+    </None>
+    <None Include="Source\Views\scBal.i">
+      <Filter>Views\SC0100 - SCBAL\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\SCBAL.tbl">
+      <Filter>Views\SC0100 - SCBAL\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCBAL2.tbl">
+      <Filter>Views\SC0100 - SCBAL\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCTRAN.ptn">
+      <Filter>Views\SC0110 - SCTRAN</Filter>
+    </None>
+    <None Include="Source\Views\scTran.def">
+      <Filter>Views\SC0110 - SCTRAN</Filter>
+    </None>
+    <None Include="Source\Views\scTran.gnumake">
+      <Filter>Views\SC0110 - SCTRAN</Filter>
+    </None>
+    <None Include="Source\Views\scTran.i.gnumake">
+      <Filter>Views\SC0110 - SCTRAN</Filter>
+    </None>
+    <None Include="Source\Views\scTran.mak">
+      <Filter>Views\SC0110 - SCTRAN</Filter>
+    </None>
+    <None Include="Source\Views\scTran.i">
+      <Filter>Views\SC0110 - SCTRAN\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\SCTRAN.tbl">
+      <Filter>Views\SC0110 - SCTRAN\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCTRAN2.tbl">
+      <Filter>Views\SC0110 - SCTRAN\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCPRO.ptn">
+      <Filter>Views\SC0800 - SCPRO</Filter>
+    </None>
+    <None Include="Source\Views\scPro.def">
+      <Filter>Views\SC0800 - SCPRO</Filter>
+    </None>
+    <None Include="Source\Views\scPro.gnumake">
+      <Filter>Views\SC0800 - SCPRO</Filter>
+    </None>
+    <None Include="Source\Views\scPro.i.gnumake">
+      <Filter>Views\SC0800 - SCPRO</Filter>
+    </None>
+    <None Include="Source\Views\scPro.mak">
+      <Filter>Views\SC0800 - SCPRO</Filter>
+    </None>
+    <None Include="Source\Views\scPro.i">
+      <Filter>Views\SC0800 - SCPRO\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\SCPRO.tbl">
+      <Filter>Views\SC0800 - SCPRO\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\ENG.ptn">
+      <Filter>ENG\Resource</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\makefile">
+      <Filter>ENG\Resource</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\scEng.def">
+      <Filter>ENG\Resource</Filter>
+    </None>
+    <None Include="Source\UIs\Resource\Makefile">
+      <Filter>UIs\Resource</Filter>
+    </None>
+    <None Include="Source\UIs\Resource\ENG\SCVersion.rc2">
+      <Filter>UIs\Resource\ENG</Filter>
+    </None>
+    <None Include="Source\Views\makefile.gnumake">
+      <Filter>Views</Filter>
+    </None>
+    <None Include="Source\Views\makefile">
+      <Filter>Views</Filter>
+    </None>
+    <None Include="Source\Project\scrpt.ini">
+      <Filter>Project\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCLOAN.ptn">
+      <Filter>Views\SC0200 - SCLOAN</Filter>
+    </None>
+    <None Include="Source\Views\scLoan.def">
+      <Filter>Views\SC0200 - SCLOAN</Filter>
+    </None>
+    <None Include="Source\Views\scLoan.gnumake">
+      <Filter>Views\SC0200 - SCLOAN</Filter>
+    </None>
+    <None Include="Source\Views\scLoan.i.gnumake">
+      <Filter>Views\SC0200 - SCLOAN</Filter>
+    </None>
+    <None Include="Source\Views\scLoan.mak">
+      <Filter>Views\SC0200 - SCLOAN</Filter>
+    </None>
+    <None Include="Source\Views\SCLOAN.tbl">
+      <Filter>Views\SC0200 - SCLOAN\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\scLoan.i">
+      <Filter>Views\SC0200 - SCLOAN\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\SCINIT.ptn">
+      <Filter>Views\SC0999 - SCINIT</Filter>
+    </None>
+    <None Include="Source\Views\scInit.def">
+      <Filter>Views\SC0999 - SCINIT</Filter>
+    </None>
+    <None Include="Source\Views\scInit.gnumake">
+      <Filter>Views\SC0999 - SCINIT</Filter>
+    </None>
+    <None Include="Source\Views\scInit.i.gnumake">
+      <Filter>Views\SC0999 - SCINIT</Filter>
+    </None>
+    <None Include="Source\Views\scInit.mak">
+      <Filter>Views\SC0999 - SCINIT</Filter>
+    </None>
+    <None Include="Source\Views\scInit.i">
+      <Filter>Views\SC0999 - SCINIT\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\SCINIT.tbl">
+      <Filter>Views\SC0999 - SCINIT\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCSCHDL.ptn">
+      <Filter>Views\SC0899 - SCSCHDL</Filter>
+    </None>
+    <None Include="Source\Views\scSchdl.def">
+      <Filter>Views\SC0899 - SCSCHDL</Filter>
+    </None>
+    <None Include="Source\Views\scSchdl.gnumake">
+      <Filter>Views\SC0899 - SCSCHDL</Filter>
+    </None>
+    <None Include="Source\Views\scSchdl.i.gnumake">
+      <Filter>Views\SC0899 - SCSCHDL</Filter>
+    </None>
+    <None Include="Source\Views\scSchdl.mak">
+      <Filter>Views\SC0899 - SCSCHDL</Filter>
+    </None>
+    <None Include="Source\Views\scSchdl.i">
+      <Filter>Views\SC0899 - SCSCHDL\Header Files</Filter>
+    </None>
+    <None Include="Source\Views\SCSCHDL.tbl">
+      <Filter>Views\SC0899 - SCSCHDL\Resource Files</Filter>
+    </None>
+    <None Include="Source\Views\SCLOAN2.tbl">
+      <Filter>Views\SC0200 - SCLOAN\Resource Files</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACControl.cls">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACControls.cls">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACCustCtl.cls">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACCustCtls.cls">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACDBLinks.cls">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACDSControl.cls">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACDSControls.cls">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACLayoutManager.bas">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100.vbp">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100.vbw">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100Group.vbg">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE.vbp">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE.vbw">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE_Form.frm">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE_Form.frx">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100UICtrl.ctl">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\AccpacSC9100UICtrl.ctx">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACSystemManager.bas">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACTmplHelpIDs.bas">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACTmplResourceIDs.bas">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACTmplStrings.bas">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACUICustomizeBox.frm">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACUICustomizeBox.frx">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\ACCPACUIGlobals.bas">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\clsTabManager.cls">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\MSSCCPRJ.SCC">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\AccpacSC9100\WINAPI.bas">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </None>
+    <None Include="Source\UIs\BinaryCompat\AccpacSC9100.ocx">
+      <Filter>UIs\BinaryCompat</Filter>
+    </None>
+    <None Include="Source\UIs\Reg.cmd">
+      <Filter>UIs</Filter>
+    </None>
+    <None Include="Source\UIs\Unreg.cmd">
+      <Filter>UIs</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCAPCASH.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCAPTOP.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCARAGED.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCARTOP.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCCABK.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCINOUT.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCOPT.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCSUM01.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Reports\SCSUM03.rpt">
+      <Filter>ENG\Reports</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\0011-TestEmail.htm">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\27021-SGLoanRequest.htm">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\27022-SGTermsAndConditions.htm">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\80001-ThresholdAlert.htm">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\87021-SGLoanOffer.htm">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\87021Offer.mht">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\80001Alert.mht">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\87022Combined.mht">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\87021Offer.html">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\87022Combined.html">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\80001Alert.html">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\24582-MYTermsAndConditions.htm">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Source\Project\sc.txt">
+      <Filter>Project\Resource Files</Filter>
+    </Text>
+    <Text Include="Source\Project\roto.txt">
+      <Filter>Project\Resource Files</Filter>
+    </Text>
+    <Text Include="Source\ENG\Resource\grp.txt">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </Text>
+    <Text Include="Source\UIs\Resource\ENG\DEP.TXT">
+      <Filter>UIs\Resource\ENG</Filter>
+    </Text>
+    <Text Include="Source\UIs\AccpacSC9100\AccpacSC9100TestEXE_Form.log">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </Text>
+    <Text Include="Source\UIs\AccpacSC9100\AUIWizard.log">
+      <Filter>UIs\AccpacSC9100</Filter>
+    </Text>
+    <Text Include="Source\UIs\Build.txt">
+      <Filter>UIs</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Project\sc.c">
+      <Filter>Project\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scOpt.cpp">
+      <Filter>Views\SC0001 - SCOPT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scOpt1.cpp">
+      <Filter>Views\SC0001 - SCOPT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scAcct1.cpp">
+      <Filter>Views\SC0010 - SCACCT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scAcct.cpp">
+      <Filter>Views\SC0010 - SCACCT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scBal.cpp">
+      <Filter>Views\SC0100 - SCBAL\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scBal1.cpp">
+      <Filter>Views\SC0100 - SCBAL\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scTran.cpp">
+      <Filter>Views\SC0110 - SCTRAN\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scTran1.cpp">
+      <Filter>Views\SC0110 - SCTRAN\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scPro1.cpp">
+      <Filter>Views\SC0800 - SCPRO\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scPro.cpp">
+      <Filter>Views\SC0800 - SCPRO\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ENG\Resource\scEng.c">
+      <Filter>ENG\Resource\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scLoan.cpp">
+      <Filter>Views\SC0200 - SCLOAN\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scLoan1.cpp">
+      <Filter>Views\SC0200 - SCLOAN\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scInit.cpp">
+      <Filter>Views\SC0999 - SCINIT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scInit1.cpp">
+      <Filter>Views\SC0999 - SCINIT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scSchdl.cpp">
+      <Filter>Views\SC0899 - SCSCHDL\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scSchdl1.cpp">
+      <Filter>Views\SC0899 - SCSCHDL\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scSample.cpp">
+      <Filter>Views\SCXXXX - SCUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scEmail.cpp">
+      <Filter>Views\SCXXXX - SCUTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Views\scUtil.cpp">
+      <Filter>Views\SCXXXX - SCUTIL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Project\sc.h">
+      <Filter>Project\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scOpt1.h">
+      <Filter>Views\SC0001 - SCOPT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scOpt2.h">
+      <Filter>Views\SC0001 - SCOPT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scOpt3.h">
+      <Filter>Views\SC0001 - SCOPT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scOpt.h">
+      <Filter>Views\SC0001 - SCOPT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scAcct.h">
+      <Filter>Views\SC0010 - SCACCT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scAcct1.h">
+      <Filter>Views\SC0010 - SCACCT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scAcct2.h">
+      <Filter>Views\SC0010 - SCACCT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scAcct3.h">
+      <Filter>Views\SC0010 - SCACCT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scBal.h">
+      <Filter>Views\SC0100 - SCBAL\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scBal1.h">
+      <Filter>Views\SC0100 - SCBAL\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scBal2.h">
+      <Filter>Views\SC0100 - SCBAL\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scBal3.h">
+      <Filter>Views\SC0100 - SCBAL\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scTran.h">
+      <Filter>Views\SC0110 - SCTRAN\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scTran1.h">
+      <Filter>Views\SC0110 - SCTRAN\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scTran2.h">
+      <Filter>Views\SC0110 - SCTRAN\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scTran3.h">
+      <Filter>Views\SC0110 - SCTRAN\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scPro.h">
+      <Filter>Views\SC0800 - SCPRO\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scPro1.h">
+      <Filter>Views\SC0800 - SCPRO\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scPro2.h">
+      <Filter>Views\SC0800 - SCPRO\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scPro3.h">
+      <Filter>Views\SC0800 - SCPRO\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UIs\Resource\ENG\SCClientID.h">
+      <Filter>UIs\Resource\ENG</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UIs\Resource\ENG\SC9100ID.h">
+      <Filter>UIs\Resource\ENG</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scLoan.h">
+      <Filter>Views\SC0200 - SCLOAN\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scLoan1.h">
+      <Filter>Views\SC0200 - SCLOAN\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scLoan2.h">
+      <Filter>Views\SC0200 - SCLOAN\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scLoan3.h">
+      <Filter>Views\SC0200 - SCLOAN\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scInit.h">
+      <Filter>Views\SC0999 - SCINIT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scInit1.h">
+      <Filter>Views\SC0999 - SCINIT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scInit2.h">
+      <Filter>Views\SC0999 - SCINIT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scInit3.h">
+      <Filter>Views\SC0999 - SCINIT\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scSchdl.h">
+      <Filter>Views\SC0899 - SCSCHDL\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scSchdl1.h">
+      <Filter>Views\SC0899 - SCSCHDL\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scSchdl2.h">
+      <Filter>Views\SC0899 - SCSCHDL\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scSchdl3.h">
+      <Filter>Views\SC0899 - SCSCHDL\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UIs\Resource\ENG\SC1100ID.h">
+      <Filter>UIs\Resource\ENG</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Project\External\cscbsk.H">
+      <Filter>Project\External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Project\External\cscom.H">
+      <Filter>Project\External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Project\External\cssktb.H">
+      <Filter>Project\External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Project\External\glacgrp.H">
+      <Filter>Project\External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Project\External\glamf.H">
+      <Filter>Project\External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Project\External\glfisc.H">
+      <Filter>Project\External</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scValidation.h">
+      <Filter>Views\SCXXXX - SCUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scSample.h">
+      <Filter>Views\SCXXXX - SCUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scEmail.h">
+      <Filter>Views\SCXXXX - SCUTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Views\scUtil.h">
+      <Filter>Views\SCXXXX - SCUTIL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\ENG\Resource\scdp.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\ENG\Resource\scEng.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\ENG\Resource\scerr.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\ENG\Resource\scOpt.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\UIs\Resource\ENG\SCClient.rc">
+      <Filter>UIs\Resource\ENG</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\UIs\Resource\ENG\SC9100.rc">
+      <Filter>UIs\Resource\ENG</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\ENG\Resource\scAcct.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\ENG\Resource\scBal.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\ENG\Resource\scPro.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\ENG\Resource\scTran.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\UIs\Resource\ENG\SC1100.rc">
+      <Filter>UIs\Resource\ENG</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\ENG\Resource\scLoan.rc">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Source\ENG\Resource\images\block.jpg">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\images\divider.png">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\images\dot.png">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\images\fb.png">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\images\ico1.png">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\images\ico2.png">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\images\ico3.png">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\images\masthead.jpg">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\images\sc.com.png">
+      <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

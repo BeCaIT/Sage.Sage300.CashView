@@ -1,0 +1,31 @@
+#############################################################################
+#
+#  Linux/Unix main makefile for scAcct, application sc
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+# See also scAcct.i.gnumake
+#
+#############################################################################
+
+scAcctOBJS = $(OBJPATH)/scAcct.o $(OBJPATH)/scAcct1.o
+
+$(RUNPATH)/scAcct.so: $(scAcctOBJS)
+
+# Require the scAcct.ver at this stage so it will get built before the linking
+# stage.  (It cannot be a dependent of the scAcct.so because that will upset the
+# linker)
+$(OBJPATH)/scAcct.o: scAcct.cpp $(isc) $(iscAcct) scAcct1.h scAcct2.h scAcct3.h scAcct.ver
+
+$(OBJPATH)/scAcct1.o: scAcct1.cpp $(isc) $(iscAcct) scAcct1.h scAcct2.h scAcct3.h
+
+# If there is a SCACCT2 table add table generation dependencies here based
+# on the .tbl files
+$(GENPATH)/SCACCT.dep: SCACCT.tbl
+ifneq "scAcct" "SCACCT"
+	gentable -ZscAcct -T$^ -o$(GENPATH)
+	echo $@: $^ >$@
+endif
+
+ALL_VIEWS += $(RUNPATH)/scAcct.so
+ALL_OBJS += $(scAcctOBJS)

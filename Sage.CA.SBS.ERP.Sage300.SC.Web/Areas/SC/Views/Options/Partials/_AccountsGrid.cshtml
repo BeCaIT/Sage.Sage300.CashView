@@ -1,0 +1,9 @@
+﻿@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.AccountViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Account>
+
+<script type="text/javascript">
+    var scAccountsGridFields = {
+        chkInclude: '@Html.SageCheckBoxFor(m => m.Data.Include, new { sagechecked = "Include" })'
+    }
+</script>
+@Html.KoKendoGrid("scAccountsGrid", "scOptionsUI.optionsModel.Data.Accounts.Items", "AccountNumber", "scAccountsGrid.config")

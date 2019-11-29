@@ -1,0 +1,50 @@
+@* Copyright © 2019 Sage Software Asia Pte Ltd *@
+
+@model Sage.CA.SBS.ERP.Sage300.SC.Web.Models.OptionsViewModel<Sage.CA.SBS.ERP.Sage300.SC.Models.Options>
+@using OptionsResx = Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms.OptionsResx
+
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.AreaConstants
+@using Sage.CA.SBS.ERP.Sage300.Common.Resources
+@using Sage.CA.SBS.ERP.Sage300.Common.Web.HtmlHelperExtension
+@using Sage.CA.SBS.ERP.Sage300.Common.Models.Enums
+@using AnnotationsResx = Sage.CA.SBS.ERP.Sage300.Common.Resources.AnnotationsResx
+
+<script type="text/javascript">
+    @Html.ConvertToJsVariableUsingNewtonSoft("scOptionsViewModel", Model)
+</script>
+
+@Html.Partial("~/Areas/SC/Views/Options/Partials/_Localization.cshtml")
+
+<div>@Html.ValidationSummary(true)</div>
+<div id="success" class="message"></div>
+
+<div class="form-screen">
+    <div id="message"></div>
+    <header>
+        <section class="header-group-1">
+            <div class="header-wrapper">
+                <div class="header-headline">@Html.SageHeader3Label("OptionsHeader", OptionsResx.Entity)</div>
+            </div>
+            <div class="flag-required">@Html.SageLabel(CommonResx.RequiredLegend, new { @class = "required" })</div>
+        </section>
+    </header>
+
+    <div id="scOptionsTabStrip" class="tab-group" style="display: none">
+        <ul>
+            <li id="tabCompany" class="k-state-active">@OptionsResx.TabCompany</li>
+            <li id="tabProcessing">@OptionsResx.TabProcessing</li>
+            <li id="tabAccounts">@OptionsResx.TabAccounts</li>
+            <li id="tabEmail">@OptionsResx.TabEmail</li>
+        </ul>
+        @Html.Partial("~/Areas/SC/Views/Options/Partials/_Company.cshtml")
+        @Html.Partial("~/Areas/SC/Views/Options/Partials/_Processing.cshtml")
+        @Html.Partial("~/Areas/SC/Views/Options/Partials/_Accounts.cshtml")
+        @Html.Partial("~/Areas/SC/Views/Options/Partials/_Email.cshtml")
+    </div>
+    <section class="footer-group">
+        @if (Model.UserAccess.SecurityType.HasFlag(SecurityType.Modify))
+        {
+            @Html.KoSageButton("btnSave", new { }, new { @value = CommonResx.Save, @id = "btnSave", @class = "btn btn-primary" })
+        }
+    </section>
+</div>

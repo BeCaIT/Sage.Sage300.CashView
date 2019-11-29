@@ -1,0 +1,20 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Security resources for SC
+;;
+;; Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;SCINQUIRE=9999
+;;SCMAINTAIN=9998
+SCSETUP=59300
+SCINQUIRY=59310
+SCPROCESS=59311
+SCPROCESS:SCINQUIRY
+SCFCENTRY=59321
+SCFCENTRY:SCINQUIRY
+SCLINQUIRY=59330
+SCLINQUIRY:SCINQUIRY
+SCLENTRY=59331
+SCLENTRY:SCLINQUIRY,SCINQUIRY

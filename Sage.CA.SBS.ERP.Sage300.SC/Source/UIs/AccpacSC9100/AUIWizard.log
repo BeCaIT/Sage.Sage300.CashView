@@ -1,0 +1,18 @@
+You must still make the following changes manually (within the VB IDE):
+* FIRST, rename the UserControl to AccpacSC9100UICtrl, then save the project group.
+* NEXT, remove the following menu items:
+    - mnuFile_Import
+    - popmnuFile_Import
+    - mnuFile_Export
+    - popmnuFile_Export
+    - mnuFile_s3
+    - popmnuFile_s3
+  then save the project group AGAIN.
+* Create and build the UI-specific resource DLL using the sample RC files and makefile as a basis (see ACCPACUIGlobals.bas for details).
+
+When editing the UserControl's code, most of the code you'll write will be in the "Commonly Modified Methods" sections.  Commented instructions are found in the code.
+
+Start by focusing on these methods:
+ * ActivateDataSources, DeactivateDataSources
+ * CheckAccessRights, ResetAccessRights
+ * InitAppCtlsCallout

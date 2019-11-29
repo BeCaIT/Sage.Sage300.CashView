@@ -1,0 +1,27 @@
+#############################################################################
+#
+#  Linux/Unix Makefile for sc common definitions
+#
+#  Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+#
+#############################################################################
+
+include $(PLUS_INCLUDE)/accpac.gnumake
+
+ALL_INCLUDES= \
+   $(INCPATH)/sc.h \
+   $(INCPATH)/sc.i \
+   $(INCPATH)/scerr.i \
+   $(INCPATH)/scdp.i \
+
+ALL_RESOURCES= \
+    $(RUNPATH)/roto.dat \
+    $(RUNPATH)/sc.ini \
+
+#############################################################################
+# Targets
+
+all: $(ALL_INCLUDES) $(ALL_RESOURCES)
+
+clean:
+	rm -f $(ALL_INCLUDES) $(ALL_RESOURCES)

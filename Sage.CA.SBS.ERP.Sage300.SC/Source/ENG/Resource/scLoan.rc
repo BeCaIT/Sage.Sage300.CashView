@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------------
+
+    File        :   scPro.rc
+    Purpose     :   Resource script for resource only DLL for a view.
+
+    Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+
+    Conventions:
+        0 -   299 view names/object names
+      300 -   599 key names
+      600 -  4999 field names
+     5000 -  8999 presentation
+     9000 -  9999 security
+    10000 - 59999 error messages and text
+    60000         program name
+    60001 - 65535 reserved by the system
+
+--------------------------------------------------------------------*/
+
+
+//////////////////////////////////////////////////////////////////////
+// For each view defined, add an include line for its ZZZZ.i resource
+// ID definition file.
+
+// +++
+#include "scLoan.i"
+// ---
+
+STRINGTABLE
+{
+   ///////////////////////////////////////////////////////////////////
+   // Duplicate the following section for each view defined, and fill
+   // in the string resource definitions appropriately for each view.
+
+   // +++
+
+   //// View name
+   IDS_SCLOAN_VIEW_NAME			,    "Loan History"
+   IDS_SCLOAN_VIEW_NOUN			,    "Loan Histories"
+   //
+   //// Key names
+   IDS_SCLOAN_KEY_NAME			,    "Loan Number"
+	IDS_SCLOAN_KEY1_NAME			,    "Loan Status"
+	//
+   //// Field names
+   IDS_SCLOAN_LOANNUM_FLD		,    "Loan Number"
+	IDS_SCLOAN_STATUS_FLD		,    "Status"
+	IDS_SCLOAN_REFERENCE_FLD	,    "Reference"
+	IDS_SCLOAN_DTOFFER_FLD		,    "Date Offerred"
+	IDS_SCLOAN_DTSUBMIT_FLD		,    "Date Submitted"
+	IDS_SCLOAN_USRSUBMIT_FLD	,    "Submitted By"
+	IDS_SCLOAN_EMLSUBMIT_FLD	,    "From"
+	IDS_SCLOAN_AMTOFFER_FLD		,    "Loan Cap Amount"
+	IDS_SCLOAN_AMTREQUEST_FLD	,    "Loan Requested"
+	IDS_SCLOAN_CONTACT_FLD		,    "Key Contact"
+	IDS_SCLOAN_JOBTITLE_FLD		,    "Job Title"
+	IDS_SCLOAN_EMAIL_FLD			,    "Email"
+	IDS_SCLOAN_PHONE_FLD			,    "Phone"
+	IDS_SCLOAN_MOBILE_FLD		,    "Mobile"
+	IDS_SCLOAN_MESSAGE_FLD		,    "Additional Comments"
+	IDS_SCLOAN_COMPNAME_FLD		,    "Legal Name"
+	IDS_SCLOAN_ADDRESS1_FLD		,    "Address"
+	IDS_SCLOAN_ADDRESS2_FLD		,    ""
+	IDS_SCLOAN_ADDRESS3_FLD		,    ""
+	IDS_SCLOAN_ADDRESS4_FLD		,    ""
+	IDS_SCLOAN_CITY_FLD			,    "City"
+	IDS_SCLOAN_STATE_FLD			,    "State"
+	IDS_SCLOAN_COUNTRY_FLD		,    "Country"
+	IDS_SCLOAN_POSTAL_FLD		,    "Postal Code"
+	IDS_SCLOAN_EMAILCC_FLD		,    "CC"
+	//
+	//// Field names (2)
+	IDS_SCLOAN2_BRN_FLD			,    "BRN"
+	IDS_SCLOAN2_RPTCUR_FLD		,    "Currency"
+	IDS_SCLOAN2_EMAILSUBJ_FLD	,    "Subject"
+	IDS_SCLOAN2_EMAILFROM_FLD	,    "From"
+	IDS_SCLOAN2_EMAILTO_FLD		,    "To"
+	//
+   //// Presentation strings
+	IDS_SCLOAN_STATUS_PENDING		,    "New"
+	IDS_SCLOAN_STATUS_SUBMITTED	,    "Submitted"
+	IDS_SCLOAN_STATUS_CANCELLED	,    "Cancelled"
+	IDS_SCLOAN_STATUS_REJECTED		,    "Rejected"
+	IDS_SCLOAN_STATUS_APPROVED		,    "Approved"
+	//
+	//// Messages
+	IDS_SCLOAN_MESSAGE_RESEND		,    "[RESEND] - %s"
+	//
+	IDS_SCLOAN_MESSAGE_SG_SUBJECT	,    "Standard Chartered Loan request submission"
+	IDS_SCLOAN_MESSAGE_SG_BODY		,    "Loan request body: %s\n%s\n%s"
+	//
+	//// Marks
+	//
+   //// Error messages
+	IDERR_SCLOAN_AMOUNT_REQUEST	,    "Invalid Input. Request amount must be greater than 0 and less than Loan Cap Amount."
+	//
+	IDERR_SCLOAN_SUBMIT_FAILED		,    "Application Error. Unable to submit Loan request. Please check Email Settings in S/C Options."
+}
+
+
+//
+//// HTML Files
+27021	HTML	"27021-SGLoanRequest.htm"
+27022	HTML	"27022-SGTermsAndConditions.htm"
+//
+24582	HTML	"24582-MYTermsAndConditions.htm"

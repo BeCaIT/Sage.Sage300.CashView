@@ -1,0 +1,318 @@
+/*--------------------------------------------------------------------
+
+    File        :   scOpt.rc
+    Purpose     :   Resource script for resource only DLL for a view.
+
+    Copyright © 2019 Sage Software Asia Pte Ltd. All rights reserved.
+
+    Conventions:
+        0 -   299 view names/object names
+      300 -   599 key names
+      600 -  4999 field names
+     5000 -  8999 presentation
+     9000 -  9999 security
+    10000 - 59999 error messages and text
+    60000         program name
+    60001 - 65535 reserved by the system
+
+--------------------------------------------------------------------*/
+
+
+//////////////////////////////////////////////////////////////////////
+// For each view defined, add an include line for its ZZZZ.i resource
+// ID definition file.
+
+// +++
+#include "scOpt.i"
+// ---
+
+STRINGTABLE
+{
+   ///////////////////////////////////////////////////////////////////
+   // Duplicate the following section for each view defined, and fill
+   // in the string resource definitions appropriately for each view.
+
+   // +++
+
+   //// View name
+   IDS_SCOPT_VIEW_NAME			,    "Cash Flow Management Options"
+   IDS_SCOPT_VIEW_NOUN			,    "Cash Flow Management Options"
+   //
+   //// Key names
+   IDS_SCOPT_KEY_NAME			,    "Dummy"
+   //
+   //// Field names - Company Options
+   IDS_SCOPT_DUMMY_FLD			,    "Dummy"
+   IDS_SCOPT_CONTACT_FLD		,    "Key Contact"
+   IDS_SCOPT_JOBTITLE_FLD		,    "Job Title"
+   IDS_SCOPT_EMAIL_FLD			,    "Email"
+	IDS_SCOPT_PHONE_FLD			,    "Telephone"
+	IDS_SCOPT_MOBILE_FLD			,    "Mobile Phone"
+	IDS_SCOPT_COUNTRY_FLD		,    "Country"
+	IDS_SCOPT_INDUSTRY_FLD		,    "Industry"
+	IDS_SCOPT_ENTITYTYPE_FLD	,    "Entity Type"
+	IDS_SCOPT_BRYEAR_FLD			,    "Business Reg. Year"
+	//
+	//// Field names - Processing Options
+	IDS_SCOPT_CBALTHRHD_FLD		,    "Cash Bal. Threshold"
+	IDS_SCOPT_FCPERIOD1E_FLD	,    "Forecast Period 1 End"
+	IDS_SCOPT_FCPERIOD2E_FLD	,    "Forecast Period 2 End"
+	IDS_SCOPT_FCPERIOD3E_FLD	,    "Forecast Period 3 End"
+	IDS_SCOPT_FCPERIOD4E_FLD	,    "Forecast Period 4 End"
+	IDS_SCOPT_FCPERIOD5E_FLD	,    "Forecast Period 5 End"
+	IDS_SCOPT_PENDINGGL_FLD		,    "Include Pending G/L Transactions"
+	IDS_SCOPT_PENDINGAR_FLD		,    "Include Pending A/R Transactions"
+	IDS_SCOPT_PENDINGAP_FLD		,    "Include Pending A/P Transactions"
+	IDS_SCOPT_LPROCDATE_FLD		,    "Last Processed Date"
+	IDS_SCOPT_LPROCTIME_FLD		,    "Last Processed Time"
+	//
+	//// Field names - Email Options
+	IDS_SCOPT_EMAILALERT_FLD	,    "Use Email for Notification"
+	IDS_SCOPT_EMAILOFFER_FLD	,    "I agree to receiving promotional materials from Sage and other third-party companies via email, in accordance with the Personal Data Protection Act 2012 and our data protection policy (available at our website). Please note that all communications sent to you will be through Sage."
+	IDS_SCOPT_EMAILSNUTL_FLD	,    "Snooze Email Until"
+	IDS_SCOPT_EMAILHOST_FLD		,    "Server Name"
+	IDS_SCOPT_EMAILPORT_FLD		,    "Server Port"
+	IDS_SCOPT_EMAILSSL_FLD		,    "Use SSL"
+	IDS_SCOPT_EMAILUSER_FLD		,    "User Name"
+	IDS_SCOPT_EMAILPSWD_FLD		,    "Password"
+	IDS_SCOPT_EMAILADDR_FLD		,    "Sender's Email"
+	IDS_SCOPT_EMAILTO_FLD		,    "Recipients' Emails"
+	//
+	//// Field names - Document Numbering Options
+	IDS_SCOPT_CFELENGTH_FLD		,    "Forecast Number Length"
+	IDS_SCOPT_CFEPREFIX_FLD		,    "Forecast Prefix"
+	IDS_SCOPT_CFENEXTNBR_FLD	,    "Next Forecast Number"
+	//
+	//// Field names (2) - Company Options
+	IDS_SCOPT2_BRN_FLD			,    "Business Reg. No."
+	IDS_SCOPT2_BRYEARC_FLD		,    "Business Reg. Year (Cal.)"
+	IDS_SCOPT2_HOMECUR_FLD		,    "Functional Currency"
+	IDS_SCOPT2_INDUSTRYSG_FLD	,    "Industry"
+	IDS_SCOPT2_INDUSTRYMY_FLD	,    "Industry"
+	IDS_SCOPT2_INDUSTRYHK_FLD	,    "Industry"
+	IDS_SCOPT2_INDUSTRYAU_FLD	,    "Industry"
+	IDS_SCOPT2_INDUSTRYNZ_FLD	,    "Industry"
+	IDS_SCOPT2_ENTTYPESG_FLD	,    "Entity Type"
+	IDS_SCOPT2_ENTTYPEMY_FLD	,    "Entity Type"
+	IDS_SCOPT2_ENTTYPEHK_FLD	,    "Entity Type"
+	IDS_SCOPT2_ENTTYPEAU_FLD	,    "Entity Type"
+	IDS_SCOPT2_ENTTYPENZ_FLD	,    "Entity Type"
+	//
+	//// Field names (2) - Processing Options
+	IDS_SCOPT2_FCPERIOD1S_FLD	,    "Forecast Period 1 Start"
+	IDS_SCOPT2_FCPERIOD2S_FLD	,    "Forecast Period 2 Start"
+	IDS_SCOPT2_FCPERIOD3S_FLD	,    "Forecast Period 3 Start"
+	IDS_SCOPT2_FCPERIOD4S_FLD	,    "Forecast Period 4 Start"
+	IDS_SCOPT2_FCPERIOD5S_FLD	,    "Forecast Period 5 Start"
+	IDS_SCOPT2_FCPERIOD6S_FLD	,    "Forecast Period 6 Start"
+	//
+	////
+	IDS_SCOPT2_CURDATE_FLD		,    "Current Date"
+	IDS_SCOPT2_CURYEAR_FLD		,    "Current Year"
+	IDS_SCOPT2_CURPERIOD_FLD	,    "Current Period"
+	//
+	//// Field names (2) - Currency Rates
+	IDS_SCOPT2_RPTCUR_FLD		,    "Reporting Currency"
+	IDS_SCOPT2_RATE_FLD			,    "Conversion Rate"
+	IDS_SCOPT2_RATEOPER_FLD		,    "Rate Operator"
+	IDS_SCOPT2_RATEDATE_FLD		,    "Rate Date"
+	//
+	//// Field names (2) - Email Options
+	IDS_SCOPT2_EMAILPSWDS_FLD	,    "Password"
+	IDS_SCOPT2_EMAILTEST_FLD	,    "To"
+	//
+	//// Field names (2) - Document Numbering Options
+	IDS_SCOPT2_CFEDOCNUMD_FLD	,    "Default Forecast Number"
+	IDS_SCOPT2_CFEDOCNUMN_FLD	,    "Next Forecast Number"
+	//
+	//// Field names (2) - Misc
+	IDS_SCOPT2_PROCESSCMD_FLD	,    "Process Command"
+	//
+   //// Presentation strings
+	//
+	//// Job Titles
+	IDS_SCOPT_JOBTITLE_0			,    "Select Job Title"
+	IDS_SCOPT_JOBTITLE_1			,    "Owner/Partner/Principal/GM"
+	IDS_SCOPT_JOBTITLE_2			,    "President/CEO"
+	IDS_SCOPT_JOBTITLE_3			,    "CFO/VP of Finance"
+	IDS_SCOPT_JOBTITLE_4			,    "Director/Senior Manager"
+	IDS_SCOPT_JOBTITLE_5			,    "Accounting Manager/Controller"
+	IDS_SCOPT_JOBTITLE_15		,    "Others"
+	//
+	//// Countries
+	IDS_SCOPT_COUNTRY_OTHERS		,    "Others"
+	IDS_SCOPT_COUNTRY_SINGAPORE	,    "Singapore"
+	IDS_SCOPT_COUNTRY_MALAYSIA		,    "Malaysia"
+	IDS_SCOPT_COUNTRY_HONGKONG		,    "Hong Kong"
+	IDS_SCOPT_COUNTRY_AUSTRALIA	,    "Australia"
+	IDS_SCOPT_COUNTRY_NEWZEALAND	,    "New Zealand"
+	//
+	//// Industries
+	IDS_SCOPT_SIC_NONE			,    "Select Industry"
+	//
+	//// Industries - Singapore
+	IDS_SCOPT_SIC_SG_A			,    "Agriculture and Fishing"
+	IDS_SCOPT_SIC_SG_B			,    "Mining and Quarrying"
+	IDS_SCOPT_SIC_SG_C			,    "Manufacturing"
+	IDS_SCOPT_SIC_SG_D			,    "Electricity, Gas, Steam and Air-Conditioning Supply"
+	IDS_SCOPT_SIC_SG_E			,    "Water Supply; Sewerage, Waste Management and Remediation Activities"
+	IDS_SCOPT_SIC_SG_F			,    "Construction"
+	IDS_SCOPT_SIC_SG_G			,    "Wholesale and Retail Trade"
+	IDS_SCOPT_SIC_SG_H			,    "Transportation and Storage"
+	IDS_SCOPT_SIC_SG_I			,    "Accomodation and Food Service Activities"
+	IDS_SCOPT_SIC_SG_J			,    "Information and Communications"
+	IDS_SCOPT_SIC_SG_K			,    "Financial and Insurance Activities"
+	IDS_SCOPT_SIC_SG_L			,    "Real Estate Activities"
+	IDS_SCOPT_SIC_SG_M			,    "Professional, Scientific and Technical Activities"
+	IDS_SCOPT_SIC_SG_N			,    "Administrative and Support Service Activities"
+	IDS_SCOPT_SIC_SG_O			,    "Public Administration and Defence"
+	IDS_SCOPT_SIC_SG_P			,    "Education"
+	IDS_SCOPT_SIC_SG_Q			,    "Health and Social Services"
+	IDS_SCOPT_SIC_SG_R			,    "Arts, Entertainment and Recreation"
+	IDS_SCOPT_SIC_SG_S			,    "Other Service Activities"
+	IDS_SCOPT_SIC_SG_T			,    "Activities of Households as Employers of Domestic Personnel"
+	IDS_SCOPT_SIC_SG_U			,    "Activities of Extra-Territorial Organisations and Bodies"
+	IDS_SCOPT_SIC_SG_V			,    "Activities Not Adequately Defined"
+	//
+	//// Industries - Malaysia
+	IDS_SCOPT_SIC_MY_A			,    "Agriculture, Forestry and Fishing"
+	IDS_SCOPT_SIC_MY_B			,    "Mining"
+	IDS_SCOPT_SIC_MY_C			,    "Construction"
+	IDS_SCOPT_SIC_MY_D			,    "Manufacturing"
+	IDS_SCOPT_SIC_MY_E			,    "Transportation and Public Utilities"
+	IDS_SCOPT_SIC_MY_F			,    "Wholesale Trade"
+	IDS_SCOPT_SIC_MY_G			,    "Retail Trade"
+	IDS_SCOPT_SIC_MY_H			,    "Finance, Insurance and Real Estate"
+	IDS_SCOPT_SIC_MY_I			,    "Services"
+	IDS_SCOPT_SIC_MY_J			,    "Public Administration"
+	IDS_SCOPT_SIC_MY_K			,    "NonClassifiable Establishments"
+	//
+	//// Industries - Hong Kong
+	IDS_SCOPT_SIC_HK_A			,    "Agriculture, forestry and fishing"
+	IDS_SCOPT_SIC_HK_B			,    "Mining and quarrying"
+	IDS_SCOPT_SIC_HK_C			,    "Manufacturing"
+	IDS_SCOPT_SIC_HK_D			,    "Electricity and gas supply"
+	IDS_SCOPT_SIC_HK_E			,    "Water supply; sewerage, waste management and remediation activities"
+	IDS_SCOPT_SIC_HK_F			,    "Construction"
+	IDS_SCOPT_SIC_HK_G			,    "Import/export, wholesale and retail trades"
+	IDS_SCOPT_SIC_HK_H			,    "Transportation, storage, postal and courier services"
+	IDS_SCOPT_SIC_HK_I			,    "Accommodation and food service activities"
+	IDS_SCOPT_SIC_HK_J			,    "Information and communications"
+	IDS_SCOPT_SIC_HK_K			,    "Financial and insurance activities"
+	IDS_SCOPT_SIC_HK_L			,    "Real estate activities"
+	IDS_SCOPT_SIC_HK_M			,    "Professional, scientific and technical activities"
+	IDS_SCOPT_SIC_HK_N			,    "Administrative and support service activities"
+	IDS_SCOPT_SIC_HK_O			,    "Public administration"
+	IDS_SCOPT_SIC_HK_P			,    "Education"
+	IDS_SCOPT_SIC_HK_Q			,    "Human health and social work activities"
+	IDS_SCOPT_SIC_HK_R			,    "Arts, entertainment and recreation"
+	IDS_SCOPT_SIC_HK_S			,    "Other service activities"
+	IDS_SCOPT_SIC_HK_T			,    "Work activities within domestic households"
+	IDS_SCOPT_SIC_HK_U			,    "Activities of extraterritorial organisations and bodies"
+	//
+	//// Industries - Australia
+	IDS_SCOPT_SIC_AU_A			,    "Agriculture, Forestry and Fishing"
+	IDS_SCOPT_SIC_AU_B			,    "Mining"
+	IDS_SCOPT_SIC_AU_C			,    "Manufacturing"
+	IDS_SCOPT_SIC_AU_D			,    "Electricity, Gas, Water and Waste Services"
+	IDS_SCOPT_SIC_AU_E			,    "Construction"
+	IDS_SCOPT_SIC_AU_F			,    "Wholesale Trade"
+	IDS_SCOPT_SIC_AU_G			,    "Retail Trade"
+	IDS_SCOPT_SIC_AU_H			,    "Accommodation and Food Services"
+	IDS_SCOPT_SIC_AU_I			,    "Transport, Postal and Warehousing"
+	IDS_SCOPT_SIC_AU_J			,    "Information Media and Telecommunications"
+	IDS_SCOPT_SIC_AU_K			,    "Financial and Insurance Services"
+	IDS_SCOPT_SIC_AU_L			,    "Rental, Hiring and Real Estate Services"
+	IDS_SCOPT_SIC_AU_M			,    "Professional, Scientific and Technical Services"
+	IDS_SCOPT_SIC_AU_N			,    "Administrative and Support Services"
+	IDS_SCOPT_SIC_AU_O			,    "Public Administration and Safety"
+	IDS_SCOPT_SIC_AU_P			,    "Education and Training"
+	IDS_SCOPT_SIC_AU_Q			,    "Health Care and Social Assistance"
+	IDS_SCOPT_SIC_AU_R			,    "Arts and Recreation Services"
+	IDS_SCOPT_SIC_AU_S			,    "Other Services"
+	//
+	//// Industries - New Zealand
+	IDS_SCOPT_SIC_NZ_A			,    "Agriculture, Forestry and Fishing"
+	IDS_SCOPT_SIC_NZ_B			,    "Mining"
+	IDS_SCOPT_SIC_NZ_C			,    "Manufacturing"
+	IDS_SCOPT_SIC_NZ_D			,    "Electricity, Gas, Water and Waste Services"
+	IDS_SCOPT_SIC_NZ_E			,    "Construction"
+	IDS_SCOPT_SIC_NZ_F			,    "Wholesale Trade"
+	IDS_SCOPT_SIC_NZ_G			,    "Retail Trade"
+	IDS_SCOPT_SIC_NZ_H			,    "Accommodation and Food Services"
+	IDS_SCOPT_SIC_NZ_I			,    "Transport, Postal and Warehousing"
+	IDS_SCOPT_SIC_NZ_J			,    "Information Media and Telecommunications"
+	IDS_SCOPT_SIC_NZ_K			,    "Financial and Insurance Services"
+	IDS_SCOPT_SIC_NZ_L			,    "Rental, Hiring and Real Estate Services"
+	IDS_SCOPT_SIC_NZ_M			,    "Professional, Scientific and Technical Services"
+	IDS_SCOPT_SIC_NZ_N			,    "Administrative and Support Services"
+	IDS_SCOPT_SIC_NZ_O			,    "Public Administration and Safety"
+	IDS_SCOPT_SIC_NZ_P			,    "Education and Training"
+	IDS_SCOPT_SIC_NZ_Q			,    "Health Care and Social Assistance"
+	IDS_SCOPT_SIC_NZ_R			,    "Arts and Recreation Services"
+	IDS_SCOPT_SIC_NZ_S			,    "Other Services"
+	//
+	//// Entity Type
+	IDS_SCOPT_ENTITYTYPE_0		,    "Select Entity Type"
+	//
+	//// Entity Type Singapore
+	IDS_SCOPT_ENTITYTYPE_SG_1	,    "BIZ - Business"
+	IDS_SCOPT_ENTITYTYPE_SG_2	,    "COM - Company"
+	IDS_SCOPT_ENTITYTYPE_SG_3	,    "LLP - Limited Liability Partnership"
+	IDS_SCOPT_ENTITYTYPE_SG_4	,    "LP - Limited Partnership"
+	IDS_SCOPT_ENTITYTYPE_SG_5	,    "PAF - Public Accounting Firm"
+	//
+	//// Entity Type Malaysia
+	IDS_SCOPT_ENTITYTYPE_MY_1	,    "BIZ - Business"
+	IDS_SCOPT_ENTITYTYPE_MY_2	,    "COM - Sdn Bhd"
+	IDS_SCOPT_ENTITYTYPE_MY_3	,    "LLP - Limited Liability Partnership"
+	IDS_SCOPT_ENTITYTYPE_MY_4	,    "LP - Limited Partnership"
+	IDS_SCOPT_ENTITYTYPE_MY_5	,    "PAF - Public Accounting Firm"
+	//
+	//// Entity Type Hong Kong
+	IDS_SCOPT_ENTITYTYPE_HK_1	,    "BIZ - Business"
+	IDS_SCOPT_ENTITYTYPE_HK_2	,    "COM - Company"
+	IDS_SCOPT_ENTITYTYPE_HK_3	,    "LLP - Limited Liability Partnership"
+	IDS_SCOPT_ENTITYTYPE_HK_4	,    "LP - Limited Partnership"
+	IDS_SCOPT_ENTITYTYPE_HK_5	,    "PAF - Public Accounting Firm"
+	//
+	//// Entity Type Australia
+	IDS_SCOPT_ENTITYTYPE_AU_1	,    "BIZ - Business"
+	IDS_SCOPT_ENTITYTYPE_AU_2	,    "COM - Company"
+	IDS_SCOPT_ENTITYTYPE_AU_3	,    "LLP - Limited Liability Partnership"
+	IDS_SCOPT_ENTITYTYPE_AU_4	,    "LP - Limited Partnership"
+	IDS_SCOPT_ENTITYTYPE_AU_5	,    "PAF - Public Accounting Firm"
+	//
+	//// Entity Type New Zealand
+	IDS_SCOPT_ENTITYTYPE_NZ_1	,    "BIZ - Business"
+	IDS_SCOPT_ENTITYTYPE_NZ_2	,    "COM - Company"
+	IDS_SCOPT_ENTITYTYPE_NZ_3	,    "LLP - Limited Liability Partnership"
+	IDS_SCOPT_ENTITYTYPE_NZ_4	,    "LP - Limited Partnership"
+	IDS_SCOPT_ENTITYTYPE_NZ_5	,    "PAF - Public Accounting Firm"
+	//
+	//// Marks
+	IDS_SCOPT_BRYEAR_MASK			,    "%04D"
+	IDS_SCOPT_DOCNUM_PREFIX_MASK	,    "%-6N"
+	IDS_SCOPT_DOCNUM_DEFAULT		,    "*** NEW ***"
+	IDS_SCOPT_BRN_MASK				,    "%-30N"
+	//
+	//// Test Email
+	IDS_SCOPT_TESTEMAIL_SUBJECT	,    "Email Configuration for Cash Flow Setup"
+//	IDS_SCOPT_TESTEMAIL_BODY		,    "<html><body><p style=""font-family:georgia,garamond,serif;font-size:14px;font-style:italic;"">Dear Customer<br/><br/>If you see this email, it means that your cash flow alert is successfully configured for use. No further action is required.<br/><br/><b>Company Information:</b>&nbsp;%.60s<br/><br/>Thank You</p><br/><br/>From the team that brought you this new feature</body></html>"
+	IDS_SCOPT_TESTEMAIL_SUCCESSED	,    "Test email sent successfully.\nPlease check your inbox."
+	IDS_SCOPT_TESTEMAIL_FAILED		,    "Failed to send Test email.\nPlease verify your settings."
+	//
+   //// Error messages
+	IDERR_SCOPT_BRYEAR_INVALID	,    "Invalid input. '%s' must be between 1900 and now."
+	IDERR_SCOPT_PERIOD_SEQUENCE,    "Invalid input. Forecast periods must be in ascending order."
+	IDERR_SCOPT_DOCNUM_LENGTH	,    "Invalid input. '%s' must be between 1 and 22 characters."
+	IDERR_SCOPT_DOCNUM			,    "Invalid input. Forecast prefix appended to next Forecast number exceeds specified length of %lu characters."
+	//
+	//// Warning Messages
+	IDWARN_SCOPT_RATENOTFOUND	,    "Warning: No exchange rate for %.3s to %.3s or %.3s to %.3s is found. Please enter a rate in the Currency Rate table."
+}
+
+
+//
+//// HTML Files
+0011	HTML	"0011-TestEmail.htm"
