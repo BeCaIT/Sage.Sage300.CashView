@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ARC" xml:space="preserve">
-    <value>Accounts Receivables Collections</value>
+    <value>Accounts Receivable Collections</value>
   </data>
   <data name="CashEndingBalance" xml:space="preserve">
     <value>Ending Balance</value>

@@ -61,7 +61,7 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Accounts Receivables Collections.
+        ///   Looks up a localized string similar to Accounts Receivable Collections.
         /// </summary>
         public static string ARC {
             get {
