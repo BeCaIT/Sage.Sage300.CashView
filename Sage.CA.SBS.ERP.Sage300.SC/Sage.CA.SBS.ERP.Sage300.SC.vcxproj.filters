@@ -151,6 +151,12 @@
     <Filter Include="ENG\Resource\Resource Files\images">
       <UniqueIdentifier>{26be7348-b62c-4eac-8f5f-169017b27e1d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ENG\Help">
+      <UniqueIdentifier>{a43c12b7-c527-421e-baf8-e62f7df34c7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENG\Docs">
+      <UniqueIdentifier>{1f5fe68e-8011-4b45-9bd4-91a5afa2b415}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\Project\SC.ptn">
@@ -533,6 +539,12 @@
     </None>
     <None Include="Source\ENG\Resource\24582-MYTermsAndConditions.htm">
       <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Help\SC63AENG.chm">
+      <Filter>ENG\Help</Filter>
+    </None>
+    <None Include="Source\ENG\Help\WEB_SC63AENG.chm">
+      <Filter>ENG\Help</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

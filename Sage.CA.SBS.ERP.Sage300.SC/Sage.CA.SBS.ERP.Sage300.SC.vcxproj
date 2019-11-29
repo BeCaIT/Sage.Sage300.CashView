@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Source\ENG\Help\SC63AENG.chm" />
+    <None Include="Source\ENG\Help\WEB_SC63AENG.chm" />
     <None Include="Source\ENG\Reports\SCAPCASH.rpt" />
     <None Include="Source\ENG\Reports\SCAPTOP.rpt" />
     <None Include="Source\ENG\Reports\SCARAGED.rpt" />

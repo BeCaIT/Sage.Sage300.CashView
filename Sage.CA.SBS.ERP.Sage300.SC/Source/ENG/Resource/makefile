@@ -35,7 +35,7 @@ VERSION = 63A
 #############################################################################
 # Targets
 
-all: $(RESPATH)\SC$(VERSION)$(RESBRANCH).DLL $(RESPATH)\grp.dat reports
+all: $(RESPATH)\SC$(VERSION)$(RESBRANCH).DLL $(RESPATH)\grp.dat reports help docs
 
 $(RESPATH)\SC$(VERSION)$(RESBRANCH).DLL: $(OBJPATH)\SC$(VERSION)$(RESBRANCH).RES
 
@@ -60,3 +60,9 @@ $(OBJPATH)\SCENG.RES: scEng.rc scerr.rc scdp.rc \
 # ---
 reports:
 	copy ..\Reports\*.rpt $(RESPATH)\
+
+help:
+	copy ..\Help\*.chm $(RESPATH)\..\..\Help
+
+docs:
+	copy ..\Docs\*.* $(RESPATH)\..\..\Docs
