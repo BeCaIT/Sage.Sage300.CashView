@@ -546,6 +546,27 @@
     <None Include="Source\ENG\Help\WEB_SC63AENG.chm">
       <Filter>ENG\Help</Filter>
     </None>
+    <None Include="Source\ENG\Docs\Implementation Checklist.xlsx">
+      <Filter>ENG\Docs</Filter>
+    </None>
+    <None Include="Source\ENG\Docs\Quick Start Guide.docx">
+      <Filter>ENG\Docs</Filter>
+    </None>
+    <None Include="Source\ENG\Docs\Quick Start Guide.pdf">
+      <Filter>ENG\Docs</Filter>
+    </None>
+    <None Include="Source\ENG\Docs\Sage 300 CashView User Guide.docx">
+      <Filter>ENG\Docs</Filter>
+    </None>
+    <None Include="Source\ENG\Docs\Sage 300 CashView User Guide.pdf">
+      <Filter>ENG\Docs</Filter>
+    </None>
+    <None Include="Source\ENG\Docs\Sage 300cloud CashView User Guide.docx">
+      <Filter>ENG\Docs</Filter>
+    </None>
+    <None Include="Source\ENG\Docs\Sage 300cloud CashView User Guide.pdf">
+      <Filter>ENG\Docs</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Source\Project\sc.txt">

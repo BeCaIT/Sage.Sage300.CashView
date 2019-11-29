@@ -30,6 +30,9 @@ Copyright (c) 1992-2008 Sage Software, Inc.  All rights reserved.
 	copy ..\Docs\*.* C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\RUNTIME\ENG\..\..\Docs
 ..\Docs\Implementation Checklist.xlsx
 ..\Docs\Quick Start Guide.docx
+..\Docs\Quick Start Guide.pdf
 ..\Docs\Sage 300 CashView User Guide.docx
+..\Docs\Sage 300 CashView User Guide.pdf
 ..\Docs\Sage 300cloud CashView User Guide.docx
-        4 file(s) copied.
+..\Docs\Sage 300cloud CashView User Guide.pdf
+        7 file(s) copied.

@@ -19,6 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Source\ENG\Docs\Implementation Checklist.xlsx" />
+    <None Include="Source\ENG\Docs\Quick Start Guide.docx" />
+    <None Include="Source\ENG\Docs\Quick Start Guide.pdf" />
+    <None Include="Source\ENG\Docs\Sage 300 CashView User Guide.docx" />
+    <None Include="Source\ENG\Docs\Sage 300 CashView User Guide.pdf" />
+    <None Include="Source\ENG\Docs\Sage 300cloud CashView User Guide.docx" />
+    <None Include="Source\ENG\Docs\Sage 300cloud CashView User Guide.pdf" />
     <None Include="Source\ENG\Help\SC63AENG.chm" />
     <None Include="Source\ENG\Help\WEB_SC63AENG.chm" />
     <None Include="Source\ENG\Reports\SCAPCASH.rpt" />
