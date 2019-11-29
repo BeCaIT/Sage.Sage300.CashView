@@ -99,7 +99,12 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.BusinessRepository
             businessEntity.SetValue(Options.Fields.BRN, model.BRN, true);
 
             var newModel = Mapper.Map(businessEntity);
+            newModel.IsNewLine = model.IsNewLine;
             newModel.ETag = model.ETag;
+
+            if (newModel.Country == Models.Enums.Country.Singapore)
+                newModel.BRYear = newModel.BRYearCalculated;
+
             return newModel;
         }
 
