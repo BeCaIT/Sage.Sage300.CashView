@@ -63,6 +63,16 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _458 {
+            get {
+                object obj = ResourceManager.GetObject("458", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _702 {
             get {
                 object obj = ResourceManager.GetObject("702", resourceCulture);

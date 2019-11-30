@@ -219,7 +219,11 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.Data
                 switch (Country)
                 {
                     case 702:
-                        Properties.Resources.Offer702.Save(memoryStream, Properties.Resources.Offer702.RawFormat);
+                        Properties.Resources.OfferBannerSG.Save(memoryStream, Properties.Resources.OfferBannerSG.RawFormat);
+                        break;
+
+                    case 458:
+                        Properties.Resources.OfferBannerMY.Save(memoryStream, Properties.Resources.OfferBannerMY.RawFormat);
                         break;
                 }
 

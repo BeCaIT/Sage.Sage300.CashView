@@ -67,9 +67,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\OfferSG.jpg" />
+    <None Include="Resources\OfferBannerSG.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\OfferBannerMY.jpg" />
     <Content Include="Resources\TermsAndConditionsMY.html" />
     <Content Include="Resources\TermsAndConditionsSG.html" />
   </ItemGroup>

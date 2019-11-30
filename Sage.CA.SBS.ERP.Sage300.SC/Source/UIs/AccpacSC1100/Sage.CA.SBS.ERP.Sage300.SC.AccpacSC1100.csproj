@@ -163,6 +163,11 @@
     <Compile Include="PopUps\PopupLoan.Designer.cs">
       <DependentUpon>PopupLoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Sage300Application.cs" />
     <Compile Include="TermsAndConditionsForm.cs">
       <SubType>Form</SubType>
@@ -223,14 +228,9 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="TermsAndConditionsForm.resx">
       <DependentUpon>TermsAndConditionsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -400,13 +400,16 @@
     <None Include="Resources\EmailSend.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SCBK19076_SCB x SAGE web banner_R1_2.png" />
+    <None Include="Resources\OfferBanner702.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WarningSign.PNG" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\InfoSign.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OfferBanner458.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

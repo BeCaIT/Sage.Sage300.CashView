@@ -63,13 +63,25 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.Data.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Offer702 {
+        internal static System.Drawing.Bitmap OfferBannerSG {
             get {
-                object obj = ResourceManager.GetObject("Offer702", resourceCulture);
+                object obj = ResourceManager.GetObject("OfferBannerSG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OfferBannerMY
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("OfferBannerMY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to &lt;h1&gt;Terms And Conditions&lt;/h1&gt;
         ///&lt;h3&gt;IMPORTANT NOTES&lt;/h3&gt;
