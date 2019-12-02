@@ -19,6 +19,9 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.Data
             PopuplateCashFlowSummaryData();
             PopuplateARSummaryData();
             PopuplateAPSummaryData();
+
+            _offerImage = null;
+            _termsAndConditions = null;
         }
 
         #region Permissions
