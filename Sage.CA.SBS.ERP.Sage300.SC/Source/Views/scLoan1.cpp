@@ -2580,7 +2580,7 @@ VIEWCALL scLoanSubmit(
 	strTrim(szAmountRequest);
 	GetNumberFormat(LOCALE_SYSTEM_DEFAULT, LOCALE_NOUSEROVERRIDE, szAmountOffer, NULL, szAmountOfferFmt, SIZEOF_BCDSTR + 1);
 	GetNumberFormat(LOCALE_SYSTEM_DEFAULT, LOCALE_NOUSEROVERRIDE, szAmountRequest, NULL, szAmountRequestFmt, SIZEOF_BCDSTR + 1);
-	rscLoadHTML(lpv->hpib, APPL, 27021, szEmailBodyTemplate, sizeof(szEmailBodyTemplate));
+	rscLoadHTML(lpv->hpib, APPL, 20001, szEmailBodyTemplate, sizeof(szEmailBodyTemplate));
 	sprintf(szEmailBody, szEmailBodyTemplate,
 		szDate, // Date
 		lpr->reference,
