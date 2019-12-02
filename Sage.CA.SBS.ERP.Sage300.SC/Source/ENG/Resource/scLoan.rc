@@ -100,7 +100,10 @@ STRINGTABLE
 
 //
 //// HTML Files
-27021	HTML	"27021-SGLoanRequest.htm"
+// Generic Loan Request
+20001	HTML	"20001-LoanRequest.htm"
+// Singapore T&C
+//27021	HTML	"27021-SGLoanRequest.htm"
 27022	HTML	"27022-SGTermsAndConditions.htm"
-//
+// Malaysia T&C
 24582	HTML	"24582-MYTermsAndConditions.htm"

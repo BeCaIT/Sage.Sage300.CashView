@@ -2509,10 +2509,10 @@ VIEWCALL scLoanSubmit(
 	CHAR szEmailSubject[SCLOAN_SIZ(EMAILSUBJ) + 1];
 	CHAR szEmailSubjectResend[SCLOAN_SIZ(EMAILSUBJ) + 1];
 	//
-	CHAR szEmailBodyTemplate[MAX_RECORD_LENGTH + 1];
-	CHAR szEmailBody[MAX_RECORD_LENGTH + MAX_RECORD_LENGTH + 1];
-	CHAR szEmailTC[MAX_RECORD_LENGTH + 1];
-	CHAR szEmailFull[MAX_RECORD_LENGTH + MAX_RECORD_LENGTH + 1];
+	LPCHAR szEmailBodyTemplate = (LPCHAR)memAlloc(SC_EMAIL_MAX_SIZE);
+	LPCHAR szEmailBody = (LPCHAR)memAlloc(SC_EMAIL_MAX_SIZE);
+	LPCHAR szEmailTC = (LPCHAR)memAlloc(SC_EMAIL_MAX_SIZE);
+	LPCHAR szEmailFull = (LPCHAR)memAlloc(SC_EMAIL_MAX_SIZE);
 
 	strInit(szEmailHost);
 	strInit(szEmailUser);
@@ -2522,10 +2522,10 @@ VIEWCALL scLoanSubmit(
 	strInit(szEmailCC);
 	strInit(szEmailCCFull);
 	strInit(szEmailSubject);
-	strInit(szEmailBodyTemplate);
-	strInit(szEmailBody);
-	strInit(szEmailTC);
-	strInit(szEmailFull);
+	blkSet(szEmailBodyTemplate, 0, SC_EMAIL_MAX_SIZE);
+	blkSet(szEmailBody, 0, SC_EMAIL_MAX_SIZE);
+	blkSet(szEmailTC, 0, SC_EMAIL_MAX_SIZE);
+	blkSet(szEmailFull, 0, SC_EMAIL_MAX_SIZE);
 
 	CHECK_CALL(e, viewRead(SCOPT->rvh, SCOPT->view));
 
@@ -2584,6 +2584,7 @@ VIEWCALL scLoanSubmit(
 	sprintf(szEmailBody, szEmailBodyTemplate,
 		szDate, // Date
 		lpr->reference,
+		lpr2->rptCur,
 		szAmountOfferFmt,
 		szAmountRequestFmt,
 		lpr->contact,
@@ -2617,7 +2618,7 @@ VIEWCALL scLoanSubmit(
 	}
 	sprintf(szEmailFull, "%s<br />%s", szEmailBody, szEmailTC);
 
-	if (!emailSend(
+	BOOL bEmailResult = emailSend(
 		szEmailHost,
 		wEmailPort,
 		bEmailSSL,
@@ -2628,7 +2629,18 @@ VIEWCALL scLoanSubmit(
 		szEmailCCFull,
 		szEmailSubject,
 		szEmailFull,
-		NULL))
+		NULL);
+
+	if (szEmailFull != NULL)
+		memFree(szEmailFull);
+	if (szEmailTC != NULL)
+		memFree(szEmailTC);
+	if (szEmailBody != NULL)
+		memFree(szEmailBody);
+	if (szEmailBodyTemplate != NULL)
+		memFree(szEmailBodyTemplate);
+
+	if (!bEmailResult)
 	{
 		return ERRNUM_SUCCESS;
 	}

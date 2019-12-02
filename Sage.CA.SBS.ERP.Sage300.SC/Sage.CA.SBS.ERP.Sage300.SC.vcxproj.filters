@@ -567,6 +567,9 @@
     <None Include="Source\ENG\Docs\Sage 300cloud CashView User Guide.pdf">
       <Filter>ENG\Docs</Filter>
     </None>
+    <None Include="Source\ENG\Resource\20001-LoanRequest.htm">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Source\Project\sc.txt">

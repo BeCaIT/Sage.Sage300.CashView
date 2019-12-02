@@ -4,14 +4,6 @@
 	copy C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\OBJ\SCENG.RES C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\OBJ\SC63AENG.RES
         1 file(s) copied.
 	link -nologo -incremental:no  -machine:iX86 -subsystem:windows -dll -heap:0 -map:C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\CODMAP\SC63AENG.MAP  -noentry -manifest:no  C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\OBJ\SC63AENG.RES -out:C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\RUNTIME\ENG\SC63AENG.DLL  oldnames.lib shell32.lib gdi32.lib kernel32.lib  user32.lib comdlg32.lib advapi32.lib  a4wapi.lib a4wmtr.lib a4wroto.lib a4wrv.lib xapi32.lib  a4wmac.lib a4wprgt.lib a4wrpt.lib a4wstat.lib  cato3dat.lib cato3nbr.lib cato3tim.lib cabl3.lib
-	ccgrp grp.TXT C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\RUNTIME\ENG\grp.dat
-
-Group Resource Compiler Version 1.2
-Copyright (c) 1992-2008 Sage Software, Inc.  All rights reserved.
-
-
-53 lines processed.
-
 	copy ..\Reports\*.rpt C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\RUNTIME\ENG
 ..\Reports\SCAPCASH.rpt
 ..\Reports\SCAPTOP.rpt

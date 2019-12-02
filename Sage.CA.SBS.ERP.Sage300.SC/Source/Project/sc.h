@@ -29,7 +29,7 @@ extern "C" {
 #define	SC_SIZEOF_PAYMENTNBR	3
 #define	SC_SIZEOF_DOCPREFIX	6
 
-#define	SC_EMAIL_MAX_SIZE		900000
+#define	SC_EMAIL_MAX_SIZE		1048576 // in bytes ~= 1MB
 
 //
 //// Yes No
@@ -49,7 +49,6 @@ extern "C" {
 #define	SC_RSC_SCFCENTRY	"SCFCENTRY"
 #define	SC_RSC_SCLINQUIRY	"SCLINQUIRY"
 #define	SC_RSC_SCLENTRY	"SCLENTRY"
-
 
 
 

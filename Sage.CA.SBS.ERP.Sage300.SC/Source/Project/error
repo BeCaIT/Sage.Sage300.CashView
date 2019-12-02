@@ -1,8 +1,6 @@
-	copy sc.H C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\INCLUDE\sc.h
+	copy sc.H C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\INCLUDE\sc.h
         1 file(s) copied.
-	copy sc.INI C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\RUNTIME\sc.ini
-        1 file(s) copied.
-	copy EXTERNAL\*.h C:\Projects\Sage.CA.SBS.ERP.Sage300.SC\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\INCLUDE
+	copy EXTERNAL\*.h C:\Projects\CashView\Sage.CA.SBS.ERP.Sage300.SC\BUILD32\INCLUDE
 EXTERNAL\a4wuser.H
 EXTERNAL\cscbsk.H
 EXTERNAL\cscom.H

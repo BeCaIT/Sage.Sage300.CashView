@@ -37,6 +37,9 @@
     <None Include="Source\ENG\Reports\SCOPT.rpt" />
     <None Include="Source\ENG\Reports\SCSUM01.rpt" />
     <None Include="Source\ENG\Reports\SCSUM03.rpt" />
+    <None Include="Source\ENG\Resource\20001-LoanRequest.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
     <None Include="Source\ENG\Resource\24582-MYTermsAndConditions.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
@@ -329,6 +332,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(ProjectDir)\Build32\CodMap;$(ProjectDir)\Build32\Gen;$(ProjectDir)\Build32\Include;C:\Pluswdev\INCLUDE;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Pluswdev\INCLUDE;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
