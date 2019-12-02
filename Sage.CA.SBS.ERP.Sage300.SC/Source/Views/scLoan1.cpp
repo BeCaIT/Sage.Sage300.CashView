@@ -2580,12 +2580,13 @@ VIEWCALL scLoanSubmit(
 	strTrim(szAmountRequest);
 	GetNumberFormat(LOCALE_SYSTEM_DEFAULT, LOCALE_NOUSEROVERRIDE, szAmountOffer, NULL, szAmountOfferFmt, SIZEOF_BCDSTR + 1);
 	GetNumberFormat(LOCALE_SYSTEM_DEFAULT, LOCALE_NOUSEROVERRIDE, szAmountRequest, NULL, szAmountRequestFmt, SIZEOF_BCDSTR + 1);
-	rscLoadHTML(lpv->hpib, APPL, 20001, szEmailBodyTemplate, sizeof(szEmailBodyTemplate));
+	rscLoadHTML(lpv->hpib, APPL, 20001, szEmailBodyTemplate, SC_EMAIL_MAX_SIZE);
 	sprintf(szEmailBody, szEmailBodyTemplate,
 		szDate, // Date
 		lpr->reference,
 		lpr2->rptCur,
 		szAmountOfferFmt,
+		lpr2->rptCur,
 		szAmountRequestFmt,
 		lpr->contact,
 		lpr->compName,
@@ -2606,11 +2607,11 @@ VIEWCALL scLoanSubmit(
 	switch (lpv->wCountry)
 	{
 	case SCOPT_COUNTRY_SINGAPORE:
-		rscLoadHTML(lpv->hpib, APPL, 27022, szEmailTC, sizeof(szEmailTC));
+		rscLoadHTML(lpv->hpib, APPL, 27022, szEmailTC, SC_EMAIL_MAX_SIZE);
 		break;
 
 	case SCOPT_COUNTRY_MALAYSIA:
-		rscLoadHTML(lpv->hpib, APPL, 24582, szEmailTC, sizeof(szEmailTC));
+		rscLoadHTML(lpv->hpib, APPL, 24582, szEmailTC, SC_EMAIL_MAX_SIZE);
 		break;
 
 	default:
