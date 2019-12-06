@@ -63,30 +63,28 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.Data.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OfferBannerMY {
+            get {
+                object obj = ResourceManager.GetObject("OfferBannerMY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OfferBannerSG {
             get {
                 object obj = ResourceManager.GetObject("OfferBannerSG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap OfferBannerMY
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("OfferBannerMY", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to &lt;h1&gt;Terms And Conditions&lt;/h1&gt;
         ///&lt;h3&gt;IMPORTANT NOTES&lt;/h3&gt;
         ///&lt;ol&gt;
-        ///&lt;li style=&quot;list-style-type: decimal;&quot;&gt;Your company/business/partnership (“Company”) is receiving this notice about the a Standard Chartered Bank Malaysia Berhad (“Bank”) Business Instalment Loan (“Loan”) based solely on your Company’s financial and transactional information available on this platform. Receipt of this notice should therefore not be construed as a representation, warranty or undertaking by the Bank of Loan approval and for any qua [rest of string was truncated]&quot;;.
+        ///&lt;li style=&quot;list-style-type: decimal;&quot;&gt;Your company/business/partnership (“Company”) is receiving this notice about the Business Instalment Loan / BizFinancing-I (each the “Financing”) offered by Standard Chartered Bank Malaysia Berhad and Standard Chartered Saadiq Berhad respectively (each, the “Bank”) based solely on your Company’s financial and transactional information available on this platform. Receipt of this notice should therefore not be [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TermsAndConditionsMY {
             get {
