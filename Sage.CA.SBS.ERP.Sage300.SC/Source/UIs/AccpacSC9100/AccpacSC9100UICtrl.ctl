@@ -5,93 +5,72 @@ Object = "{D07665A1-D89F-11D2-9BD2-00104B71EB3F}#1.0#0"; "a4wFldEdtCtrl.dll"
 Object = "{A46D8382-C397-11D3-9FF2-00C04F815D63}#1.0#0"; "AccpacListCtrl.dll"
 Object = "{B700FC75-C559-11D4-94E1-00C04F815D63}#1.0#0"; "AccpacGridCtrl.dll"
 Begin VB.UserControl AccpacSC9100UICtrl 
-   ClientHeight    =   7905
+   ClientHeight    =   8040
    ClientLeft      =   0
    ClientTop       =   0
    ClientWidth     =   8340
    KeyPreview      =   -1  'True
-   ScaleHeight     =   7905
+   ScaleHeight     =   8040
    ScaleWidth      =   8340
    ToolboxBitmap   =   "AccpacSC9100UICtrl.ctx":0000
    Begin TabDlg.SSTab sstabOptions 
-      Height          =   7140
+      Height          =   7290
       Left            =   150
       TabIndex        =   0
       TabStop         =   0   'False
       Top             =   150
       Width           =   8040
       _ExtentX        =   14182
-      _ExtentY        =   12594
+      _ExtentY        =   12859
       _Version        =   393216
       Style           =   1
       Tabs            =   4
+      Tab             =   2
       TabsPerRow      =   4
       TabHeight       =   520
       TabCaption(0)   =   "@Company@"
       TabPicture(0)   =   "AccpacSC9100UICtrl.ctx":0312
-      Tab(0).ControlEnabled=   -1  'True
-      Tab(0).Control(0)=   "fecSCOPT_Email"
-      Tab(0).Control(0).Enabled=   0   'False
-      Tab(0).Control(1)=   "fecSCOPT_Mobile"
-      Tab(0).Control(1).Enabled=   0   'False
-      Tab(0).Control(2)=   "fecSCOPT_Phone"
-      Tab(0).Control(2).Enabled=   0   'False
-      Tab(0).Control(3)=   "fecSCOPT_JobTitle"
-      Tab(0).Control(3).Enabled=   0   'False
-      Tab(0).Control(4)=   "fecSCOPT_Contact"
-      Tab(0).Control(4).Enabled=   0   'False
+      Tab(0).ControlEnabled=   0   'False
+      Tab(0).Control(0)=   "fecSCOPT_BRN"
+      Tab(0).Control(1)=   "fraCompany"
+      Tab(0).Control(2)=   "fecSCOPT_BRYear"
+      Tab(0).Control(3)=   "fecSCOPT_Country"
+      Tab(0).Control(4)=   "fecSCOPT_EntityType"
       Tab(0).Control(5)=   "fecSCOPT_Industry"
-      Tab(0).Control(5).Enabled=   0   'False
-      Tab(0).Control(6)=   "fecSCOPT_EntityType"
-      Tab(0).Control(6).Enabled=   0   'False
-      Tab(0).Control(7)=   "fecSCOPT_Country"
-      Tab(0).Control(7).Enabled=   0   'False
-      Tab(0).Control(8)=   "fecSCOPT_BRYear"
-      Tab(0).Control(8).Enabled=   0   'False
-      Tab(0).Control(9)=   "fraCompany"
-      Tab(0).Control(9).Enabled=   0   'False
-      Tab(0).Control(10)=   "fecSCOPT_BRN"
-      Tab(0).Control(10).Enabled=   0   'False
+      Tab(0).Control(6)=   "fecSCOPT_Contact"
+      Tab(0).Control(7)=   "fecSCOPT_JobTitle"
+      Tab(0).Control(8)=   "fecSCOPT_Phone"
+      Tab(0).Control(9)=   "fecSCOPT_Mobile"
+      Tab(0).Control(10)=   "fecSCOPT_Email"
       Tab(0).ControlCount=   11
       TabCaption(1)   =   "@Processing@"
       TabPicture(1)   =   "AccpacSC9100UICtrl.ctx":032E
       Tab(1).ControlEnabled=   0   'False
       Tab(1).Control(0)=   "lblProcess_ForecastPeriods"
-      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).Control(1)=   "lblProcess_DocumentNumbers"
-      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).Control(2)=   "grdSCOPT_DocumentNumbers"
       Tab(1).Control(2).Enabled=   0   'False
       Tab(1).Control(3)=   "fraProcessing_Statistics"
-      Tab(1).Control(3).Enabled=   0   'False
       Tab(1).Control(4)=   "fraProcessing_Settings"
-      Tab(1).Control(4).Enabled=   0   'False
       Tab(1).Control(5)=   "grdSCOPT_ForecastPeriods"
       Tab(1).Control(5).Enabled=   0   'False
       Tab(1).ControlCount=   6
       TabCaption(2)   =   "@Cash/Bank Accounts@"
       TabPicture(2)   =   "AccpacSC9100UICtrl.ctx":034A
-      Tab(2).ControlEnabled=   0   'False
+      Tab(2).ControlEnabled=   -1  'True
       Tab(2).Control(0)=   "vlsSCACCT_Accounts"
       Tab(2).Control(0).Enabled=   0   'False
       Tab(2).ControlCount=   1
       TabCaption(3)   =   "@Emails Alert@"
       TabPicture(3)   =   "AccpacSC9100UICtrl.ctx":0366
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "lblEmail_Consent"
-      Tab(3).Control(0).Enabled=   0   'False
-      Tab(3).Control(1)=   "fecSCOPT_EmailOffer"
-      Tab(3).Control(1).Enabled=   0   'False
-      Tab(3).Control(2)=   "fecSCOPT_EmailSnoozeUntil"
-      Tab(3).Control(2).Enabled=   0   'False
+      Tab(3).Control(0)=   "fraEmail_Advisory"
+      Tab(3).Control(1)=   "fraEmail_Testing"
+      Tab(3).Control(2)=   "fraEmail_Settings"
       Tab(3).Control(3)=   "fecSCOPT_EmailAlert"
-      Tab(3).Control(3).Enabled=   0   'False
-      Tab(3).Control(4)=   "fraEmail_Settings"
-      Tab(3).Control(4).Enabled=   0   'False
-      Tab(3).Control(5)=   "fraEmail_Testing"
-      Tab(3).Control(5).Enabled=   0   'False
-      Tab(3).Control(6)=   "fraEmail_Advisory"
-      Tab(3).Control(6).Enabled=   0   'False
+      Tab(3).Control(4)=   "fecSCOPT_EmailSnoozeUntil"
+      Tab(3).Control(5)=   "fecSCOPT_EmailOffer"
+      Tab(3).Control(6)=   "lblEmail_Consent"
       Tab(3).ControlCount=   7
       Begin VB.Frame fraEmail_Advisory 
          Caption         =   "@Advisory@"
@@ -687,8 +666,8 @@ Begin VB.UserControl AccpacSC9100UICtrl
          End
       End
       Begin AccpacFldListCtl.AccpacViewList vlsSCACCT_Accounts 
-         Height          =   6540
-         Left            =   -74850
+         Height          =   6765
+         Left            =   150
          TabIndex        =   31
          Top             =   450
          Width           =   7740
@@ -715,7 +694,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
             Strikethrough   =   0   'False
          EndProperty
          _cx             =   13652
-         _cy             =   11536
+         _cy             =   11933
          BackColor       =   -2147483633
          ForeColor       =   -2147483630
          BorderWidth     =   1
@@ -1067,7 +1046,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_BRN 
          Height          =   315
-         Left            =   150
+         Left            =   -74850
          TabIndex        =   14
          Top             =   4275
          Width           =   3765
@@ -1135,7 +1114,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin VB.Frame fraCompany 
          Height          =   3015
-         Left            =   150
+         Left            =   -74850
          TabIndex        =   1
          Top             =   375
          Width           =   7740
@@ -1214,7 +1193,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_BRYear 
          Height          =   315
-         Left            =   4125
+         Left            =   -70875
          TabIndex        =   15
          Top             =   4275
          Width           =   3765
@@ -1282,7 +1261,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_Country 
          Height          =   315
-         Left            =   150
+         Left            =   -74850
          TabIndex        =   11
          Top             =   3525
          Width           =   3765
@@ -1350,7 +1329,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_EntityType 
          Height          =   315
-         Left            =   4125
+         Left            =   -70875
          TabIndex        =   12
          Top             =   3525
          Width           =   3765
@@ -1418,7 +1397,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_Industry 
          Height          =   315
-         Left            =   150
+         Left            =   -74850
          TabIndex        =   13
          Top             =   3900
          Width           =   7740
@@ -1486,7 +1465,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_Contact 
          Height          =   315
-         Left            =   150
+         Left            =   -74850
          TabIndex        =   16
          Top             =   4650
          Width           =   7740
@@ -1554,7 +1533,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_JobTitle 
          Height          =   315
-         Left            =   150
+         Left            =   -74850
          TabIndex        =   17
          Top             =   5025
          Width           =   7740
@@ -1622,7 +1601,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_Phone 
          Height          =   315
-         Left            =   150
+         Left            =   -74850
          TabIndex        =   19
          Top             =   5775
          Width           =   3765
@@ -1690,7 +1669,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_Mobile 
          Height          =   315
-         Left            =   4125
+         Left            =   -70875
          TabIndex        =   20
          Top             =   5775
          Width           =   3765
@@ -1826,7 +1805,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       End
       Begin AccpacFldEditCtl.AccpacFieldEditControl fecSCOPT_Email 
          Height          =   315
-         Left            =   150
+         Left            =   -74850
          TabIndex        =   18
          Top             =   5400
          Width           =   7740
@@ -2071,7 +2050,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   1440
+         Height          =   1590
          Left            =   -74550
          TabIndex        =   52
          Top             =   5625
@@ -2099,7 +2078,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       Height          =   315
       Left            =   150
       TabIndex        =   49
-      Top             =   7425
+      Top             =   7575
       Width           =   1065
    End
    Begin VB.CommandButton APP_Close_Button 
@@ -2107,7 +2086,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       Height          =   315
       Left            =   7125
       TabIndex        =   50
-      Top             =   7425
+      Top             =   7575
       Width           =   1065
    End
    Begin AccpacDataSrcCtl.AccpacDataSource dsSCACCT 
@@ -2115,7 +2094,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       Left            =   1800
       TabIndex        =   48
       TabStop         =   0   'False
-      Top             =   7425
+      Top             =   7575
       Width           =   315
       _cx             =   556
       _cy             =   556
@@ -2143,7 +2122,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       Left            =   1350
       TabIndex        =   47
       TabStop         =   0   'False
-      Top             =   7425
+      Top             =   7575
       Width           =   315
       _cx             =   556
       _cy             =   556
