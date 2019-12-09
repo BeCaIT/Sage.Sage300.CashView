@@ -182,8 +182,10 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100.Pages
         {
             using (TermsAndConditionsForm formTC = new TermsAndConditionsForm())
             {
+                bool result = (formTC.ShowDialog(this) == DialogResult.OK);
+
                 if ((short)_dataSource.Fields["STATUS"].get_Value() == 0)
-                    chkAgreeTC.Enabled = (formTC.ShowDialog(this) == DialogResult.OK);
+                    chkAgreeTC.Enabled = result;
             }
         }
 
