@@ -5,23 +5,23 @@ Object = "{D07665A1-D89F-11D2-9BD2-00104B71EB3F}#1.0#0"; "a4wFldEdtCtrl.dll"
 Object = "{A46D8382-C397-11D3-9FF2-00C04F815D63}#1.0#0"; "AccpacListCtrl.dll"
 Object = "{B700FC75-C559-11D4-94E1-00C04F815D63}#1.0#0"; "AccpacGridCtrl.dll"
 Begin VB.UserControl AccpacSC9100UICtrl 
-   ClientHeight    =   7290
+   ClientHeight    =   8040
    ClientLeft      =   0
    ClientTop       =   0
    ClientWidth     =   8340
    KeyPreview      =   -1  'True
-   ScaleHeight     =   7290
+   ScaleHeight     =   8040
    ScaleWidth      =   8340
    ToolboxBitmap   =   "AccpacSC9100UICtrl.ctx":0000
    Begin TabDlg.SSTab sstabOptions 
-      Height          =   6465
+      Height          =   7290
       Left            =   150
       TabIndex        =   0
       TabStop         =   0   'False
       Top             =   150
       Width           =   8040
       _ExtentX        =   14182
-      _ExtentY        =   11404
+      _ExtentY        =   12859
       _Version        =   393216
       Style           =   1
       Tabs            =   4
@@ -64,13 +64,13 @@ Begin VB.UserControl AccpacSC9100UICtrl
       TabCaption(3)   =   "@Emails Alert@"
       TabPicture(3)   =   "AccpacSC9100UICtrl.ctx":0366
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "lblEmail_Consent"
-      Tab(3).Control(1)=   "fecSCOPT_EmailOffer"
-      Tab(3).Control(2)=   "fecSCOPT_EmailSnoozeUntil"
+      Tab(3).Control(0)=   "fraEmail_Advisory"
+      Tab(3).Control(1)=   "fraEmail_Testing"
+      Tab(3).Control(2)=   "fraEmail_Settings"
       Tab(3).Control(3)=   "fecSCOPT_EmailAlert"
-      Tab(3).Control(4)=   "fraEmail_Settings"
-      Tab(3).Control(5)=   "fraEmail_Testing"
-      Tab(3).Control(6)=   "fraEmail_Advisory"
+      Tab(3).Control(4)=   "fecSCOPT_EmailSnoozeUntil"
+      Tab(3).Control(5)=   "fecSCOPT_EmailOffer"
+      Tab(3).Control(6)=   "lblEmail_Consent"
       Tab(3).ControlCount=   7
       Begin VB.Frame fraEmail_Advisory 
          Caption         =   "@Advisory@"
@@ -666,7 +666,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
          End
       End
       Begin AccpacFldListCtl.AccpacViewList vlsSCACCT_Accounts 
-         Height          =   5790
+         Height          =   6765
          Left            =   150
          TabIndex        =   31
          Top             =   450
@@ -694,7 +694,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
             Strikethrough   =   0   'False
          EndProperty
          _cx             =   13652
-         _cy             =   10213
+         _cy             =   11933
          BackColor       =   -2147483633
          ForeColor       =   -2147483630
          BorderWidth     =   1
@@ -2050,7 +2050,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Height          =   690
+         Height          =   1590
          Left            =   -74550
          TabIndex        =   52
          Top             =   5625
@@ -2078,7 +2078,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       Height          =   315
       Left            =   150
       TabIndex        =   49
-      Top             =   6825
+      Top             =   7575
       Width           =   1065
    End
    Begin VB.CommandButton APP_Close_Button 
@@ -2086,7 +2086,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       Height          =   315
       Left            =   7125
       TabIndex        =   50
-      Top             =   6825
+      Top             =   7575
       Width           =   1065
    End
    Begin AccpacDataSrcCtl.AccpacDataSource dsSCACCT 
@@ -2094,7 +2094,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       Left            =   1800
       TabIndex        =   48
       TabStop         =   0   'False
-      Top             =   6825
+      Top             =   7575
       Width           =   315
       _cx             =   556
       _cy             =   556
@@ -2122,7 +2122,7 @@ Begin VB.UserControl AccpacSC9100UICtrl
       Left            =   1350
       TabIndex        =   47
       TabStop         =   0   'False
-      Top             =   6825
+      Top             =   7575
       Width           =   315
       _cx             =   556
       _cy             =   556

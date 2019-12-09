@@ -1,23 +1,23 @@
 VERSION 5.00
-Object = "*\AAccpacSC9100.vbp"
+Object = "{9C6C2217-86BB-4DE6-99AF-A8529AB15813}#1.0#0"; "AccpacSC9100.ocx"
 Begin VB.Form AccpacSC9100TestEXE_Form 
    Caption         =   "VB Test Form"
-   ClientHeight    =   8190
+   ClientHeight    =   8640
    ClientLeft      =   2250
    ClientTop       =   1635
    ClientWidth     =   8640
    Icon            =   "AccpacSC9100TestEXE_Form.frx":0000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   8190
+   ScaleHeight     =   8640
    ScaleWidth      =   8640
    Begin AccpacSC9100.AccpacSC9100UICtrl ACCPACUIControl1 
-      Height          =   7290
+      Height          =   7740
       Left            =   150
       TabIndex        =   3
       Top             =   150
       Width           =   8340
       _ExtentX        =   14711
-      _ExtentY        =   12859
+      _ExtentY        =   13944
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
          Size            =   8.25
@@ -33,7 +33,7 @@ Begin VB.Form AccpacSC9100TestEXE_Form
       Height          =   315
       Left            =   1875
       TabIndex        =   1
-      Top             =   7725
+      Top             =   8175
       Width           =   1275
    End
    Begin VB.CommandButton cmdExit 
@@ -41,7 +41,7 @@ Begin VB.Form AccpacSC9100TestEXE_Form
       Height          =   315
       Left            =   7425
       TabIndex        =   2
-      Top             =   7725
+      Top             =   8175
       Width           =   1065
    End
    Begin VB.CommandButton cmdTestCollections 
@@ -49,14 +49,14 @@ Begin VB.Form AccpacSC9100TestEXE_Form
       Height          =   315
       Left            =   150
       TabIndex        =   0
-      Top             =   7725
+      Top             =   8175
       Width           =   1590
    End
    Begin VB.Line Line1 
       X1              =   150
       X2              =   8475
-      Y1              =   7575
-      Y2              =   7575
+      Y1              =   8025
+      Y2              =   8025
    End
    Begin VB.Menu mnuTestPopup 
       Caption         =   "Test &Popup"
