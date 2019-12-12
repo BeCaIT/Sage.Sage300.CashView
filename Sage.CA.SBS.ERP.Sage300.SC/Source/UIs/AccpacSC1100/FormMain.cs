@@ -89,7 +89,7 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.AccpacSC1100
                 using (PopupAlert popupAlert = new PopupAlert())
                     popupAlert.ShowDialog();
             // Loan
-            if (ApplicationData.Current.HasNewLoanRecord)
+            if (ApplicationData.Current.HasNewLoanRecord && ApplicationData.Current.HasLoanInquiryRight)
                 using (PopupLoan popupLoan = new PopupLoan()
                 {
                     DataSource = ApplicationData.Current
