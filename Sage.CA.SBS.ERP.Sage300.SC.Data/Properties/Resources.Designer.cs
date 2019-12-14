@@ -63,30 +63,28 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.Data.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OfferBannerMY {
+            get {
+                object obj = ResourceManager.GetObject("OfferBannerMY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OfferBannerSG {
             get {
                 object obj = ResourceManager.GetObject("OfferBannerSG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap OfferBannerMY
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("OfferBannerMY", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;h1&gt;Terms And Conditions&lt;/h1&gt;
-        ///&lt;h3&gt;IMPORTANT NOTES&lt;/h3&gt;
+        ///   Looks up a localized string similar to &lt;h1 style=&quot;font-size: 2em; font-weight: bold;&quot;&gt;Terms And Conditions&lt;/h1&gt;
+        ///&lt;h3 style=&quot;font-size: 1.5em; font-weight: bold;&quot;&gt;IMPORTANT NOTES&lt;/h3&gt;
         ///&lt;ol&gt;
-        ///&lt;li style=&quot;list-style-type: decimal;&quot;&gt;Your company/business/partnership (“Company”) is receiving this notice about the a Standard Chartered Bank Malaysia Berhad (“Bank”) Business Instalment Loan (“Loan”) based solely on your Company’s financial and transactional information available on this platform. Receipt of this notice should therefore not be construed as a representation, warranty or undertaking by the Bank of Loan approval and for any qua [rest of string was truncated]&quot;;.
+        ///&lt;li style=&quot;list-style-type: decimal;&quot;&gt;Your company/business/partnership (“Company”) is receiving this notice about the Business Instalment Loan (“Loan”)/ BizFinancing-I (“Financing”) offered by Standard Chartered Bank Malaysia Berhad and Standard Chartered Saadiq Berhad respectively (each, the “Bank”) based solely on your Company’s financial and transactional [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TermsAndConditionsMY {
             get {
@@ -95,10 +93,10 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.Data.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;h1&gt;Terms And Conditions&lt;/h1&gt;
-        ///&lt;h3&gt;IMPORTANT NOTES&lt;/h3&gt;
+        ///   Looks up a localized string similar to &lt;h1 style=&quot;font-size: 2em; font-weight: bold;&quot;&gt;Terms And Conditions&lt;/h1&gt;
+        ///&lt;h3 style=&quot;font-size: 1.5em; font-weight: bold;&quot;&gt;IMPORTANT NOTES&lt;/h3&gt;
         ///&lt;ol&gt;
-        ///&lt;li style=&quot;list-style-type: decimal;&quot;&gt;Your company/business/partnership (“Company”) is receiving this notice about the Standard Chartered Bank (Singapore) Limited (“Bank”) Business Instalment Loan (“Loan”) based solely on your Company’s financial and transactional information available on this platform. Receipt of this notice should therefore not be construed as a representation, warranty or undertaking by the Bank of Loan approval and for any q [rest of string was truncated]&quot;;.
+        ///&lt;li style=&quot;list-style-type: decimal;&quot;&gt;Your company/business/partnership (“Company”) is receiving this notice about the Standard Chartered Bank (Singapore) Limited (“Bank”) Business Instalment Loan (“Loan”) based solely on your Company’s financial and transactional information available on this platform. Receipt of this notice should therefore not be construed [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TermsAndConditionsSG {
             get {
