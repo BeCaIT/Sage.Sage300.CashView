@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://inspiramedia.com/scb/edm/180517/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+  <style>
+  * {
+  font-family: sans-serif !important;
+}
+</style>
+<![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What is does: Centers email on Android 4.4 */
+
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+            table table table {
+                table-layout: auto;
+            }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+
+        /*img {
+            -ms-interpolation-mode: bicubic;
+        }*/
+        /* What it does: A work-around for iOS meddling in triggered links. */
+
+        *[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+        /* What it does: A work-around for Gmail meddling in triggered links. */
+
+        .x-gmail-data-detectors,
+        .x-gmail-data-detectors *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+        }
+        /* What it does: Prevents underlining the button text in Windows 10 */
+
+        .button-link {
+            text-decoration: none !important;
+        }
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            /* iPhone 6 and 6+ */
+            .email-container {
+                min-width: 375px !important;
+            }
+        }
+
+        sup {
+            font-size: 0.6em;
+        }
+    </style>
+
+    <!-- Progressive Enhancements -->
+    <style>
+        /* What it does: Hover styles for buttons */
+
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+
+            .button-td:hover,
+            .button-a:hover {
+                background: #555555 !important;
+                border-color: #555555 !important;
+            }
+        /* Media Queries */
+
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            .text-center {
+                text-align: center !important;
+            }
+        }
+    </style>
+    <style>
+        .edm-title {
+            font-size: 24px !important;
+        }
+
+        @media (min-width: 600px) {
+            .edm-title {
+                font-size: 16px !important;
+            }
+        }
+
+        .row-1 {
+            width: 29% !important;
+        }
+
+        @media (min-width: 600px) {
+            .row-1 {
+                width: 20% !important;
+            }
+        }
+
+        .row-2 {
+            width: 29% !important;
+        }
+
+        @media (min-width: 600px) {
+            .row-2 {
+                width: 22% !important;
+            }
+        }
+
+        .row-3 {
+            width: 42% !important;
+        }
+
+        @media (min-width: 600px) {
+            .row-3 {
+                width: 58% !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .mobile-hide {
+                display: none !important;
+            }
+
+            .mobile-nopadding {
+                padding: 0;
+                height: 1px;
+            }
+
+            .mobile-padding-top-20 {
+                padding-top: 20px !important;
+            }
+        }
+    </style>
+    <style type="text/css">
+        @media (max-width: 600px) {
+            img {
+                height: auto !important;
+            }
+
+            .mobile-remove-padding-top {
+                padding-top: 10px !important;
+            }
+
+            .desktop-remove-border-right_mobile-add-border-bottom {
+                border-bottom: 1px red solid;
+                border-right: none !important;
+            }
+        }
+    </style>
+    <style>
+        @media(max-width:500px) {
+            img {
+                height: auto !important;
+            }
+
+            .mobile-width100-pad,
+            .mobile-width100 {
+                width: 100% !important;
+                display: block !important;
+                box-sizing: border-box;
+            }
+
+            .mobile-width100 {
+                padding: 0 !important;
+                padding-bottom: 20px !important;
+            }
+
+            .imgmobile100 {
+                width: 100% !important;
+            }
+
+            .mobile100 {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .mobile-gone {
+                display: none;
+            }
+
+            .mobile-appear {
+                display: block !important;
+            }
+
+            .mobile-pb2 {
+                padding-bottom: 20px !important;
+            }
+
+            .mobile-pb3 {
+                padding-bottom: 30px !important;
+            }
+
+            .mobile-appear-cell {
+                display: table-cell !important;
+            }
+
+            .mobile-height-auto {
+                height: initial !important;
+                padding-bottom: 15px !important;
+            }
+
+            .mobile-ha {
+                height: initial !important;
+            }
+
+            .mobile-pb1 {
+                padding-bottom: 10px !important;
+            }
+
+            .mobile-ptb-20 {
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+            }
+
+            .mobile-pb-none {
+                padding-bottom: 0 !important;
+            }
+        }
+
+        .auto-style1 {
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body width="100%" bgcolor="#ffffff" style="margin: 0; background: #ffffff;">
+    <span style="width: 100%; background: #ffffff;">
+
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto;" class="email-container">
+            <tbody>
+                <tr>
+                    <td style="padding-top: 2px; font-family: Arial, Helvetica, sans-serif; color: #6e6e6e; font-size: 12px;" class="auto-style1">
+                        <div class="auto-style1">
+                            &nbsp;Dear Sir/Madam,
+                       
+                            <br />
+                            <br />
+                            Your CashView application has detected that your company&#39;s cash/bank balance reached the minimum threshold amount set by your company for one or more days&#39; range.
+                       
+                            <br />
+                            <br />
+                            Please follow these steps for more details:
+                       
+                            <br />
+                        </div>
+    </span>
+
+    <span style="width: 100%; background: #ffffff;">
+
+        <ol>
+            <li>Log into Sage 300 using your Sage User ID. [You will need to have Inquiry access rights to the CashView module]</li>
+            <li>Click on the CashView menu.</li>
+            <li>Click on the Inquiry function.</li>
+            <li>From the sidebar menu, click on Dashboard or Cash Flow Summary to view the cash projection.</li>
+        </ol>
+        Thank you
+                       
+        <br />
+        <br />
+        [This is a system generated message]
+                       
+        <br />
+        <em>To turn off future alert emails, please change the setting in Settings/Options in your CashView module&nbsp;</em><br />
+
+    </span>
+    <center style="width: 100%; background: #ffffff;">
+
+        <hr /></td>
+                </tr>
+            </tbody>
+        </table>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto;" class="email-container">
+            <tbody>
+                <tr>
+                    <td style="padding-top: 2px; text-align: center; font-family:Arial, Helvetica, sans-serif; color:#6e6e6e; font-size:12px;">&nbsp;
+                        <br>If you cannot view this email, please click <a href="https://www.sc.com/my/promotions/business-banking-sage/" target="_blank">here</a>.
+                        <br>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Email Body : BEGIN -->
+        <table bgcolor="#ffffff" role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto; border:1px solid #aaa;" class="email-container">
+            <tbody>
+                <tr>
+                    <td align="left" style="padding:0;">
+                        <img src="8458images/masthead.jpg" border="0" align="center" style="display: block; max-width: 100%; width:598px; height:454px;" height="454" width="598">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#ffffff" align="left" valign="top" style="padding: 0;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <!-- Column : BEGIN -->
+                                    <td width="100%">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tbody>
+                                                <!-- SEPARATOR -->
+                                                <tr>
+                                                    <td align="left" valign="top" height="12"  style="padding: 0px 20px 0;line-height:12px;height:12px;">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                            <tr>
+                                                                <td style="border-top:2px solid #3b4559; color:#ffffff; width:30px; height:12px; line-height:12px;" width="30" height="12">&nbsp;</td>
+                                                                <td width="90%" style="height:12px; line-height:12px;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- SEPARATOR END -->
+                                                <!-- CONTENT -->
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#6d6e71; font-size:15px; line-height: 1.3em; padding: 0px 20px 0;">
+                                                        Grow your business with Standard Chartered. You may be eligible to borrow/ apply up to RM1,500,000 with our Business Instalment Loan/ BizFinancing-i.
+                                                        <br><br>
+                                                    </td>
+                                                </tr>
+                                                <!-- SEPARATOR -->
+                                                <tr>
+                                                    <td align="left" valign="top" height="12"  style="padding: 0px 20px 0;line-height:12px;height:12px;">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                            <tr>
+                                                                <td style="border-top:2px solid #3b4559; color:#ffffff; width:30px; height:12px; line-height:12px;" width="30" height="12">&nbsp;</td>
+                                                                <td width="90%" style="height:12px; line-height:12px;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- SEPARATOR END -->
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#3b4559; font-size:15px; line-height: 1.3em; padding: 0px 20px 20px;">
+                                                        <strong style="font-size:20px; color:#3b4559;">
+                                                            Key Features 
+                                                        </strong>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#6d6e71; font-size:15px; line-height: 1.3em; padding: 0px 20px 0;">
+                                                        <table cellpadding='0' cellspacing='0' style="margin:0 !important;">
+                                                            <tr>
+                                                                <td align="left" valign="top" style='text-align:left;font-family:Arial, Roboto, Helvetica, Open Sans, sans-serif;color:#202020;font-size:16px;padding-right:20px;' class="mobile100 mobile-pb3">
+                                                                    <a href="#" target="_blank">
+                                                                        <img src="8458images/ico1.png" width="143" style="display:block;width:143px;" alt="">
+                                                                    </a>
+                                                                </td>
+                                                                <td align="left" valign="top" style='text-align:left;font-family:Arial, Roboto, Helvetica, Open Sans, sans-serif;color:#202020;font-size:16px;padding-right:20px;' class="mobile100 mobile-pb3">
+                                                                    <a href="#" target="_blank">
+                                                                        <img src="8458images/ico2.png" width="110" style="display:block;width:110px;" alt="">
+                                                                    </a>
+                                                                </td>
+                                                                <td align="left" valign="top" style='text-align:left;font-family:Arial, Roboto, Helvetica, Open Sans, sans-serif;color:#202020;font-size:16px;padding-right:20px;' class="mobile100 mobile-pb1">
+                                                                    <a href="#" target="_blank">
+                                                                        <img src="8458images/ico3.png" width="154" style="display:block;width:154px;" alt="">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- SEPARATOR -->
+                                                <tr>
+                                                    <td align="left" valign="top" height="12"  style="padding: 30px 20px 0;line-height:12px;height:12px;">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                            <tr>
+                                                                <td style="border-top:2px solid #3b4559; color:#ffffff; width:30px; height:12px; line-height:12px;" width="30" height="12">&nbsp;</td>
+                                                                <td width="90%" style="height:12px; line-height:12px;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- SEPARATOR END -->
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#3b4559; font-size:15px; line-height: 1.3em; padding: 0px 20px 20px;">
+                                                        <strong style="font-size:20px; color:#3b4559;">
+                                                            Two options to submit a loan/ financing request:
+                                                        </strong>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#6d6e71; font-size:15px; line-height: 1.3em; padding: 0px 20px 20px;">
+                                                        <span style="color:#3b4559">Option 1 - Via Sage platform</span>
+                                                        <br>
+                                                        <span style="color:#6d6e71">
+                                                            1.  Log on to Sage 300 CashView module^.
+                                                            <br>
+                                                            2.  Select the Loan menu in your Inquiry function.
+                                                            <br>
+                                                            3.  Fill in and submit the loan/financing form request. 
+                                                        </span>
+                                                        <br>
+                                                        <span style="font-size:10px;">^You need to have Loan Entry access rights.</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#3b4559; font-size:15px; line-height: 1.3em; padding: 0px 20px 10px;">
+                                                        Option 2 - Via Standard Chartered website
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#6d6e71; font-size:15px; line-height: 1.3em; padding: 0px 20px 0px;">
+                                                        <table>
+                                                            <tr>
+                                                                <td style="background-color:#6e80a9; font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:25px; line-height:33px; padding: 20px 20px 0;" bgcolor="#6e80a9">
+                                                                        Exclusive promotion
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="background-color:#6e80a9; font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:18px; line-height:20px; padding: 5px 20px 20px;" bgcolor="#6e80a9">
+                                                                    Be rewarded when you take up a Standard Chartered Business Instalment Loan/Biz Financing-i.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="background-color:#6e80a9; font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:15px; line-height: 1.3em; padding: 0px 20px 20px;" bgcolor="#6e80a9">
+                                                                    <a href="https://www.sc.com/my/promotions/business-banking-sage/" style="text-decoration:none;" target="_blank">
+                                                                        <img src="8458images/cta-apply-now.png" style="display:block;outline:none;border:none;" alt="">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#3b4559; font-size:22px; line-height: 1.3em; padding: 0px 20px 0;">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                            <tr>
+                                                                <td style="height:30px;line-height:30px" height="30">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#6d6e71; font-size:15px; line-height: 1.3em; padding: 0px 20px 0px;">
+                                                        <img src="8458images/logo-perbankan-islam.png" style="display:block;width:86px;" width="86" alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family:Arial, Helvetica, sans-serif; color:#3b4559; font-size:22px; line-height: 1.3em; padding: 0px 20px 0;">
+                                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                            <tr>
+                                                                <td style="height:50px;line-height:50px" height="50">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <!-- Column : END -->
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td align="left" style="font-family:Arial, Helvetica, sans-serif; color:#999999; font-size:16px!important;line-height:18px;">
+                                        <img src="8458images/sc.com.png" width="80" style="display:block;width:80px; border:none;" alt="">
+                                    </td>
+
+                                    <td align="right" style="font-family:Arial, Helvetica, sans-serif; color:#6DC068; font-size:16px!important;line-height:18px;">
+                                        Here for good
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Email Body : END -->
+
+        <!-- Email Footer : BEGIN -->
+
+       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto;" class="email-container">
+            <tbody>
+                <tr>
+                    <td align="left" valign="center" width="100%" bgcolor="#3b4559" style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:10px; line-height: 13px; text-align:left; background-color:#3b4559;padding:10px 20px">
+                        Standard Chartered Bank Malaysia Berhad 198401003274 (115793-P)
+                        <br>
+                        Standard Chartered Saadiq Berhad 200801022118 (823437-K)
+                    </td>
+                    <td align="right" width="64px" bgcolor="#3b4559" valign="center" style="background-color:#3b4559;padding:10px 20px">
+                        <a href="https://www.facebook.com/StandardCharteredMalaysia/" target="_blank"><img src="8458images/fb.png" width="34" style="width:34px;display:block;" alt=""></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto;" class="email-container">
+            <tbody>
+                <tr>
+                    <td align="left" valign="center" width="100%" bgcolor="#c1c2c3" style="font-family:Arial, Helvetica, sans-serif; color:#636363; font-size:10px; line-height: 13px; text-align:left; background-color:#efeff0;padding:15px 20px;">
+                        Terms and conditions apply.
+                        <br><br>
+                        <strong>Disclaimer:</strong>
+                        <br>
+                        Standard Chartered Malaysia Berhad and Standard Chartered Saadiq Berhad (“the “Bank”) is not an agent of Sage Software Sdn Bhd (“Sage”) and its affiliates, partners, intermediaries and agents (collectively “Sage entities”) and makes no warranty of any kind, express, implied or statutory, regarding any platform provided by Sage or any information contained or referred to therein. Any dispute about the same must be resolved directly with Sage.
+                        <br><br>
+                        For the avoidance of doubt, the said platform is managed by Sage and not the Bank. This email has been automatically generated and sent to you via Sage 300 CashView module. You are receiving this email because you have consented to receive email notifications and/or marketing material from Sage and its business alliance partners, and this email address has been included in the list of recipients for and on behalf of Sage. To stop receiving email notifications and/or marketing material generated from the said Sage 300 CashView module, you will be deemed to have submitted such request to Sage when you update the S/C Setup Options – Email Tab of the Sage 300 CashView module, and your request will take effect only upon such update.
+                        <br><br>
+                        To unsubscribe from marketing emails sent by Sage otherwise than from the Sage 300 CashView module, please email <a href="mailto:dataprotection.apac@sage.com" style="text-decoration:underline;color:#636363;">dataprotection.apac@sage.com</a> or use the links provided in emails sent.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table role="presentation" cellspacing="0" bgcolor="#3b4559" cellpadding="0" border="0" align="center" width="600" style="margin: auto;background-color:#3b4559;" class="email-container">
+            <tbody>
+                <tr>
+                    <td style="padding:20px;">
+                        <table cellspacing="0" cellpadding="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table cellspacing="0" cellpadding="0" width="100%">
+                                            <tbody>
+                                                <tr valign="top">
+                                                   <td align="left" width="50%" style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:10px; text-align: left;"><a href="https://www.sc.com/sg/privacy/" style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:10px;" target="_blank">Privacy policy</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <!-- Email Footer : END -->
+
+    </center>
+
+</body>
+
+</html>

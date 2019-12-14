@@ -44,6 +44,10 @@
       <DeploymentContent>true</DeploymentContent>
     </None>
     <None Include="Source\ENG\Resource\80001Alert.mht" />
+    <None Include="Source\ENG\Resource\84581Offer.html" />
+    <None Include="Source\ENG\Resource\84581Offer.mht" />
+    <None Include="Source\ENG\Resource\84582Combined.html" />
+    <None Include="Source\ENG\Resource\84582Combined.mht" />
     <None Include="Source\ENG\Resource\87021-SGLoanOffer.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
@@ -266,6 +270,16 @@
     <ResourceCompile Include="Source\UIs\Resource\ENG\SCClient.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Source\ENG\Resource\8458images\block.jpg" />
+    <Image Include="Source\ENG\Resource\8458images\cta-apply-now.png" />
+    <Image Include="Source\ENG\Resource\8458images\divider.png" />
+    <Image Include="Source\ENG\Resource\8458images\fb.png" />
+    <Image Include="Source\ENG\Resource\8458images\ico1.png" />
+    <Image Include="Source\ENG\Resource\8458images\ico2.png" />
+    <Image Include="Source\ENG\Resource\8458images\ico3.png" />
+    <Image Include="Source\ENG\Resource\8458images\logo-perbankan-islam.png" />
+    <Image Include="Source\ENG\Resource\8458images\masthead.jpg" />
+    <Image Include="Source\ENG\Resource\8458images\sc.com.png" />
     <Image Include="Source\ENG\Resource\images\block.jpg" />
     <Image Include="Source\ENG\Resource\images\divider.png" />
     <Image Include="Source\ENG\Resource\images\dot.png" />
@@ -334,7 +348,7 @@
     <IncludePath>$(ProjectDir)\Build32\CodMap;$(ProjectDir)\Build32\Gen;$(ProjectDir)\Build32\Include;C:\Pluswdev\INCLUDE;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Pluswdev\INCLUDE;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)\Build32\Gen;$(ProjectDir)\Build32\Include;C:\Pluswdev\INCLUDE;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
