@@ -1960,6 +1960,9 @@ VIEWBASE ProcessEtc (
 			CHECK_CALL(e, viewGet(SCOPT->rvh, SCOPT->view, SCOPT_IDX(EMAILOFFER), &bEmailOffer, SCOPT_SIZ(EMAILOFFER)));
 			bLoanConditionsMet &= bEmailOffer;
 
+			WORD wCountry = 0;
+			CHECK_CALL(e, viewGet(SCOPT->rvh, SCOPT->view, SCOPT_IDX(COUNTRY), &wCountry, SCOPT_SIZ(COUNTRY)));
+
 			//
 			//
 			//
@@ -2011,12 +2014,16 @@ VIEWBASE ProcessEtc (
 				//// Send email Alert & Loan offer
 				LoadRsc(lpv->hpib, MAKERSC(IDS_SCPRO_EMAIL_SUBJECT_ALERTLOAN), RSC_MAX_MESSAGE, szEmailSubjectTemplate, TRUE);
 				sprintf_s(szEmailSubject, szEmailSubjectTemplate, lpv->CompanyInfo.sName);
-				//CHAR szEmailOffer[SCPRO_EMAIL_MAX_MESSAGE + 1];
-				//strInit(szEmailOffer);
-				//rscLoadHTML(lpv->hpib, APPL, 80001, szEmailBody, SCPRO_EMAIL_MAX_MESSAGE);
-				//rscLoadHTML(lpv->hpib, APPL, 87021, szEmailOffer, SCPRO_EMAIL_MAX_MESSAGE);
-
-				rscLoadHTML(lpv->hpib, APPL, 87022, szEmailBody, SCPRO_EMAIL_MAX_MESSAGE);
+				
+				switch (wCountry)
+				{
+					case SC_COUNTRY_MALAYSIA:
+						rscLoadHTML(lpv->hpib, APPL, 84582, szEmailBody, SCPRO_EMAIL_MAX_MESSAGE);
+						break;
+					default:
+						rscLoadHTML(lpv->hpib, APPL, 87022, szEmailBody, SCPRO_EMAIL_MAX_MESSAGE);
+						break;
+				}
 
 				//strAppend(szEmailBody, szEmailOffer);
 				emailSendRaw(
@@ -2058,7 +2065,17 @@ VIEWBASE ProcessEtc (
 				//// Send email Offer Only
 				LoadRsc(lpv->hpib, MAKERSC(IDS_SCPRO_EMAIL_SUBJECT_LOAN), RSC_MAX_MESSAGE, szEmailSubjectTemplate, TRUE);
 				sprintf_s(szEmailSubject, szEmailSubjectTemplate, lpv->CompanyInfo.sName);
-				rscLoadHTML(lpv->hpib, APPL, 87021, szEmailBody, SCPRO_EMAIL_MAX_MESSAGE);
+
+				switch (wCountry)
+				{
+					case SC_COUNTRY_MALAYSIA:
+						rscLoadHTML(lpv->hpib, APPL, 84581, szEmailBody, SCPRO_EMAIL_MAX_MESSAGE);
+						break;
+					default:
+						rscLoadHTML(lpv->hpib, APPL, 87021, szEmailBody, SCPRO_EMAIL_MAX_MESSAGE);
+						break;
+				}
+
 				emailSendRaw(
 					szEmailHost,
 					wEmailPort,

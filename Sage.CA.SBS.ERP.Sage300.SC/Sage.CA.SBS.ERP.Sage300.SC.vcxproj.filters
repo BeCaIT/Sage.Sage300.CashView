@@ -157,6 +157,9 @@
     <Filter Include="ENG\Docs">
       <UniqueIdentifier>{1f5fe68e-8011-4b45-9bd4-91a5afa2b415}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ENG\Resource\Resource Files\8458images">
+      <UniqueIdentifier>{eb64fb3c-7826-42ac-aa75-7ebedad9531b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\Project\SC.ptn">
@@ -570,6 +573,18 @@
     <None Include="Source\ENG\Resource\20001-LoanRequest.htm">
       <Filter>ENG\Resource\Resource Files</Filter>
     </None>
+    <None Include="Source\ENG\Resource\84581Offer.html">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\84582Combined.html">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\84581Offer.mht">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
+    <None Include="Source\ENG\Resource\84582Combined.mht">
+      <Filter>ENG\Resource\Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Source\Project\sc.txt">
@@ -864,6 +879,36 @@
     </Image>
     <Image Include="Source\ENG\Resource\images\sc.com.png">
       <Filter>ENG\Resource\Resource Files\images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\block.jpg">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\cta-apply-now.png">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\divider.png">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\fb.png">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\ico1.png">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\ico2.png">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\ico3.png">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\logo-perbankan-islam.png">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\masthead.jpg">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
+    </Image>
+    <Image Include="Source\ENG\Resource\8458images\sc.com.png">
+      <Filter>ENG\Resource\Resource Files\8458images</Filter>
     </Image>
   </ItemGroup>
 </Project>

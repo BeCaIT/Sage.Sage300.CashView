@@ -66,8 +66,9 @@ STRINGTABLE
 //// HTML Files
 //80001	HTML	"80001-ThresholdAlert.htm"
 80001	HTML	"80001Alert.mht"
-//87021	HTML	"87021-SGLoanOffer.htm"
+// Singapore
 87021	HTML	"87021Offer.mht"
 87022	HTML	"87022Combined.mht"
-//8002	HTML	".\\TemplateQuickReference.htm"
-//8003	HTML	".\\TemplateQuickReference.htm"
+// Malaysia
+84581	HTML	"84581Offer.mht"
+84582	HTML	"84582Combined.mht"
