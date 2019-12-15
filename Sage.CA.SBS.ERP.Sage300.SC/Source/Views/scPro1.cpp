@@ -1804,16 +1804,52 @@ BOOL WINAPI CheckLoanRecordExists(
 }
 
 
+VIEWBASE WINAPI CheckObsoletedLoanRecords(
+	LPV lpv
+)
+{
+	ERRNUM e = ERRNUM_SUCCESS;
+
+	LPVIEWDEF SCLOAN = FindCmp(lpv, SCLOAN_CMP);
+
+	BCDDATE bcdDateLimit;
+
+	if (datePlus((LPBCDDATE)FindFieldValue(lpv, SCPRO_IDX(PROCESSDT)), -180, bcdDateLimit))
+	{
+		CHAR szDateLimit[9];
+		bcdToZStr(bcdDateLimit, SIZEOF_DATE, 0, szDateLimit, 9, 0);
+
+		CHAR szQuery[RSC_MAX_MESSAGE + 1];
+		sprintf(szQuery, "((DTSUBMIT > 0) AND (DTSUBMIT <= %s))", szDateLimit);
+
+		WORD wStatusCancel = SCLOAN_STATUS_CANCELLED;
+
+		CHECK_CALL(e, viewRecordClear((LPRVH)SCLOAN->rvh, SCLOAN->view));
+		CHECK_CALL(e, viewBrowse(SCLOAN->rvh, SCLOAN->view, szQuery, TRUE));
+		while (ERRNUM_IS_SUCCESS(viewFetch(SCLOAN->rvh, SCLOAN->view)))
+		{
+			CHECK_CALL(e, viewPut(SCLOAN->rvh, SCLOAN->view, SCLOAN_IDX(STATUS), &wStatusCancel, SCLOAN_SIZ(STATUS), FALSE));
+			CHECK_CALL(e, viewUpdate(SCLOAN->rvh, SCLOAN->view));
+		}
+	}
+
+	return e;
+}
+
+
 BOOL WINAPI CheckLoanConditions(
 	LPV lpv,
 	LPSTR sYear)
 {
+	ERRNUM e = ERRNUM_SUCCESS;
+
+	CHECK_CALL(e, CheckObsoletedLoanRecords(lpv));
+
 	if (CheckLoanRecordExists(lpv))
 		return FALSE;
 
 	BOOL bResult = FALSE;
 
-	ERRNUM e = ERRNUM_SUCCESS;
 	LPVIEWDEF SCOPT = FindCmp(lpv, SCOPT_CMP);
 	LPVIEWDEF SCLOAN = FindCmp(lpv, SCLOAN_CMP);
 
