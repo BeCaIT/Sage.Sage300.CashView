@@ -2108,7 +2108,20 @@ VIEWCALL scLoanInsert    (LPVOID lpView)
 	CHAR szDate[9];
 	bcdToZStr((PCBYTE)FindFieldValue(lpv, SCLOAN_IDX(DTOFFER)), SIZEOF_DATE, 0, szDate, 9, 0);
 	CHAR szLOANNUM[SCLOAN_SIZ(LOANNUM) + 1];
-	sprintf(szLOANNUM, "SGSCB%08s", szDate);
+	switch (lpv->wCountry)
+	{
+		case SC_COUNTRY_SINGAPORE:
+			sprintf(szLOANNUM, "SGSCB%08s", szDate);
+			break;
+
+		case SC_COUNTRY_MALAYSIA:
+			sprintf(szLOANNUM, "MYSCB%08s", szDate);
+			break;
+
+		default:
+			sprintf(szLOANNUM, "OTSCB%08s", szDate);
+			break;
+	}
 	strCopyBZ(FindFieldValue(lpv, SCLOAN_IDX(LOANNUM)), SCLOAN_SIZ(LOANNUM), szLOANNUM);
 
 
