@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.CA.SBS.ERP.Sage300.SC.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.CA.SBS.ERP.Sage300.SC.Data", "Sage.CA.SBS.ERP.Sage300.SC.Data\Sage.CA.SBS.ERP.Sage300.SC.Data.csproj", "{6F65BC8B-A900-4F31-A225-B57889CBDF0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.CA.SBS.ERP.Sage300.SC.Processor", "Sage.CA.SBS.ERP.Sage300.SC.Processor\Sage.CA.SBS.ERP.Sage300.SC.Processor.csproj", "{2A307255-A8C6-4B49-9033-61F8DA665853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,18 @@ Global
 		{6F65BC8B-A900-4F31-A225-B57889CBDF0C}.Release|x64.Build.0 = Release|Any CPU
 		{6F65BC8B-A900-4F31-A225-B57889CBDF0C}.Release|x86.ActiveCfg = Release|Any CPU
 		{6F65BC8B-A900-4F31-A225-B57889CBDF0C}.Release|x86.Build.0 = Release|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Debug|x64.Build.0 = Debug|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Debug|x86.Build.0 = Debug|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Release|x64.ActiveCfg = Release|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Release|x64.Build.0 = Release|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Release|x86.ActiveCfg = Release|Any CPU
+		{2A307255-A8C6-4B49-9033-61F8DA665853}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

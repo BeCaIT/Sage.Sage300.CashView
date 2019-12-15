@@ -537,6 +537,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_5C144298EFD14ABF85F382DD7502A937"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6078CF6980ED2D73E44C527FE388C4C4"
         "OwnerKey" = "8:_A385E2BAFB74F221E23F849526AED2EE"
         "MsmSig" = "8:_UNDEFINED"
@@ -874,12 +880,6 @@
         "Entry"
         {
         "MsmKey" = "8:_92E722BF2DFE4154ADB7E4C87FC1A7EC"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_92FEA0FF20E84BA9AB0647DE3BAEC24A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1371,6 +1371,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_DD8F64B8A0094159A761CEAB92652F1A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E028C5CAF5404A2780E07F2E9B158449"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1475,6 +1481,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_F61E73B3F1BF4B5797782CA5295C640B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5C144298EFD14ABF85F382DD7502A937"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -3474,6 +3486,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5C144298EFD14ABF85F382DD7502A937"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:AccpacSCProcessor, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_5C144298EFD14ABF85F382DD7502A937"
+                    {
+                    "Name" = "8:AccpacSCProcessor.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\Sage.CA.SBS.ERP.Sage300.SC\\Build32\\Runtime\\AccpacSCProcessor.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_76FB1F4D6EBB4CC4844703B9BB929B8C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6078CF6980ED2D73E44C527FE388C4C4"
             {
             "AssemblyRegister" = "3:1"
@@ -4168,26 +4211,6 @@
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_76FB1F4D6EBB4CC4844703B9BB929B8C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_92FEA0FF20E84BA9AB0647DE3BAEC24A"
-            {
-            "SourcePath" = "8:..\\Sage.CA.SBS.ERP.Sage300.SC\\Build32\\Docs\\Implementation Checklist.xlsx"
-            "TargetName" = "8:Implementation Checklist.xlsx"
-            "Tag" = "8:"
-            "Folder" = "8:_E620E32BA71642F584274890AC97A0D4"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -5404,6 +5427,26 @@
                 }
             "SourcePath" = "8:..\\Sage.CA.SBS.ERP.Sage300.SC\\Build32\\Runtime\\Telerik.WinControls.dll"
             "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_76FB1F4D6EBB4CC4844703B9BB929B8C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DD8F64B8A0094159A761CEAB92652F1A"
+            {
+            "SourcePath" = "8:..\\Sage.CA.SBS.ERP.Sage300.SC\\Build32\\Runtime\\AccpacSCProcessor.exe.config"
+            "TargetName" = "8:AccpacSCProcessor.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_76FB1F4D6EBB4CC4844703B9BB929B8C"
             "Condition" = "8:"
