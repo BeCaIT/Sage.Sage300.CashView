@@ -28,7 +28,7 @@
     <div class="form-group">
         <div class="dropdown-group">
             @Html.SageLabelFor(model => model.Data.Country, new { @class = "required" })
-            @Html.KoSageDropDownList("Country", new { options = "Countries", sagedisable = "!Data.IsNewLine()", @sagevalue = "Data.Country", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "default" })
+            @Html.KoSageDropDownList("Country", new { options = "Countries", sagedisable = "!Data.IsNewLine() && Data.Country() != 0", @sagevalue = "Data.Country", optionsText = "'Text'", optionsValue = "'Value'" }, new { @class = "default" })
             @Html.ValidationMessageFor(model => model.Data.Country, null)
         </div>
         <!-- Default Entity Type -->
