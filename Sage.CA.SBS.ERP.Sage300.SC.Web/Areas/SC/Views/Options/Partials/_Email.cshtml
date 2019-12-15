@@ -107,12 +107,12 @@
             </div>
         </div>
         <!-- Email Offer -->
-        <div class="form-group">
-            <div class="ctrl-group">
-                <div class="child block">
-                    @Html.KoSageCheckBoxFor(m => m.Data.EmailOffer, new { sagechecked = "Data.EmailOffer" }, new { @class = "icon" })
-                    <label class="checkBox-info optionpostingcheck" for="Data_EmailOffer">@Html.Raw(OptionsResx.EmailOffer)</label>
-                </div>
+        <div class="ctrl-group">
+            <div class="child block left">
+                @Html.KoSageCheckBoxFor(m => m.Data.EmailOffer, new { sagechecked = "Data.EmailOffer" }, new { @class = "icon" })
+            </div>
+            <div class="child block">
+                <label class="checkBox-info optionpostingcheck" for="Data_EmailOffer">@Html.Raw(OptionsResx.EmailOffer)</label>
             </div>
         </div>
     </div>
