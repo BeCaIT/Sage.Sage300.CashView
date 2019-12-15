@@ -54,7 +54,7 @@ STRINGTABLE
 	//// Email Subjects
 	IDS_SCPRO_EMAIL_SUBJECT_ALERT			,    "[Send from Sage CashView] Alert for %.60s"
 	IDS_SCPRO_EMAIL_SUBJECT_ALERTLOAN	,    "[Send from Sage CashView] Alert for %.60s"
-	IDS_SCPRO_EMAIL_SUBJECT_LOAN			,    "[Send from Sage CashView] Alert for %.60s"
+	IDS_SCPRO_EMAIL_SUBJECT_LOAN			,    "[Send from Sage CashView] Notice for %.60s"
 	//
 	//// Marks
 	//
