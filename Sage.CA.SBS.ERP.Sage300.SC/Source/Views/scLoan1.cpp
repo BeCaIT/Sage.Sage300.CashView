@@ -2597,6 +2597,7 @@ VIEWCALL scLoanSubmit(
 	sprintf(szEmailBody, szEmailBodyTemplate,
 		szDate, // Date
 		lpr->reference,
+		lpr2->brn,
 		lpr2->rptCur,
 		szAmountOfferFmt,
 		lpr2->rptCur,
