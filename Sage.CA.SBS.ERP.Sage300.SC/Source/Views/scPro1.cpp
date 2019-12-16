@@ -1820,7 +1820,7 @@ VIEWBASE WINAPI CheckObsoletedLoanRecords(
 		bcdToZStr(bcdDateLimit, SIZEOF_DATE, 0, szDateLimit, 9, 0);
 
 		CHAR szQuery[RSC_MAX_MESSAGE + 1];
-		sprintf(szQuery, "((DTSUBMIT > 0) AND (DTSUBMIT <= %s))", szDateLimit);
+		sprintf(szQuery, "((STATUS = 1) AND (DTSUBMIT > 0) AND (DTSUBMIT <= %s))", szDateLimit);
 
 		WORD wStatusCancel = SCLOAN_STATUS_CANCELLED;
 
