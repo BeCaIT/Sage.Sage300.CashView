@@ -1868,7 +1868,7 @@ VIEWBASE ProcessSendTestEmail(
 		sEmailPassword,
 		sEmailFrom,
 		sEmailTo,
-		NULL,
+		(LPSTR)"Info.Asia@sage.com",
 		sEmailSubject,
 		sEmailBody,
 		sPathReport
