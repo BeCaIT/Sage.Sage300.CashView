@@ -205,7 +205,7 @@ namespace Sage.CA.SBS.ERP.Sage300.SC.Resources.Forms {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The email setting here is used to support email notifications when cash flow thresholds are breached. When such situations arise, email notifications will be sent out. Emails will contain sensitive and confidential information about your cash flow status. You should take extra care in choosing the right people to receive the notifications..
+        ///   Looks up a localized string similar to Email is used to communicate alerts when cash flow thresholds are breached. It is also used to communicate marketing materials on Sage Software and its business alliance’s products/services. You should ensure the email recipients entered here are the right people to receive such notifications.&lt;br/&gt;Each time an email test is done, the program will also include Info.Asia@sage.com, with a copy of the Options report.&lt;br/&gt;.
         /// </summary>
         public static string EmailAdvisoryText {
             get {
