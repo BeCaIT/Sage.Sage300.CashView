@@ -105,7 +105,7 @@ extern "C" {
 // Set to the number of manually composed views. These are not maintained
 // except to close them upon the view being closed. The programmer must
 // manually maintain them.
-#define MAN_CMP_COUNT    1
+#define MAN_CMP_COUNT    2
 
 // ---
 

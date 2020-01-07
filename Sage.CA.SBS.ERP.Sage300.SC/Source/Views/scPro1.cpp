@@ -1945,9 +1945,10 @@ VIEWBASE ProcessEtc (
 	CHAR sYear[SIZEOF_YEAR + 1];
 	WORD wYear;
 	WORD wPeriod;
-	BOOL bPeriodStatus;
-	fscPeriod(lpv->hpib, lpv->wLinkNo, processDate, &wPeriod, sYear, &bPeriodStatus);
+	CHECK_CALL(e, viewGet(SCOPT->rvh, SCOPT->view, SCOPT_IDX(CURYEAR), sYear, SCOPT_SIZ(CURYEAR)));
 	strToWord(sYear, &wYear, SIZEOF_YEAR);
+	CHECK_CALL(e, viewGet(SCOPT->rvh, SCOPT->view, SCOPT_IDX(CURPERIOD), &wPeriod, SCOPT_SIZ(CURPERIOD)));
+
 	CHECK_CALL(e, ProcessSCBAL(lpv, wYear, meter));
 
 	CHAR sDate[9];
