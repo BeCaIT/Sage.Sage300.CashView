@@ -43,6 +43,7 @@ namespace A4WAPI {
 // +++
 
 // #include "composite .H file(s)"
+#include "scOpt.h"
 
 
 
@@ -216,9 +217,11 @@ extern IDXMAP fldIdxMap [IDXIDX(FLD_IDX_LIMIT)] = {
 // Composite names: all composite names must be listed here, including
 // implicit and manual compositions. Their ordering is important:
 // header, detail, hierarchy, demand, implicit, then manual composites.
-#define	GLACGRP_CMP	0
+#define	SCOPT_CMP	0
+#define	GLACGRP_CMP	1
 
 extern CMPNAME cmpNameList [CMP_COUNT+MAN_CMP_COUNT] = {
+	{SCOPT_ROTOID, INSTANCE_OPEN_READONLY},
 	{GLACGRP_VIEW, INSTANCE_OPEN_READONLY},
 };
 #endif
@@ -1085,15 +1088,22 @@ VIEWBASE OpenEtc (LPV lpv)
 {
    ERRNUM e = ERRNUM_SUCCESS;
 
-	DBDATE dbDate;
-	BCDDATE bcdDate;
-	BOOL bStatus = FALSE;
-	dtGetDate(&dbDate);
-	dtDateToBCD(&dbDate, bcdDate);
-	fscPeriod(lpv->hpib, lpv->wLinkNo, bcdDate, (LPWORD)&lpv->curPeriod, lpv->curYear, &bStatus);
+	//DBDATE dbDate;
+	//BCDDATE bcdDate;
+	//BOOL bStatus = FALSE;
+	//dtGetDate(&dbDate);
+	//dtDateToBCD(&dbDate, bcdDate);
+	//fscPeriod(lpv->hpib, lpv->wLinkNo, bcdDate, (LPWORD)&lpv->curPeriod, lpv->curYear, &bStatus);
 
 	CHECK_CALL(e, OpenOneView(lpv, GLACGRP_CMP));
-	//CHECK_CALL(e, OpenOneView(lpv, GLAMF_CMP));
+
+	LPVIEWDEF	SCOPT = FindCmp(lpv, SCOPT_CMP);
+
+	CHECK_CALL(e, OpenOneView(lpv, SCOPT_CMP));
+	CHECK_CALL(e, viewRead(SCOPT->rvh, SCOPT->view));
+	CHECK_CALL(e, viewGet(SCOPT->rvh, SCOPT->view, SCOPT_IDX(CURYEAR), lpv->curYear, SCOPT_SIZ(CURYEAR)));
+	CHECK_CALL(e, viewGet(SCOPT->rvh, SCOPT->view, SCOPT_IDX(CURPERIOD), &lpv->curPeriod, SCOPT_SIZ(CURPERIOD)));
+	CloseOneView(lpv, SCOPT_CMP);
 
    return e;
 }

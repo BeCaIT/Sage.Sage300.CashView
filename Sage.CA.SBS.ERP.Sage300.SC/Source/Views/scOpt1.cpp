@@ -1231,7 +1231,31 @@ VIEWBASE CalculateFields (LPV lpv)
 	dtGetDate(&currentDate);
 	dtDateToBCD(&currentDate, lpr2->curDate);
 	BOOL bPeriodStatus;
-	fscPeriod(lpv->hpib, lpv->wLinkNo, lpr2->curDate, (LPWORD)&lpr2->curPeriod, lpr2->curYear, &bPeriodStatus);
+	CHAR szCurrentYear[SIZEOF_YEAR + 1];
+	blkSet(szCurrentYear, 0, sizeof(szCurrentYear));
+	if (fscPeriod(lpv->hpib, lpv->wLinkNo, lpr2->curDate, (LPWORD)& lpr2->curPeriod, szCurrentYear, &bPeriodStatus) == TRUE)
+		strCopyBZ(lpr2->curYear, SIZEOF_YEAR, szCurrentYear);
+	else
+	{
+		//
+		// If we reach here, mean the fiscal calendar for the current day is not created.
+		// This usually happen for the first few days of the year where users forgot to create new Fiscal Year.
+		// We will get the last period of the "LATEST" (means Last) year.
+		FISCINFO fscLatestYear;
+		if (fscLastYear(lpv->hpib, lpv->wLinkNo, &fscLatestYear) == TRUE)
+		{
+			blkCopy(lpr2->curYear, fscLatestYear.sYear, SIZEOF_YEAR);
+			lpr2->curPeriod = fscLatestYear.wFiscalPeriods; 
+		}
+		else
+		{
+			//
+			// One we reached here, means we can't even find latest year in Fiscal Calendar.
+			// Fall back to 2019-12 since this is the time we release this program. No back-dated calculation.
+			strCopyBZ(lpr2->curYear, SIZEOF_YEAR, "2019");
+			lpr2->curPeriod = (WORD)12;
+		}
+	}
 
 	for (INT i = 0; i < SIZEOF_PASSWORD; i++)
 		lpr2->emailPswdS[i] = '*';
